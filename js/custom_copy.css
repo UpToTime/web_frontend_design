@@ -1,0 +1,429 @@
+/*
+@import fonts
+
+custom styling
+
+*/
+
+@import url(./static/custom/css/fonts.css);
+
+
+/* fonts */
+
+/* all elements use cabin font
+*/
+html {
+    scroll-behavior: smooth !important;
+    -webkit-scroll-behaviour: smooth !important;
+}
+body {
+    font-family: 'Cabin' !important;
+    font-weight: 400;
+}
+
+
+h1,h2,h3,
+h4,h5,h6,
+.header,.sub,.title {
+    font-family: 'Old Standard TT' !important;
+    font-weight: 700;
+    text-transform: capitalize !important;
+}
+
+.signature {
+    font-family: 'Alex Brush' !important;
+    text-transform: capitalize !important;
+
+}
+
+
+/* end fonts */
+
+
+/* my custom added css styling */
+
+.banner-wrapper {
+    margin: 0 auto;
+    min-height: 35vh;
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* changed from stretch to center */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+
+
+
+}
+
+
+
+.txt-typed > .txt {
+    /* a cursor for the typed text */
+    border-right: 0.2rem solid #777;
+}
+
+/* mask an image */
+
+.maskedImg {
+    /* -webkit-mask-image: url(#masker);
+  mask-image: url(#masker);*/
+    height: auto;
+    width: auto;
+    mask-image: url("./static/images/splash.png");
+    -webkit-mask-image: url("./static/images/splash.png");
+    mask-position: center center;
+    -webkit-mask-position: center center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+.maskedGradient {
+    -webkit-mask-image: linear-gradient(tobottom ,transparent 25%, black 75%);
+
+    mask-image: linear-gradient(tobottom ,transparent 25%, black 75%);
+
+    mask-position: center center;
+    -webkit-mask-position: center center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+
+}
+
+.maskedGradient2 {
+    -webkit-mask-image: radial-gradient(circle farthest-corner at 20% 50%, transparent,white);
+
+    mask-image: radial-gradient(circle farthest-corner at 20% 50%, transparent,white);
+    mask-position: center center;
+    -webkit-mask-position: center center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+
+}
+
+.clippedImg {
+
+    clip-path: polygon(11% 0, 34% 0, 19% 100%, 31% 100%, 49% 0, 68% 0, 54% 100%, 70% 100%, 82% 0, 100% 0, 90% 100%, 0 100%);
+    -webkit-clip-path: polygon(11% 0, 34% 0, 19% 100%, 31% 100%, 49% 0, 68% 0, 54% 100%, 70% 100%, 82% 0, 100% 0, 90% 100%, 0 100%);
+
+
+}
+
+.raiseImg {
+    height: 100%;
+    z-index: 4;
+}
+
+.unborder {
+    border-radius: unset !important;
+
+}
+.marginless {
+    /* no top and bottom margin */
+    margin: 0 auto !important;
+}
+.paddless {
+    /* no padding in element*/
+    padding: 0 !important;
+}
+.svg-wrapper-top {
+    padding-bottom: 0 !important;
+}
+.svg-wrapper {
+
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+
+}
+/* #333  a darker grey shade
+#ccc a light grey shade */
+
+
+
+/* custom extra styling added */
+.parallaxed {
+    background-color: #333;
+    background-image: url('static/images/light-bulb.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/* glassmorphism style */
+.glassed {
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem auto;
+    padding: 1em 1em;
+    background: #ffffff80;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    backdrop-filter: blur(4.0px );
+    -webkit-backdrop-filter: blur(4.0px );
+    border-radius: 10px;
+    border: 1px solid #ffffff2e;
+    color: #000000d9;
+}
+
+
+.main-glassed {
+
+    margin: 1rem 0;
+    padding: 1em 1em;
+    background:
+    rgba( 255, 255, 255, 0.50 ) !important;
+    box-shadow:
+    0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+    backdrop-filter:
+    blur(4.0px ) !important;
+    -webkit-backdrop-filter:
+    blur(4.0px ) !important;
+    border-radius:
+    10px !important;
+    border:
+    1px solid #ffffff2e !important;
+    color: #000000d9;
+}
+
+.topdownText {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: right;
+    text-orientation: sideways;
+
+
+}
+
+.controllers {
+    margin-top: 2% !important;
+}
+
+
+.ui.vertical.divider {
+    margin: 0 4px;
+}
+
+.shadowed {
+    height: 100%;
+    box-shadow: 1rem 1rem orange;
+    /*box-shadow: 1rem 1rem 0 1rem orange ;*/
+}
+
+.double-shadow {
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,0.8) !important;
+    border-left: .5rem solid orange !important;
+    border-right: .5rem solid orange !important;
+    border-radius: 0.5rem !important;
+}
+#sidebar-wrapper {
+    max-height: 50%;
+    margin-top: 20% !important;
+}
+
+
+
+.svg-wave {
+    display: block !important;
+    min-height: 100%;
+    min-width: 100vw;
+    padding: 0 !important;
+    vertical-align: top !important;
+    line-height: 0 !important;
+    color: #fff;
+}
+
+.svg-slanted {
+    display: block !important;
+    min-height: 100%;
+    min-width: 100vw;
+    padding: 0;
+    vertical-align: top !important;
+    line-height: 0 !important;
+    color: #fff;
+}
+
+
+.big-letter::first-letter {
+    font-size: 3rem;
+    display: block;
+    margin: 1.5% auto;
+    line-height: 0.5;
+    initial-letter: 4;
+    -webkit-initial-letter: 4;
+
+}
+
+.hidding {
+    display: none;
+    visibility: hidden;
+}
+
+.showing {
+    display: block;
+    visibility: visible;
+    animation: Nohidding0.5s ease;
+}
+/*animation to reveal paginated
+items */
+
+@keyframes Nohidding {
+
+    0% {
+        opacity: 0 !important;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+
+
+
+@supports (initial-letter : 4) or (-webkit-initial-letter : 4) {
+
+
+    .big-letter::first-letter {
+        font-size: 3rem;
+        display: block;
+        margin: 1.5% auto;
+        line-height: 0.5;
+        initial-letter: 4;
+        -webkit-initial-letter: 4;
+
+    }
+
+}
+
+/*end of conditions*/
+
+/* use rem instead of px */
+@media only screen and (max-width:700px) {}
+
+
+/*
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: grayscale;
+        }
+
+        .hidden.menu {
+            display: none;
+        }
+
+        .masthead.segment {
+            min-height: 600px;
+            padding: 1em 0em;
+        }
+
+        .masthead .logo.item img {
+            margin-right: 1em;
+        }
+
+        .masthead .ui.menu .ui.button {
+            margin-left: 0.5em;
+        }
+
+        .masthead h1.ui.header {
+            margin-top: 2em;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+        }
+
+        .masthead h2 {
+            font-size: 1.7em;
+            font-weight: normal;
+        }
+
+        .ui.vertical.stripe {
+            padding: 8em 0em;
+        }
+
+        .ui.vertical.stripe h3 {
+            font-size: 2em;
+        }
+
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+            margin-top: 3em;
+        }
+
+        .ui.vertical.stripe .floated.image {
+            clear: both;
+        }
+
+        .ui.vertical.stripe p {
+            font-size: 1.33em;
+        }
+
+        .ui.vertical.stripe .horizontal.divider {
+            margin: 3em 0em;
+        }
+
+        .quote.stripe.segment {
+            padding: 0em;
+        }
+
+        .quote.stripe.segment .grid .column {
+            padding-top: 5em;
+            padding-bottom: 5em;
+        }
+
+        .footer.segment {
+            padding: 5em 0em;
+        }
+
+        .secondary.pointing.menu .toc.item {
+            display: none;
+        }
+
+@media only screen and (max-width: 700px) {
+            .ui.fixed.menu {
+                display: none !important;
+            }
+
+            .secondary.pointing.menu .item,
+            .secondary.pointing.menu .menu {
+                display: none;
+            }
+
+            .secondary.pointing.menu .toc.item {
+                display: block;
+            }
+
+            .masthead.segment {
+                min-height: 350px;
+            }
+
+            .masthead h1.ui.header {
+                font-size: 2em;
+                margin-top: 1.5em;
+            }
+
+            .masthead h2 {
+                margin-top: 0.5em;
+                font-size: 1.5em;
+            }
+        }
+   */

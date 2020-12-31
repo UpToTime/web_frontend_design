@@ -1,0 +1,206 @@
+/*
+custom styling and some override
+*/
+
+@import url(./static/custom/css/fonts.css);
+
+/* global styling */
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behaviour: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+    font-family: 'Cabin' !important;
+    font-weight: 400;
+}
+
+
+h1,h2,h3,
+h4,h5,h6,
+.header,.sub,.title {
+    font-family: 'Old Standard TT' !important;
+    font-weight: 700 !important;
+    text-transform: capitalize !important;
+}
+
+.signature {
+    font-family: 'Alex Brush' !important;
+    font-weight: 700 !important;
+    text-transform: capitalize !important;
+
+}
+
+
+
+
+/* pre-styles overide */
+.banner-wrapper {
+    min-height: 450px;
+    margin: auto;
+    /*padding: 1em 0;*/
+
+}
+
+.footer-wrapper {
+    padding: 2em 0;
+}
+.unborder {
+    border-radius: 0 !important;
+
+}
+.no-borders {
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+.marginless {
+    /* no top and bottom margin */
+    margin: 0 auto !important;
+}
+
+.paddless {
+    /* no padding in element*/
+    padding: 0 !important;
+}
+
+
+.paddless-TB {
+    padding-top: 0 !important;
+    padding-bottom: 0!important;
+}
+
+
+/* custom layout */
+
+.txt-typed > .txt {
+    /* a cursor for the typed text */
+    border-right: 0.2rem solid #777;
+}
+
+.parallaxed {
+    min-width: 100%;
+    height: auto;
+
+    background-color: #333;
+    background-image: url('./static/images/light-bulb.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* glassmorphism style */
+.glassed {
+
+    margin: 0.5rem auto;
+    padding: 1rem 1rem;
+    background: #ffffff80;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    backdrop-filter: blur(4.0px );
+    -webkit-backdrop-filter: blur(4.0px );
+    border-radius: 10px;
+    border: 1px solid #ffffff2e;
+    color: #000000d9;
+}
+
+.double-shadow {
+
+    border-left: 0.5rem solid orange !important;
+    border-right: 0.5rem solid orange !important;
+    border-radius: 0.5rem !important;
+}
+
+.shadowed {
+    height: 100%;
+    box-shadow: 1rem 1rem orange;
+    /*box-shadow: 1rem 1rem 0 1rem orange ;*/
+}
+
+.big-letter:first-letter {
+    font-size: 3rem;
+    display: block;
+    margin: 1.5% auto;
+    line-height: 0.5;
+    initial-letter: 4;
+    -webkit-initial-letter: 4;
+
+}
+
+.topdownText {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: right;
+    text-orientation: sideways;
+
+}
+
+.maskedImg {
+    -webkit-mask-image: url("./static/images/splash.png");
+    -webkit-mask-position: center center;
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url("./static/images/splash.png");
+    mask-position: center center;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    object-fit: cover;
+    -webkit-object-fit: cover;
+}
+
+
+
+.svg-wrapper {
+    min-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    vertical-align: top !important;
+    line-height: 0 !important;
+    color: #fff;
+    background-color: inherit;
+
+    /* inverted color code is
+    #060606*/
+}
+
+.svg-slanted {
+    display: block !important;
+    min-height: 100%;
+    min-width: 100vw;
+    padding: 0;
+    vertical-align: top !important;
+    line-height: 0 !important;
+    color: #fff;
+}
+@supports (clip-path:circle(0px)) or (-webkit-clip-path:circle(0px)) {
+
+    .clippedImg {
+        width: 100%;
+        height: auto;
+        clip-path: url(#splash2);
+        -webkit-clip-path: url(#splash2);
+    }
+
+    .ImgClip {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .banner-wrapper {
+        min-height: 400px;
+
+    }
+    .no-mobile {
+        display: none !important;
+    }
+}
