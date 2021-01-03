@@ -1,14 +1,16 @@
 {
-    "name": "dynamic App",
-    "short_name": "DyNSpa",
+    "name": "UpToTime web app",
+    "short_name": "UpToTime",
     "display": "standalone",
     "theme_color": "#060606",
     "background_color": "#fafafa",
     "start_url": ".",
+    "orientation":"portrait",
     "icons": [{
         "src": "./manifests/android-icon-36x36.png",
         "sizes": "36x36",
         "type": "image/png",
+        "purpose":" maskable any",
         "density": "0.75"
     },
         {

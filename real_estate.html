@@ -15,7 +15,7 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="icon" href="./static/images/logo.png" sizes="32x32">
     <!-- inject:css -->
-    <link rel="stylesheet" href="./static/fomantic/semantic.cyborg.css">
+    <link rel="stylesheet" href="./static/css/fomantic/semantic.cyborg.css">
     <link rel="stylesheet" href="./custom.css">
 
     <!-- endinject -->
@@ -875,43 +875,10 @@
 
 
     <!-- inject js -->
-    <script src="./static/jQuery/jquery-3.3.1.js"></script>
-    <script src="./static/fomantic/semantic.js"></script>
+    <script src="./static/js/jQuery/jquery-3.3.1.js"></script>
+    <script src="./static/css/fomantic/semantic.js"></script>
     <!-- base js -->
-    <script type="text/javascript" charset="utf-8">
-
-
-        $('[data-modal-triggerer]').on('click', function(event) {
-            //get the data attr value
-            var triggeredModal = $(this).data("modal-triggerer");
-            //show the modal
-            $('[data-modal-triggered="'+triggeredModal+'"]').modal(
-                {
-                    blurring: true,
-                    closable: false,
-                    transition: 'fade in'
-                }
-            ).modal('show');
-        }); //end of func
-
-
-
-
-
-        $('.selection.dropdown').dropdown({
-            on: 'click',
-            // you can use any ui transition
-            transition: 'slide'
-            //action: 'combo'
-        });
-
-
-        $('.ui.rating').rating();
-
-        $('.hasDimmerItem .triggerDimmer').dimmer({
-            on: 'hover'
-        });
-
+    <script src="./custom.js" type="text/javascript" charset="utf-8">
     </script>
     <!-- endinject js -->
 </body>

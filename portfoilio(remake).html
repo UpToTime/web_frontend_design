@@ -18,10 +18,15 @@
     <link rel="stylesheet" href="./static/fomantic/semantic.css">
     <link rel="stylesheet" href="./custom.css">
     <!-- endinject -->
+    <style type="text/css" media="screen">
+        .slant-svg {
+            fill: blue;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="banner-wrapper parallaxed" id="home">
+    <header class="" id="home">
         <!-- start of top smallnav -->
         <nav class="ui top fixed small inverted borderless menu" id="topNav">
             <div class="item">
@@ -89,24 +94,19 @@
         </nav>
         <!-- end of top smallnav -->
         <!-- start of hero section -->
-        <div class="ui hidden horizontal divider">
-        </div>
 
-        <section class="ui vertical segment">
-
-            <svg class="ui fluid centered image" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#00B5AD" fill-opacity="1">
-                </path>
-            </svg>
+        <section class="ui vertical inverted segment banner-wrapper">
+            <div class="ui hidden section divider">
+            </div>
 
             <div class="ui centered middle aligned stackable equal width padded grid">
                 <section class="row">
                     <div class="left aligned seven wide column">
-                        <div class="glassed">
-                            <h1 class="ui inverted medium header">
-                                salutations
+                        <div class="">
+                            <h1 class="ui inverted large header">
+                                developer's name
                             </h1>
-                            <h4 class="ui small sub header">
+                            <h4 class="ui small inverted sub header">
                                 my professions :
                                 <span class="ui primary text txt-typed" data-wait="3000" data-words='[
                                     "developer",
@@ -130,8 +130,8 @@
                     </div>
                     <!-- start of hero image -->
                     <div class="nine wide stretched column">
-                        <figure class="ui vertical center aligned raised segment paddless">
-                            <img class="ui fluid centered rounded image" src="./static/images/horizon.jpg" alt="brand image" />
+                        <figure class="ui vertical center aligned segment paddless">
+                            <img class="ui fluid centered rounded image shadowed" src="./static/images/horizon.jpg" alt="brand image" />
 
                         </figure>
                     </div>
@@ -142,7 +142,7 @@
         </section>
         <!-- end of hero section -->
     </header>
-    <main class="ui vertical segment marginless no-borders" id="MainContent">
+    <main class="ui vertical segment no-borders" id="MainContent">
 
         <article class="ui middle aligned centered stackable equal width padded grid">
             <section id="services" class="left aligned row">
@@ -197,7 +197,8 @@
 
             <section class="row">
                 <svg class="svg-slanted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#00B5AD" fill-opacity="1">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                        fill-opacity="1">
                     </path>
                 </svg>
             </section>
@@ -239,7 +240,8 @@
             </section>
             <section class="row">
                 <svg class="svg-slanted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#00B5AD" fill-opacity="1">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                        fill-opacity="1">
                     </path>
                 </svg>
             </section>
@@ -371,7 +373,7 @@
                         </div>
                         <div class="field">
                             <label for="text-contents">text message</label>
-                            <textarea name="text-contents" id="text-contents" rows="3" placeholder="type message">
+                            <textarea name="text-contents" id="text-contents" cols="3" rows="3" placeholder="type message">
 
                             </textarea>
                         </div>
@@ -388,7 +390,8 @@
 
             <section class="row">
                 <svg class="svg-slanted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#00B5AD" fill-opacity="1">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                        fill-opacity="1">
                     </path>
                 </svg>
             </section>
@@ -589,8 +592,9 @@
     <footer class="marginless">
         <section class="ui vertical inverted basic segment
             paddless-TB">
-            <svg class="ui fluid image" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#00B5AD" fill-opacity="1">
+            <svg class="svg-slanted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                    fill-opacity="1">
                 </path>
             </svg>
             <div class="ui centered middle aligned stackable equal height padded grid">
