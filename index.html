@@ -2,10 +2,10 @@
 <html dir="ltr" lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0, width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <meta name="robots" content="all">
 
     <meta name="msapplication-TileColor" content="#060606">
@@ -50,10 +50,23 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- inject:css -->
-    <link rel="stylesheet" href="./static/css/fomantic/semantic.cyborg.css" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="./static/css/fomantic/semantic.css" media="(prefers-color-scheme: light),(prefers-color-scheme:no-preference)">
-    <link rel="stylesheet" href="./static/customised/css/custom.css">
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/css/fomantic/semantic.cyborg.css"
+    media="(prefers-color-scheme: dark),screen">
+
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/css/fomantic/semantic.cyborg.css"
+    media="(prefers-color-scheme: light),
+    (prefers-color-scheme:no-preference),screen">
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/custom.css"
+    media="screen">
+
     <!-- endinject:css -->
+
     <style type="text/css">
         .banner-wrapper {
             background-color: transparent;
@@ -66,19 +79,19 @@
     <header role="banner" class="banner-wrapper parallaxed" id="home">
 
         <!-- start of top fixed smallnav -->
-        <nav class="ui top fixed small borderless inverted menu" role="menubar" id="topNav">
+        <nav class="ui top fixed small borderless inverted padded menu" role="menubar" id="topNav">
             <div class="item" role="menuitem">
                 <img class="logo" src="./static/images/logo.png" alt="" />
             </div>
             <a class="right header item" href="#home">
-                <span class="ui medium text">
-                    website name
-                </span>
+
+                up to time designs
+
             </a>
-            <section class="menu right">
+            <section class="right menu">
                 <!-- start of dropdown -->
                 <div class="ui floating simple dropdown item">
-                    <span class="ui text">Social links</span>
+                    <span class="text header">contact links</span>
                     <i class="inverted dropdown icon"></i>
                     <div class="menu">
                         <div class="item">
@@ -93,7 +106,7 @@
                             <i class="circular inverted github icon"></i>
                             github
                         </a>
-                        <a class="item" href="tel:+2547">
+                        <a class="item" href="tel:+254786330645">
                             <i class="clockwise rotated circular inverted call icon"></i>
                             phone number
                         </a>
@@ -115,26 +128,32 @@
             <div class="left aligned fourteen wide stretched column">
                 <section class="glassed">
                     <!-- start of hero text content -->
-                    <h1 class="ui header">
+                    <h1 class="ui  header">
                         ui & ux designs
+                        <div class="sub header">
+                            features : &nbsp;
+                            <span class="ui primary text txt-typed" data-wait="4000" data-words='[
+                                "Semantic tags.",
+                                "Aria support.",
+                                "Good spacing.",
+                                "Good typography",
+                                "Good content flow.",
+                                "Good contrast."
+                                ]'>
+                            </span>
+                        </div>
+
                     </h1>
-                    <h4 class="ui small header">
-                        features : &nbsp;
-                        <span class="ui primary text txt-typed" data-wait="4000" data-words='[
-                            "Semantic tags.",
-                            "Aria support.",
-                            "Good spacing.",
-                            "Good typography",
-                            "Good content flow.",
-                            "Good contrast."
-                            ]'>
-                        </span>
-                    </h4>
                     <blockquote>
                         <p>
                             <q>
-                                showcasing my front-end design skills.
-                                focusing on important design concept fundamentals
+                                showcasing front-end design skills.
+                                templates made are based on <b>html5</b>,
+                                <b>Css3</b> and heavy use of
+                                <b>Semantic/fomantic css framework</b>
+                                focusing on previously highlighted features,
+                                that are  important on good design concept fundamentals.
+
                             </q>
                             <br />
                             <span class="ui primary text signature">
@@ -142,8 +161,8 @@
                             </span>
                         </p>
                     </blockquote>
-                    <a href="#0" class="ui fluid circular primary  button stateful">
-                        read more
+                    <a href="#MainContent" class="ui fluid small circular inverted secondary icon button stateful">
+                        scroll down for more <i class="arrow down icon"></i>
                     </a>
                     <!-- start of hero text content -->
                 </section>
@@ -172,6 +191,8 @@
                             &middot; landing pages
                             <br />
                             &middot;registration forms
+                            <br />
+                            &middot;dashboard page
                         </div>
                     </h3>
                     <!-- end of column heading -->
@@ -189,18 +210,24 @@
                                     </div>
                                     <div class="metadata">
                                         <span class="date">
-                                            December, 2019
+                                            <time datetime="2019-01-11" pubdate="2019-01-11">
+                                                November, 2019
+
+                                            </time>
                                         </span>
                                     </div>
                                     <div class="text big-letter">
-                                        well designed,landing page for programmer (developers)
+                                        <p>
+
+                                            well designed,landing page for programmer (developers).
+
+                                        </p>
                                     </div>
-                                    <div class="actions">
-                                        <a href="#0" class="ui fluid tiny circular grey button">
-                                            <i class="eye icon"></i>
-                                            view page
-                                        </a>
-                                    </div>
+                                    <a href="./portfolio.html" class="ui tiny circular basic primary icon button">
+                                        <i class="eye icon"></i>
+                                        view page
+                                    </a>
+
                                 </div>
                             </div>
                             <div class="comment">
@@ -209,17 +236,20 @@
                                 </div>
                                 <div class="content">
                                     <div class="author">
-                                        field of expertise
+                                        basic home page
                                     </div>
                                     <div class="metadata">
-                                        <span class="date">from jan,1900</span>
-                                        <span class="date">to jan,2020</span>
+                                        <span class="date">December,2019</span>
+
                                     </div>
                                     <div class="text">
-                                        Te eum doming eirmod, nominati pertinacia
-                                        argumentum ad his. Ex eam alia facete scriptorem,
-                                        est autem aliquip detraxit at. Usu ocurreret
-                                        referrentur at, c
+                                        <p>
+
+                                            Te eum doming eirmod, nominati pertinacia
+                                            argumentum ad his. Ex eam alia facete scriptorem,
+                                            est autem aliquip detraxit at. Usu ocurreret
+                                            referrentur at, c
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="comments">
@@ -452,8 +482,20 @@
     </footer>
     <!-- end of footer  -->
     <!-- inject js -->
-    <script src="./static/js/jQuery/jquery-3.3.1.js"></script>
-    <script src="./static/css/fomantic/semantic.js"></script>
+    <noscript>
+        please enable JavaScript.It's required for smooth experience
+    </noscript>
+
+    <script src="./static/js/jQuery/jquery-3.3.1.js"
+        type="text/javascript" charset="utf-8">
+
+    </script>
+
+    <script src="./static/css/fomantic/semantic.js"
+        type="text/javascript" charset="utf-8">
+
+    </script>
+
     <!--start of custom js -->
     <script src="./static/customised/js/Typing_efx.js" type="text/javascript" charset="utf-8"></script>
     <script type="application/javascript" charset="utf-8">

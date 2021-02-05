@@ -45,7 +45,7 @@
     <meta name="author" content="stephen muiruri">
 
 
-    <title>front-end designs</title>
+    <title>forum template designs</title>
 
     <!-- Place favicon.ico in the root directory -->
 
@@ -55,8 +55,17 @@
     <link rel="stylesheet" href="./static/customised/css/custom.css">
     <!-- endinject:css -->
     <style type="text/css">
-        .banner-wrapper {
-            background-color: transparent;
+
+        .light-grey {
+            background-color: #f1f3f5;
+            color: black;
+        }
+        .labeled-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            clip-path: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
         }
     </style>
 </head>
@@ -66,37 +75,34 @@
     <header role="banner" class="" id="home">
 
         <!-- start of top fixed smallnav -->
-        <nav class="ui top fixed small borderless inverted menu" role="menubar" id="topNav">
-            <div class="item" role="menuitem">
+        <nav class="ui top fixed borderless inverted padded menu" id="topNav">
+            <div class="item">
                 <img class="logo" src="./static/images/logo.png" alt="" />
             </div>
-            <a class="right header item" href="#home">
+            <a class="header right item" href="#home">
 
                 website name
 
             </a>
             <section class="menu right">
                 <!-- start of dropdown -->
-                <div class="ui floating simple dropdown item">
-                    <span class="ui text">Social links</span>
+                <div class="ui floating dropdown item">
+                    <span class="text header">members</span>
                     <i class="inverted dropdown icon"></i>
                     <div class="menu">
                         <div class="item">
                             <i class="circular inverted twitter icon"></i>
-                            twitter
+                            sign up
                         </div>
                         <a class="item" href="mailto:uptotimeservices@gmail.com">
                             <i class="circular inverted mail icon"></i>
-                            e-mail address
+                            sign in
                         </a>
                         <a class="item" href="#">
                             <i class="circular inverted github icon"></i>
-                            github
+                            sign out
                         </a>
-                        <a class="item" href="tel:+2547">
-                            <i class="clockwise rotated circular inverted call icon"></i>
-                            phone number
-                        </a>
+
                     </div>
                 </div>
                 <!-- end of dropdown -->
@@ -109,58 +115,307 @@
 
     </header>
 
-    <aside class="marginless paddless">
 
-        <nav class="ui fluid four item inverted menu" id="mainNav">
+    <nav class="ui large four item pointing primary padded menu unborder" id="mainNav">
 
-            <a class="item" href="#">forum</a>
+        <a class="active header item" href="#0">forum</a>
 
-            <a class="item" href="#">jobs</a>
+        <a class="header item" href="#">home</a>
 
-            <a class="item" href="#">pastebin</a>
+        <a class="header item" href="#">pastebin</a>
 
-            <!-- start of dropdown -->
-            <div class="ui floating simple dropdown right item">
-                <span class="ui text">menu</span>
-                <i class="inverted dropdown icon"></i>
-                <div class="menu">
+        <!-- start of dropdown -->
+        <div class="ui floating dropdown right item">
+            <span class="text header">menu</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
 
-                    <div class="item">
-                        <i class="circular inverted twitter icon"></i>
-                        chat
-                    </div>
-
-                    <div class="item">
-                        <i class="circular inverted twitter icon"></i>
-                        community
-                    </div>
-
-                    <div class="item">
-                        <i class="circular inverted twitter icon"></i>
-                        chat
-                    </div>
-
+                <div class="item">
+                    <i class="circular inverted twitter icon"></i>
+                    chat
                 </div>
+
+                <div class="item">
+                    <i class="circular inverted twitter icon"></i>
+                    community
+                </div>
+
+                <div class="item">
+                    <i class="circular inverted twitter icon"></i>
+                    jobs
+                </div>
+
             </div>
-            <!-- end of dropdown -->
+        </div>
+        <!-- end of dropdown -->
 
-        </nav>
+    </nav>
 
-    </aside>
+
     <!-- start of page contents -->
-    <main class="ui vertical segment no-borders" id="MainContent">
+    <main class="ui vertical segment" id="MainContent">
         <!-- start of dynamic page contents -->
-        <article role="article" class="ui centered middle aligned stackable equal width padded grid">
+        <article class="ui centered stackable equal width padded grid">
             <!-- start of rows -->
-            <section class="row">
 
-                <div class="left floated twelve wide column">
+            <section class="middle aligned row">
+
+                <div class="left aligned left floated ten wide column">
+                    <h2 class="ui header">
+                        forum
+                    </h2>
+                </div>
+
+                <div class="left aligned right floated six wide column">
+
+                    <form class="ui fluid form stateful" action="#" method="get" accept-charset="utf-8">
+                        <div class="ui fluid action input">
+                            <input
+                            type="text"
+                            placeholder="Search thread ..."
+                            name="topicSearch"
+                            id="topicSearch"
+                            list="topicsList"
+                            >
+                            <datalist id="topicsList">
+                                <option value="topic tag">one title</option>
+                                <option value="topic tag">two title</option>
+                                <option value="topic tag">three title</option>
+
+                            </datalist>
+                            <button class="ui positive submit button" type="submit">
+                                search
+                            </button>
+                        </div>
+                    </form>
+
 
                 </div>
 
-                <div class="right floated three wide column">
+
+            </section>
+
+
+            <div class="ui section divider">
+
+            </div>
+            <section class="top aligned row">
+
+                <div class="center aligned four wide column">
+
+                    <button class="ui fluid circular positive button" type="button">
+                        <span class="header">
+                            create thread
+                        </span>
+                    </button>
+
+                    <h3 class="ui header">
+                        forum topic tags
+                    </h3>
+
+                    <aside class="ui fluid large vertical pointing inverted  menu">
+
+
+                        <a class="item" href="#">all</a>
+
+                        <a class="active item" href="#">topic title one</a>
+                        <a class="item" href="#">topic title two</a>
+                        <a class="item" href="#">topic title there</a>
+                        <a class="item" href="#">topic title four</a>
+                        <a class="item" href="#">topic title five</a>
+
+
+
+
+                    </aside>
+
 
                 </div>
+
+                <div class="left aligned twelve wide column">
+                    <!-- start of column heading -->
+                    <h4 class="ui header">
+                        tag topic title one
+                        <div class="sub header">
+                            brief explanation about what the topic is all about.
+                            Te eum doming eirmod, nominati pertinacia
+                            argumentum ad his. Ex eam alia facete scriptorem.
+                        </div>
+                    </h4>
+                    <!-- end of column heading -->
+                    <div class="ui hidden horizontal divider">
+
+                    </div>
+
+                    <!-- start of posted content card -->
+                    <div class="ui fluid centered raised card">
+                        <div class="content">
+                            <div class="right floated meta">
+                                posted by
+                                <span class="signature">
+                                    <b> administrator
+                                    </b>
+                                </span>
+                            </div>
+                            <img class="ui avatar image"
+                            src="./static/images/logo.png">
+                        </div>
+                        <figure class="image">
+                            <img src="./static/images/light-bulb.jpg">
+                            <figcaption class="captioned">
+                                <b>posted on: </b> &nbsp;
+                                <time datetime="01-10-2030 14:00"
+                                    pubdate="01-10-2030 14:00">
+                                    01-10-2030 14:00
+                                </time>
+                            </figcaption>
+
+                        </figure>
+                        <div class="content">
+                            <div class="header">
+                                topic title tag
+                            </div>
+
+                            <!-- posted text content -->
+                            <div class="description">
+                                <p>
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem,
+                                    est autem aliquip detraxit at. Usu ocurreret referrentur at, c
+                                    u epicurei appellantur vix. Cum ea laoreet recteque e
+                                </p>
+                                <p>
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem,
+                                    est autem aliquip detraxit at. Usu ocurreret referrentur at, c
+                                    u epicurei appellantur vix. Cum ea laoreet recteque e
+                                </p>
+
+                            </div>
+                            <!-- posted text content -->
+                            <div class="ui hidden  horizontal divider">
+
+                            </div>
+                            <div class="content">
+                                <span class="right floated">
+                                    <i class="heart like icon"></i>
+                                    17 likes
+                                </span>
+
+                                <i class="comment icon"></i> 5 comments
+                            </div>
+
+                        </div>
+                        <div class="extra content">
+                            <form class="ui form stateful" action="#" method="post" accept-charset="utf-8">
+                                <div class="ui fluid action input">
+
+                                    <input placeholder="Add Comment..." type="text">
+                                    <button class="ui positive submit button" type="submit">
+                                        post comment
+                                    </button>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- start of posted content card -->
+                    <div class="ui hidden horizontal divider">
+
+                    </div>
+                    <section class="ui raised padded segment">
+                        <!-- start of  contents flow-->
+                        <div class="ui threaded comments">
+                            <h4 class="ui grey header">comments</h4>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./static/images/logo.png">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Matt</a>
+                                    <div class="metadata">
+                                        <span class="date">Today at 5:42PM</span>
+                                    </div>
+                                    <div class="text">
+                                        How artistic!
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./static/images/logo.png">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Elliot Fu</a>
+                                    <div class="metadata">
+                                        <span class="date">Yesterday at 12:30AM</span>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            This has been very useful for my research. Thanks as well!
+                                        </p>
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">Reply</a>
+                                    </div>
+                                </div>
+                                <div class="comments">
+                                    <div class="comment">
+                                        <a class="avatar">
+                                            <img src="./static/images/logo.png">
+                                        </a>
+                                        <div class="content">
+                                            <a class="author">Jenny Hess</a>
+                                            <div class="metadata">
+                                                <span class="date">Just now</span>
+                                            </div>
+                                            <div class="text">
+                                                Elliot you are always so right :)
+                                            </div>
+                                            <div class="actions">
+                                                <a class="reply">Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./static/images/logo.png">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Joe Henderson</a>
+                                    <div class="metadata">
+                                        <span class="date">5 days ago</span>
+                                    </div>
+                                    <div class="text">
+                                        Dude, this is awesome. Thanks so much
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="ui reply form">
+                                <div class="field">
+                                    <textarea placeholder="type comment" rows="2" cols="2"></textarea>
+                                </div>
+                                <button class="ui primary labeled submit icon button">
+                                    <i class="icon edit"></i> Add Reply
+                                </button>
+                            </form>
+                        </div>
+                        <!-- end of contents flow -->
+                    </section>
+
+
+                </div>
+
 
             </section>
             <!-- end of  row -->
@@ -169,47 +424,33 @@
     </main>
     <!-- end of page contents -->
     <!-- start of footer  -->
-    <footer class="footer-wrapper">
-        <section class="ui vertical inverted basic segment">
+    <footer class="marginless paddless">
+        <section class="ui vertical inverted  segment">
             <div class="ui centered stackable equal height padded grid">
-                <div class="four wide column">
-                    <h4 class="ui inverted header signature">website name</h4>
-                    <address class="ui list">
+                <div class="left aligned six wide column">
+                    <h4 class="ui inverted header">website name</h4>
+                    <div class="ui inverted list">
                         <div class="item">
-                            <i class="users icon"></i>
-                            <div class="content">
-                                Semantic UI
-                            </div>
+                            <img class="ui tiny centered rounded image"
+                            src="./static/images/logo.png" alt="logo" />
                         </div>
-                        <div class="item">
-                            <i class="marker icon"></i>
-                            <div class="content">
-                                New York, NY
-                            </div>
-                        </div>
+
                         <div class="item">
                             <i class="mail icon"></i>
                             <div class="content">
-                                <a href="mailto:jack@semantic-ui.com">jack@semantic-ui.com</a>
+                                <a href="#">
+                                    help@website.com</a>
                             </div>
                         </div>
                         <div class="item">
-                            <i class="box icon"></i>
+                            <i class="computer icon"></i>
                             <div class="content">
-                                <a href="http://www.semantic-ui.com">semantic-ui.com</a>
+                                <a href="#home">website-name.com</a>
                             </div>
                         </div>
-                    </address>
-                </div>
-                <div class="four wide column">
-                    <h4 class="ui grey header">Services</h4>
-                    <div class="ui animated list">
-                        <a href="#" class="item">Banana Pre-Order</a>
-                        <a href="#" class="item">DNA FAQ</a>
-                        <a href="#" class="item">How To Access</a>
-                        <a href="#" class="item">Favorite X-Men</a>
                     </div>
                 </div>
+
                 <div class="four wide column">
                     <h4 class="ui grey header">information links</h4>
                     <div class="ui animated list">
@@ -222,21 +463,23 @@
                     <h4 class="ui grey header">Shortcut links</h4>
                     <div class="ui animated list">
                         <a href="#" class="item">Sitemap</a>
-                        <a href="#" class="item">Contact Us</a>
+                        <a href="#" class="item">support &amp; bug report</a>
                         <a href="#home" class="item">back to top</a>
                     </div>
                 </div>
             </div>
-            <h6 class="ui center aligned tiny grey dividing header">
+            <h6 class="ui center aligned tiny grey header stretching">
                 &copy;
-                <span class="insertedDate">
-                    2019
-                </span>
-                <span class="signature">
-                    semantic &amp; fomantic ui &nbsp;
-                </span>
+                <span id="insertedDate">
+
+                </span> &nbsp;
+                <span class="signature">upToTime designs</span>
+                &nbsp;
                 all rights reserved
             </h6>
+            <div class="ui clearing divider">
+
+            </div>
         </section>
     </footer>
     <!-- end of footer  -->
@@ -244,7 +487,9 @@
     <script src="./static/js/jQuery/jquery-3.3.1.js"></script>
     <script src="./static/css/fomantic/semantic.js"></script>
     <!--start of custom js -->
-    <script src="./static/customised/js/Typing_efx.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="./static/customised/js/custom.js"
+        type="text/javascript" charset="utf-8"></script>
     <script type="application/javascript" charset="utf-8">
         $(document).ready(function() {
             //jquery functions

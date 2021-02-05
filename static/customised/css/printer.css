@@ -1,0 +1,43 @@
+/* printing styles
+*/
+/*
+1.serif font is good on paper,
+2.sans-serif font is good on web
+
+
+
+*/
+@media print {
+    .unprintable,
+    .unprintable::before
+    ,.unprintable::after,
+    img {
+        display: none;
+    }
+
+    /* Global resets */
+    body {
+        font-family: Georgia,serif;
+        font-size: 16pt;
+        background: none;
+        line-height: 24pt;
+        color: #000;
+    }
+    /* layout reset */
+    header,
+    main,
+    footer {
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: #000;
+
+    }
+    h1,.header {
+        color: #000;
+        font-size: 24pt;
+        line-height: 34pt;
+        margin: 0;
+    }
+}

@@ -1,141 +1,211 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="e-commerce index template,using fomantic css framework">
-    <meta name="keywords" content="e-commerce,fomantic,semantic,free e-commerce templates">
-    <meta name="author" content="stephen muiruri">
 
-    <meta name="theme-color" content="#060606">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0, width=device-width">
     <meta name="robots" content="all">
-    <title>Gym landing page</title>
-    <link rel="apple-touch-icon" href="./static/img/icon.png">
+
+    <meta name="msapplication-TileColor" content="#060606">
+    <meta name="msapplication-TileImage" content="./manifests/ms-icon-144x144.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#060606">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#060606">
+    <link rel="apple-touch-icon" sizes="57x57" href="./manifests/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./manifests/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./manifests/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./manifests/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./manifests/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./manifests/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./manifests/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./manifests/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./manifests/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./manifests/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./manifests/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./manifests/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./manifests/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./manifests/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+
+    <meta name="description" content="
+    well designed,beautiful and modern
+    user interface html5 templates.
+    semantic tags and aria supported and good user experience
+    website theme templates,
+    ">
+    <meta name="keywords" content="html5 and css3 templates,
+    front-end templates,
+    fomantic ui templates
+    ,semantic ui templates,
+    ,free customisable website templates
+    ">
+    <meta name="author" content="stephen muiruri">
+
+
+    <title>fitness template designs</title>
+
     <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" href="./static/images/logo.png" sizes="32x32">
+
     <!-- inject:css -->
-    <link rel="stylesheet" href="./static/fomantic/semantic.css">
-    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="./static/css/fomantic/semantic.cyborg.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="./static/css/fomantic/semantic.css" media="(prefers-color-scheme: light),(prefers-color-scheme:no-preference)">
+    <link rel="stylesheet" href="./static/customised/css/custom.css">
+    <!-- endinject:css -->
+    <style type="text/css">
 
-    <!-- endinject -->
-    <style type="text/css" media="screen">
+        .lined {
+            -webkit-clip-path: url(#theSVGPath);
+            clip-path: url(#theSVGPath);
 
-
+        }
 
     </style>
 </head>
+
 <body>
 
-    <header class="banner-wrapper">
-
+    <header class="parallaxed" id="home">
+        <!-- start of svg clip pattern -->
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="blobSvgPattern">
+                    <path fill="#FFFFFF" stroke="#000000"
+                        stroke-width="1.5794"
+                        stroke-miterlimit="10"
+                        d="M215,100.3c97.8-32.6,90.5-71.9,336-77.6
+                        c92.4-2.1,98.1,81.6,121.8,116.4c101.7,149.9,53.5,155.9,14.7,178c-96.4,54.9,5.4,269-257,115.1c-57-33.5-203,46.3-263.7,20.1
+                        c-33.5-14.5-132.5-45.5-95-111.1C125.9,246.6,98.6,139.1,215,100.3z" />
+                </clipPath>
+            </defs>
+        </svg>
+        <!-- end of svg clip pattern -->
         <!-- start of top fixed smallnav -->
-        <nav class="ui top fixed small borderless inverted menu" role="menubar" id="topNav">
-            <div class="item" role="menuitem">
-                <img class="logo" src="./static/images/logo.png" alt="" />
-            </div>
-            <a class="right header item" href="#home">
-                <span class="ui medium text">
-                    website name
-                </span>
-            </a>
-            <section class="menu right">
-                <!-- start of dropdown -->
-                <div class="ui floating simple dropdown item">
-                    <span class="ui text">Social links</span>
-                    <i class="inverted dropdown icon"></i>
-                    <div class="menu">
-                        <div class="item">
-                            <i class="circular inverted twitter icon"></i>
-                            twitter
-                        </div>
-                        <a class="item" href="mailto:brandname@mail.com">
-                            <i class="circular inverted mail icon"></i>
-                            e-mail address
-                        </a>
-                        <a class="item" href="#">
-                            <i class="circular inverted github icon"></i>
-                            github
-                        </a>
-                        <a class="item" href="telto:+2547">
-                            <i class="clockwise rotated circular inverted call icon"></i>
-                            phone number
-                        </a>
-                    </div>
-                </div>
-                <!-- end of dropdown -->
+        <nav class="ui top fixed large borderless inverted padded menu" role="menubar" id="topNav">
+
+
+            <section class="left menu">
+
+                <a href="#" class=" fitted item">
+                    <i class="circular inverted twitter icon"></i>
+                </a>
+
+                <a class="fitted item" href="#">
+                    <i class="circular inverted instagram icon">
+                    </i>
+                </a>
+                <a class="fitted item" href="#">
+                    <i class="circular inverted facebook icon">
+                    </i>
+
+                </a>
+
+                <a class="fitted item" href="telto:+2547">
+
+                    <i class="clockwise rotated circular inverted phone icon"></i>
+                </a>
+
+
             </section>
+
+            <a class="right header item">
+                <img class="logo" src="./static/images/logo.png" alt="" />
+                brand name
+            </a>
         </nav>
         <!-- end of top fixed smallnav -->
 
         <!-- start of hero section -->
-        <section class="ui vertical inverted segment paddless-TB">
+        <div class="overlayed">
+            <section class="ui vertical segment banner-wrapper">
 
-            <div class="ui hidden section divider no-mobile">
+                <div class="ui hidden section divider no-mobile">
 
-            </div>
-            <div class="ui hidden section divider">
+                </div>
+                <div class="ui hidden section divider">
 
-            </div>
+                </div>
 
-            <!-- start of grid -->
-            <div class="ui centered middle aligned stackable equal width padded grid ">
+                <!-- start of grid -->
+                <div class="ui left aligned text container ">
 
-                <section class="justified row">
+                    <h1 class="signature glowing">
 
-                    <div class="left aligned seven wide column">
+                        <span>
+                            b
+                        </span>
+                        <span>
+                            r
+                        </span>
+                        <span>
+                            a
+                        </span>
 
-                        <div class="ui inverted raised segment double-shadow">
-
-                            <h1 class="ui header">
-                                salutation heading
-                            </h1>
-
-                            <blockquote>
-                                <p>
-
-                                    <q>
-                                        Te eum doming eirmod, nominati pertinacia
-                                        argumentum ad his. Ex eam alia facete scriptorem,
-                                        est autem aliquip detraxit at. Usu ocurreret referrentur at, c
-                                        u epicurei appellantur vix. Cum ea laoreet recteque
-
-                                    </q>
-                                    <br />
-                                    <span class="ui primary text signature">
-                                        &ndash; Up to time
-                                    </span>
-                                </p>
-
-                            </blockquote>
-
-                            <a href="#0" class="ui fluid circular primary  button stateful">
-                                cal to action
-                            </a>
+                        <span>
+                            n
+                        </span>
+                        <span>
+                            d
+                        </span>
+                        <span>
+                            n
+                        </span>
+                        <span>
+                            a
+                        </span>
+                        <span>
+                            m
+                        </span>
+                        <span>
+                            e
+                        </span>
 
 
-                        </div>
+                    </h1>
+
+                    <blockquote>
+                        <p>
+
+                            <q>
+                                Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurreret referrentur at, c
+                                u epicurei appellantur vix. Cum ea laoreet recteque
+
+                            </q>
+                        </p>
+
+                    </blockquote>
+                    <cite class="ui center aligned tiny inverted header">
+                        &ndash; Up to time
+                    </cite>
+                    <div class="ui hidden horizontal divider">
+
+                    </div>
+                    <div class="small ui three buttons">
+                        <a href="#0" class="ui  primary  button stateful">
+                            join us
+                        </a>
+                        <a href="#0" class="ui  inverted primary button stateful">
+                            booking
+                        </a>
+                        <a href="#0" class="ui secondary  button stateful">
+                            watch us
+                        </a>
 
                     </div>
 
-                    <!-- start of hero image -->
-                    <div class="nine wide stretched column">
+                    <div class="ui hidden horizontal divider">
 
-                        <figure class="ui massive vertical raised segment paddless Tadad clippedImg">
-                            <img class="ui fluid centered rounded image"
-                            src="./static/images/light-bulb.jpg" alt="brand image" />
-                        </figure>
-
-                        <!-- end of hero image -->
                     </div>
+                </div>
 
-                </section>
+                <!-- end of grid -->
 
-            </div>
+            </section>
 
-            <!-- end of grid -->
-
-        </section>
+        </div>
 
 
         <!-- end of hero section -->
@@ -143,11 +213,12 @@
     </header>
 
     <!-- start of main navigation menu -->
-    <aside class="marginless paddless">
+    <aside class="ui padded grid column">
+        <nav class="ui sticky bound large four item inverted padded menu unborder"
+            data-sticks-to="#MainContent"
+            id="MainMenu">
 
-        <nav class="ui large four item inverted padded menu unborder sticks" id="MainMenu">
-
-            <a href="#home" class="header item">
+            <a href="#home" class="active header item">
                 home
             </a>
             <div class="header item">
@@ -156,16 +227,16 @@
 
 
             <a class="header item" href="#">
-                features
+                more features
             </a>
 
-            <div class="ui inverted simple dropdown dropper link header item">
-                <span class="ui text">join</span>
+            <div class="ui floating dropdown item">
+                <span class="text header">members</span>
                 <i class="dropdown icon"></i>
                 <div class="menu">
 
                     <div class="item">
-                        log in
+                        sign in
                     </div>
                     <div class="item">
                         sign up
@@ -176,309 +247,1011 @@
 
         </nav>
 
-
     </aside>
+
     <!-- end of main navigation menu -->
 
     <!-- start of page content -->
-    <main class="ui vertical centered segment no-borders">
+    <main class="ui vertical segment" id="MainContent">
 
-        <article class="ui middle aligned stackable equal width padded grid">
+        <article class="ui centered stackable equal width padded grid">
 
-            <section class="left aligned row">
+            <section class="top aligned stretched row">
 
-                <div class="sixteen wide column">
+                <div class="left aligned column ">
+                    <h2 class="ui  header">
+                        what we do &amp; why choose us
+                        <div class="sub header">
+                            Te eum doming eirmod, nominati pertinacia
+                            argumentum ad his. Ex eam alia facete scriptorem,
+                        </div>
+                    </h2>
+
+
+                    <section class="ui styled accordion">
+
+                        <!-- start of single accordion item -->
+
+                        <summary class="active title">
+                            <i class="dropdown icon"></i>
+                            Service title one
+                        </summary>
+
+                        <div class="active content">
+                            <p>
+                                Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurreret referrentur at, c
+                                u epicurei appellantur vix.
+                            </p>
+                            <a class="ui tiny circular primary button stateful" href="#">
+                                read more
+                            </a>
+                        </div>
+
+                        <!-- end of single accordion item -->
+
+                        <!-- start of single accordion item -->
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            Service title two
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurreret referrentur at, c
+                                u epicurei appellantur vix.
+                            </p>
+                            <a class="ui tiny circular primary button stateful" href="#">
+                                read more
+                            </a>
+                        </div>
+                        <!-- end of single accordion item -->
+
+                        <!-- start of single accordion item -->
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            Service title three
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurreret referrentur at, c
+                                u epicurei appellantur vix.
+                            </p>
+                            <a class="ui tiny circular primary button stateful" href="#">
+                                read more
+                            </a>
+                        </div>
+                        <!-- end of single accordion item -->
+                        <!-- start of single accordion item -->
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            Service title four
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurreret referrentur at, c
+                                u epicurei appellantur vix.
+                            </p>
+                            <a class="ui tiny circular primary button stateful" href="#">
+                                read more
+                            </a>
+                        </div>
+                        <!-- end of single accordion item -->
+                    </section>
+                    <div class="ui hidden horizontal divider">
+
+                    </div>
+                    <a class="ui fluid small circular primary button stateful" href="#">
+                        view all our services
+                    </a>
+
+
+                </div>
+
+                <div class="center aligned column">
+
+                    <figure class="ui large centered image">
+
+                        <svg class="lined"
+                            height="500px" width="960px"
+                            style="height:500px;">
+                            <!-- stlyr height500 -->
+                            <image class="" xlink:href="./static/images/horizon.jpg"
+                                x="0" y="0" width="960px"
+                                height="500"
+                                style="width:100%;height:500px;"
+                                />
+                            <defs>
+                                <clipPath id="theSVGPath">
+                                    <rect x="0" y="0" stroke="#000000" stroke-miterlimit="10" width="108" height="500" />
+                                    <rect x="121.5" y="25.5" stroke="#000000" stroke-miterlimit="10" width="55" height="455" />
+                                    <rect x="192.5" y="9.5" stroke="#000000" stroke-miterlimit="10" width="60" height="484" />
+                                    <rect x="271.5" y="44.5" stroke="#000000" stroke-miterlimit="10" width="63" height="416" />
+                                    <rect x="349.5" y="25.5" stroke="#000000" stroke-miterlimit="10" width="208" height="447" />
+                                    <rect x="574.5" y="44.5" stroke="#000000" stroke-miterlimit="10" width="60" height="446" />
+                                    <rect x="644.5" y="9.5" stroke="#000000" stroke-miterlimit="10" width="68" height="471" />
+                                    <rect x="736.5" y="18.5" stroke="#000000" stroke-miterlimit="10" width="49" height="462" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+                        <figcaption class="ui pointing small black label">
+                            caption text
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+            </section>
+
+            <div class="ui hidden section divider">
+
+            </div>
+            <section class="top aligned row">
+                <div class="left aligned sixteen wide column">
 
                     <h3 class="ui header">
-                        what we do
+                        our schedule &amp; training routines
+                        <div class="sub header">
+                            Timeline in chronological order, nominati pertinacia
+                            argumentum ad his.
+                        </div>
                     </h3>
+                    <div class="ui hidden horizontal divider">
 
+                    </div>
                 </div>
+                <!-- start of a column -->
+                <div class="left aligned eight wide column">
 
-                <!-- start of one service-->
+                    <section class="ui piled padded compact segment">
 
-                <div class="left aligned column">
+                        <div class="ui small threaded comments">
 
-                    <section class="ui basic segment">
-                        <figure class="ui rounded medium centered image">
+                            <!-- start of outer comment item -->
+                            <div class="comment">
 
-                            <img src="./static/images/horizon.jpg" alt="logo image" />
+                                <div class="avatar">
+                                    <img src="./static/images/logo.png">
+                                </div>
 
-                        </figure>
-                        <h3 class="ui header">service name</h3>
-                        <p>
-                            Te eum doming eirmod, nominati pertinacia
-                            argumentum ad his. Ex eam alia facete scriptorem,
-                            est autem aliquip detraxit at. Usu ocurreret referrentur at, c
-                            u epicurei appellantur vix. Cum ea laoreet recteque e
-                        </p>
+                                <div class="content">
+                                    <div class="author">
+                                        week day
+                                    </div>
+                                    <div class="metadata">
 
-                        <a class="ui fluid small circular secondary button stateful" href="#">
-                            read more
-                        </a>
+                                        <span class="date signature">
+                                            <b>opening time</b> &nbsp;
+                                            <time
+                                                datetime="09:00" pubdate="0900">
+                                                0900
+                                            </time>
+                                        </span>
+                                        <span class="date signature">
+                                            <b>closing time</b>&nbsp;
+                                            <time
+                                                datetime="09:00" pubdate="0900">
+                                                22:00
+                                            </time>
+                                        </span>
+
+                                    </div>
+                                    <div class="ui text">
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his.
+
+                                    </div>
+                                </div>
+                                <!-- start of inner comment wrapper -->
+                                <div class="comments">
+
+                                    <!-- start of single inner comment item -->
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./static/images/logo.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="author">
+                                                activity title
+                                            </div>
+                                            <div class="metadata">
+                                                <span class="date signature">
+                                                    <b>starting time</b> &nbsp;
+                                                    <time
+                                                        datetime="09:00" pubdate="0900">
+                                                        11:00
+                                                    </time>
+                                                </span>
+                                                <span class="date signature">
+                                                    <b>ending time</b>&nbsp;
+                                                    <time
+                                                        datetime="09:00" pubdate="0900">
+                                                        14:00
+                                                    </time>
+                                                </span>
+
+                                            </div>
+
+                                            <div class="text">
+                                                Te eum doming eirmod, nominati pertinacia
+                                                argumentum ad his. Ex eam alia facete scriptorem,
+                                                est autem.
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end of single inner comment item -->
+                                    <!-- start of single inner comment item -->
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./static/images/logo.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="author">
+                                                activity title
+                                            </div>
+                                            <div class="metadata">
+                                                <span class="date signature">
+                                                    <b>starting time</b> &nbsp;
+                                                    <time
+                                                        datetime="09:00" pubdate="0900">
+                                                        16:00
+                                                    </time>
+                                                </span>
+                                                <span class="date signature">
+                                                    <b>ending time</b>&nbsp;
+                                                    <time
+                                                        datetime="09:00" pubdate="0900">
+                                                        19:00
+                                                    </time>
+                                                </span>
+
+                                            </div>
+
+                                            <div class="text">
+                                                Te eum doming eirmod, nominati pertinacia
+                                                argumentum ad his. Ex eam alia facete scriptorem,
+                                                est autem.
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end of single inner comment item -->
+
+
+
+                                </div>
+                                <!-- end of inner comment wrapper -->
+
+
+                            </div>
+                            <!-- end of outer comment item -->
+
+                            <!-- start of outer comment item -->
+                            <div class="comment">
+
+                                <div class="avatar">
+                                    <img src="./static/images/logo.png">
+                                </div>
+
+                                <div class="content">
+                                    <div class="author">
+                                        holiday
+                                    </div>
+                                    <div class="metadata">
+
+                                        <span class="date signature">
+                                            <b>opening time</b> &nbsp;
+                                            <time
+                                                datetime="09:00" pubdate="0900">
+                                                0900
+                                            </time>
+                                        </span>
+                                        <span class="date signature">
+                                            <b>closing time</b>&nbsp;
+                                            <time
+                                                datetime="09:00" pubdate="0900">
+                                                22:00
+                                            </time>
+                                        </span>
+
+                                    </div>
+                                    <div class="ui text">
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his.
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <!-- end of outer comment item -->
+
+                        </div>
+
 
                     </section>
 
                 </div>
+                <!-- end of a column -->
+                <!-- start of a column -->
+                <div class="left aligned eight wide column">
 
-                <!--- end of one service -->
+                    <section class="ui piled padded compact segment">
 
-                <!-- start of one service-->
+                        <div class="ui small threaded comments">
 
-                <div class="left aligned column">
+                            <!-- start of outer comment item -->
+                            <div class="comment">
 
-                    <section class="ui basic  segment">
-                        <figure class="ui rounded medium centered image">
+                                <div class="avatar">
+                                    <img src="./static/images/logo.png">
+                                </div>
 
-                            <img src="./static/images/horizon.jpg" alt="logo image" />
+                                <div class="content">
+                                    <div class="author">
+                                        weekend day
+                                    </div>
+                                    <div class="metadata">
 
-                        </figure>
-                        <h3 class="ui header">service name</h3>
-                        <p class="ui text">
-                            Te eum doming eirmod, nominati pertinacia
-                            argumentum ad his. Ex eam alia facete scriptorem,
-                            est autem aliquip detraxit at. Usu ocurreret referrentur at, c
-                            u epicurei appellantur vix. Cum ea laoreet recteque e
-                        </p>
+                                        <span class="date signature">
+                                            <b>opening time</b> &nbsp;
+                                            <time
+                                                datetime="09:00" pubdate="0900">
+                                                0900
+                                            </time>
+                                        </span>
+                                        <span class="date signature">
+                                            <b>closing time</b>&nbsp;
+                                            <time
+                                                datetime="09:00" pubdate="0900">
+                                                22:00
+                                            </time>
+                                        </span>
 
-                        <a class="ui fluid small circular secondary button stateful" href="#">
-                            read more
-                        </a>
+                                    </div>
+                                    <div class="ui text">
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his.
+
+                                    </div>
+                                </div>
+                                <!-- start of inner comment wrapper -->
+                                <div class="comments">
+
+                                    <!-- start of single inner comment item -->
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./static/images/logo.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="author">
+                                                activity title
+                                            </div>
+                                            <div class="metadata">
+                                                <span class="date signature">
+                                                    <b>starting time</b> &nbsp;
+                                                    <time
+                                                        datetime="09:00" pubdate="0900">
+                                                        11:00
+                                                    </time>
+                                                </span>
+                                                <span class="date signature">
+                                                    <b>ending time</b>&nbsp;
+                                                    <time
+                                                        datetime="09:00" pubdate="0900">
+                                                        14:00
+                                                    </time>
+                                                </span>
+
+                                            </div>
+
+                                            <div class="text">
+                                                Te eum doming eirmod, nominati pertinacia
+                                                argumentum ad his. Ex eam alia facete scriptorem,
+                                                est autem.
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end of single inner comment item -->
+                                    <!-- start of single inner comment item -->
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./static/images/logo.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="author">
+                                                activity title
+                                            </div>
+                                            <div class="metadata">
+                                                <span class="date signature">
+                                                    <b>starting time</b> &nbsp;
+                                                    <time
+                                                        datetime="09:00" pubdate="0900">
+                                                        16:00
+                                                    </time>
+                                                </span>
+                                                <span class="date signature">
+                                                    <b>ending time</b>&nbsp;
+                                                    <time
+                                                        datetime="09:00" pubdate="0900">
+                                                        19:00
+                                                    </time>
+                                                </span>
+
+                                            </div>
+
+                                            <div class="text">
+                                                Te eum doming eirmod, nominati pertinacia
+                                                argumentum ad his. Ex eam alia facete scriptorem,
+                                                est autem.
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end of single inner comment item -->
+
+
+
+                                </div>
+                                <!-- end of inner comment wrapper -->
+
+
+                            </div>
+                            <!-- end of outer comment item -->
+
+                            <!-- start of outer comment item -->
+                            <div class="comment">
+
+                                <div class="avatar">
+                                    <img src="./static/images/logo.png">
+                                </div>
+
+                                <div class="content">
+                                    <div class="author">
+                                        special event day
+                                    </div>
+                                    <div class="metadata">
+
+                                        <span class="date signature">
+                                            <b>opening time</b> &nbsp;
+                                            <time
+                                                datetime="09:00" pubdate="0900">
+                                                0900
+                                            </time>
+                                        </span>
+                                        <span class="date signature">
+                                            <b>closing time</b>&nbsp;
+                                            <time
+                                                datetime="09:00" pubdate="0900">
+                                                22:00
+                                            </time>
+                                        </span>
+
+                                    </div>
+                                    <div class="ui text">
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his.
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <!-- end of outer comment item -->
+
+                        </div>
 
                     </section>
-
                 </div>
+                <!-- end of a column -->
 
-                <!--- end of one service -->
-
-                <!-- start of one service-->
-                <div class="left aligned column">
-
-                    <section class="ui basic segment">
-                        <figure class="ui rounded medium centered image">
-
-                            <img src="./static/images/horizon.jpg" alt="logo image" />
-
-                        </figure>
-                        <h3 class="ui header">service name</h3>
-                        <p>
-                            Te eum doming eirmod, nominati pertinacia
-                            argumentum ad his. Ex eam alia facete scriptorem,
-                            est autem aliquip detraxit at. Usu ocurreret referrentur at, c
-                            u epicurei appellantur vix. Cum ea laoreet recteque e
-                        </p>
-
-                        <a class="ui fluid small circular secondary button stateful" href="#">
-                            read more
-                        </a>
-
-                    </section>
-
-                </div>
-                <!--- end of one service -->
-
-                <!-- start of one service-->
-                <div class="left aligned column">
-
-                    <section class="ui basic  segment">
-                        <figure class="ui rounded medium centered image">
-
-                            <img src="./static/images/horizon.jpg" alt="logo image" />
-
-                        </figure>
-                        <h3 class="ui header">service name</h3>
-                        <p>
-                            Te eum doming eirmod, nominati pertinacia
-                            argumentum ad his. Ex eam alia facete scriptorem,
-                            est autem aliquip detraxit at. Usu ocurreret referrentur at, c
-                            u epicurei appellantur vix. Cum ea laoreet recteque e
-                        </p>
-
-                        <a class="ui fluid small circular secondary button stateful" href="#">
-                            read more
-                        </a>
-
-                    </section>
-
-                </div>
-                <!--- end of one service -->
 
             </section>
 
-            <section class="row">
+            <div class="ui hidden section divider">
 
-                <div class="centered left aligned column">
+            </div>
 
+            <section class="greyish row">
+                <div class="left aligned sixteen wide column">
 
-                    <h3 class="ui header">facility</h3>
-                    <p>
-                        Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum
-                        definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.
-                        Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones.
-                        Quot wisi nulla ex duo.
-                        Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer.
-                    </p>
+                    <h3 class="ui inverted header">
+                        meet the staff
+                        <div class="sub header">
+                            Te eum doming eirmod, nominati pertinacia
+                            argumentum ad his. Ex eam alia facete scriptorem.
+                        </div>
+                    </h3>
+                    <div class="ui hidden horizontal divider">
 
+                    </div>
+                    <!-- start of grouped images -->
+                    <section class="ui centered top aligned medium rounded images hasPerfective">
+                        <!-- start of a single dimmable image -->
+                        <figure class="ui image dimmable DimmerItem hasTransformation">
 
-                    <a href="#0" class="ui fluid circular secondary button stateful">
-                        Read more
-                    </a>
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
 
-                </div>
+                                        <section class="ui left aligned small basic segment">
+                                            <h5 class="ui inverted header">
+                                                expertise
+                                            </h5>
+                                            <p>
+                                                Te eum doming eirmod, nominati pertinacia
+                                                argumentum ad his. Ex eam alia facete scriptorem,
+                                                est autem aliquip detraxit at.
+                                            </p>
+                                            <div class="mini ui three icon buttons">
 
-                <!-- start of staff/team column -->
+                                                <a class="ui facebook button stateful" href="#">
+                                                    <i class="facebook icon"></i>
+                                                </a>
+                                                <a class="ui black button stateful" href="#">
+                                                    <i class="mail icon"></i>
+                                                </a>
+                                                <a class="ui twitter button stateful" href="#">
+                                                    <i class="twitter icon"></i>
+                                                </a>
 
-                <div class="left aligned column">
-
-                    <h4 class="ui small header">
-                        meet the team
-                    </h4>
-
-                    <!-- start of staff carousel -->
-
-                    <section class="ui center aligned small basic segment">
-
-                        <div class="ui people shape">
-                            <div class="sides">
-
-
-                                <div class="side active">
-
-                                    <div class="ui small raised card hasDimmerItem">
-                                        <div class="ui  dimmable image triggerDimmer">
-                                            <div class="ui dimmer">
-                                                <div class="content">
-                                                    <div class="center">
-                                                        <section class="ui basic segment">
-
-
-                                                            <div class="ui circular small primary button">
-                                                                read more
-                                                            </div>
-                                                        </section>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <img src="static/images/horizon.jpg">
-                                        </div>
-                                        <div class="content">
-
-                                            <a href="#0" class="header">
-                                                staff name
-                                            </a>
-
-                                            <div class="meta">
-
-                                                <span class="category signature">field of expertise</span>
 
                                             </div>
-
-                                            <div class="description">
-
-                                                <i class="ui grey quote left icon"></i>
-                                                Te eum doming eirmod, nominati
-                                                pertinacia argumentum ad his.
-                                                Ex eam alia facete scriptorem.
-                                                <i class="ui grey quote right icon"></i>
-
-                                            </div>
-                                        </div>
+                                        </section>
 
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="ui hidden horizontal divider"
-                            style="margin-top:1% ;"></div>
+                            <figcaption class="ui bottom pointing black label signature">
+                                staff one name
+                            </figcaption>
+                            <img
+                            src="./static/images/horizon.jpg" alt="" />
+                        </figure>
+                        <!-- end of a single dimmable image -->
+                        <!-- start of a single dimmable image -->
+                        <figure class="ui image dimmable DimmerItem hasTransformation">
+
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+
+                                        <section class="ui left aligned small basic segment">
+                                            <h5 class="ui inverted header">
+                                                expertise
+                                            </h5>
+                                            <p>
+                                                Te eum doming eirmod, nominati pertinacia
+                                                argumentum ad his. Ex eam alia facete scriptorem,
+                                                est autem aliquip detraxit at.
+                                            </p>
+                                            <div class="mini ui three icon buttons">
+
+                                                <a class="ui facebook button stateful" href="#">
+                                                    <i class="facebook icon"></i>
+                                                </a>
+                                                <a class="ui black button stateful" href="#">
+                                                    <i class="mail icon"></i>
+                                                </a>
+                                                <a class="ui twitter button stateful" href="#">
+                                                    <i class="twitter icon"></i>
+                                                </a>
 
 
-                        <button class="ui small blue button shapePrev">
-                            previous
-                        </button>
+                                            </div>
+                                        </section>
 
-                        <button class="ui small teal button shapeNext"
-                            id="ChangeShape">
-                            next
-                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <figcaption class="ui bottom pointing black label signature">
+                                staff two name
+                            </figcaption>
+                            <img src="./static/images/horizon.jpg" alt="" />
+                        </figure>
+                        <!-- end of a single dimmable image -->
+                        <!-- start of a single dimmable image -->
+                        <figure class="ui image dimmable DimmerItem hasTransformation">
+
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+
+                                        <section class="ui left aligned small basic segment">
+                                            <h5 class="ui inverted header">
+                                                expertise
+                                            </h5>
+                                            <p>
+                                                Te eum doming eirmod, nominati pertinacia
+                                                argumentum ad his. Ex eam alia facete scriptorem,
+                                                est autem aliquip detraxit at.
+                                            </p>
+                                            <div class="mini ui three icon buttons">
+
+                                                <a class="ui facebook button stateful" href="#">
+                                                    <i class="facebook icon"></i>
+                                                </a>
+                                                <a class="ui black button stateful" href="#">
+                                                    <i class="mail icon"></i>
+                                                </a>
+                                                <a class="ui twitter button stateful" href="#">
+                                                    <i class="twitter icon"></i>
+                                                </a>
+
+
+                                            </div>
+                                        </section>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <figcaption class="ui bottom pointing black label signature">
+                                staff three name
+                            </figcaption>
+                            <img src="./static/images/horizon.jpg" alt="" />
+                        </figure>
+                        <!-- end of a single dimmable image -->
 
                     </section>
 
-                    <!-- end of staff carousel -->
+                    <!-- end of grouped images -->
 
                 </div>
-
-                <!-- end of staff/team column -->
-
 
             </section>
 
+            <div class="ui hidden section divider">
+
+            </div>
+
+
             <section class="row parallaxed">
 
-                <div class="centered left aligned column">
+                <div class="left aligned column">
 
                     <div class="glassed">
 
-                        <h3 class="ui inverted header">About Us</h3>
-                        <p>
-                            Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum
-                            definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.
-                            Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones.
-                            Quot wisi nulla ex duo.
-                            Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer.
-                        </p>
 
-
-                        <a href="#0" class="ui fluid circular secondary button stateful">
-                            Read more
-                        </a>
-                    </div>
-                </div>
-
-                <div class="centered left aligned column">
-
-                    <div class="glassed">
-
-                        <h3 class="ui inverted header">
-                            get in touch
+                        <h4 class="ui header">
+                            how to reach us
                             <div class="sub header">
                                 Te eum doming eirmod, nominati pertinacia
                                 argumentum ad his.
                             </div>
-                        </h3>
-                        <div class="ui divided animated small list">
+                        </h4>
+
+                        <div class="ui relaxed divided inverted list">
                             <div class="item">
-                                <i class="map marker icon"></i>
+                                <i class="green map marker icon"></i>
                                 <div class="content">
-                                    <a class="header">address</a>
+                                    <div class="header">
+                                        address
+                                    </div>
                                     <div class="description">
-                                        Te eum doming eirmod, nominati pertinacia
-                                        argumentum ad his. Ex eam alia facete scriptorem,
-                                        est autem aliquip detraxit at.
+                                        <p>
+                                            Te eum doming eirmod, nominati pertinacia
+                                            argumentum ad his. Ex eam alia facete scriptorem,
+                                            est autem aliquip detraxit at.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
-                                <i class="open envelope icon"></i>
+                                <i class="green open envelope icon"></i>
                                 <div class="content">
-                                    <a class="header">mailing &amp; calling </a>
+                                    <div class="header">
+                                        mailing &amp; calling
+                                    </div>
                                     <div class="description">
-                                        Te eum doming eirmod, nominati pertinacia
-                                        argumentum ad his. Ex eam alia facete scriptorem,
-                                        est autem aliquip detraxit at.
+                                        <p>
+                                            Te eum doming eirmod, nominati pertinacia
+                                            argumentum ad his. Ex eam alia facete scriptorem,
+                                            est autem aliquip detraxit at.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+
                     </div>
                 </div>
 
+                <div class="left aligned column">
+
+                    <div class="glassed">
+                        <h4 class="ui  header">
+                            quick contact form
+                        </h4>
+                        <div class="ui clearing divider">
+
+                        </div>
+                        <form class="ui form stateful" action="." method="post" accept-charset="utf-8">
+                            <div class="two fields">
+                                <div class="field">
+                                    <label for="firstname">first name</label>
+                                    <input type="text" name="firstname" id="firstname"
+                                    placeholder="your first name" value="" />
+                                </div>
+                                <div class="field">
+                                    <label for="othername">other name</label>
+                                    <input type="text" name="othername"
+                                    placeholder="your other name" id="othername" value="" />
+                                </div>
+                            </div>
+
+                            <div class="two fields">
+                                <div class="field">
+                                    <label for="refsubject">ref subject</label>
+                                    <input type="text" name="refsubject" placeholder="subject"
+                                    id="refsubject" value="" />
+                                </div>
+                                <div class="field">
+                                    <label for="email">email</label>
+                                    <input type="email" name="email" id="email" placeholder="your e-maill address" value="" />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="text-contents">text message</label>
+
+                                <textarea name="text-contents" id="text-contents"
+                                    cols="3" rows="3"
+                                    placeholder="type message"
+                                    value=""></textarea>
+                            </div>
+                            <button class="ui circular negative reset button" type="reset">
+                                clear
+                            </button>
+                            <button class="ui right floated circular positive
+                                submit button" type="submit">
+                                send
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
 
             </section>
 
+            <div class="ui hidden section divider">
+
+            </div>
+
+            <section class="row">
+
+                <div class="center aligned column">
+
+                    <h5 class="ui left aligned header">
+                        newsletter subscription
+                        <div class="sub header">
+
+                            Te eum doming eirmod, nominati pertinacia
+                            argumentum ad his. Ex eam alia facete scriptorem,
+                            est autem aliquip detraxit at.
+                        </div>
+                    </h5>
+
+                    <form class="ui form" action="." method="post" accept-charset="utf-8">
+                        <div class="ui fluid action input">
+                            <input placeholder="your e-mail address"
+                            type="email">
+                            <button class="ui positive submit button" type="submit">
+                                subscribe
+                            </button>
+                        </div>
+                    </form>
+
+
+                    <div class="ui hidden horizontal divider">
+
+                    </div>
+
+                    <figure class="ui massive centered image">
+                        <img class="fancyBR shadowed"
+                        width="960px" height="500px"
+                        src="./static/images/horizon.jpg" alt="" />
+                        <figcaption class="ui pointing black label">caption text</figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="middle aligned column">
+
+                    <h4 class="ui left aligned header">
+                        testimonials
+                        <div class="sub header">
+                            some successful stories from oir clients.
+                            Te eum doming eirmod, nominati
+                            pertinacia argumentum ad his.
+                            referrentu.
+                        </div>
+                    </h4>
+
+                    <section class="ui center aligned basic fitted segment">
+
+                        <div class="ui people shape">
+
+                            <div class="sides">
+
+                                <div class="side active" data-side="first">
+
+                                    <div class="ui centered  raised card">
+                                        <div class="content">
+                                            <h5 class="header">
+                                                person one name
+                                            </h5>
+                                            <div class="meta">
+                                                <span class="date signature">
+                                                    <b>posted on</b> &nbsp;
+                                                    <time
+                                                        datetime="01-01-2030" pubdate="01-01-2030">
+                                                        01-01-2030
+                                                    </time>
+                                                </span>
+                                            </div>
+                                            <div class="description">
+                                                <blockquote>
+
+                                                    <q>
+                                                        Te eum doming eirmod, nominati
+                                                        pertinacia argumentum ad his.
+                                                        referrentu
+                                                        at,cu epicurei appellantur vix.
+                                                        Cum ea laoreet recteque electram,
+                                                        eosalteru ...
+                                                    </q>
+
+                                                </blockquote>
+
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <div class="right floated author">
+                                                <img class="ui avatar image"
+                                                src="./static/images/logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="side" data-side="second">
+
+                                    <div class="ui centered  raised card">
+                                        <div class="content">
+                                            <h5 class="header">
+                                                person two name
+                                            </h5>
+                                            <div class="meta">
+                                                <span class="date signature">
+                                                    <b>posted on</b> &nbsp;
+                                                    <time
+                                                        datetime="01-01-2030" pubdate="01-01-2030">
+                                                        01-01-2030
+                                                    </time>
+                                                </span>
+                                            </div>
+                                            <div class="description">
+                                                <blockquote>
+
+                                                    <q>
+                                                        Te eum doming eirmod, nominati
+                                                        pertinacia argumentum ad his.
+                                                        referrentu
+                                                        at,cu epicurei appellantur vix.
+                                                        Cum ea laoreet recteque electram,
+                                                        eosalteru ...
+                                                    </q>
+
+                                                </blockquote>
+
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <div class="right floated author">
+                                                <img class="ui avatar image"
+                                                src="./static/images/logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="side" data-side="third">
+
+                                    <div class="ui centered  raised card">
+                                        <div class="content">
+                                            <h5 class="header">
+                                                person three name
+                                            </h5>
+                                            <div class="meta">
+                                                <span class="date signature">
+                                                    <b>posted on</b> &nbsp;
+                                                    <time
+                                                        datetime="01-01-2030" pubdate="01-01-2030">
+                                                        01-01-2030
+                                                    </time>
+                                                </span>
+                                            </div>
+                                            <div class="description">
+                                                <blockquote>
+
+                                                    <q>
+                                                        Te eum doming eirmod, nominati
+                                                        pertinacia argumentum ad his.
+                                                        referrentu
+                                                        at,cu epicurei appellantur vix.
+                                                        Cum ea laoreet recteque electram,
+                                                        eosalteru ...
+                                                    </q>
+
+                                                </blockquote>
+
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <div class="right floated author">
+                                                <img class="ui avatar image"
+                                                src="./static/images/logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- start of shape controls -->
+                        <div class="ui clearing divider">
+
+                        </div>
+                        <div class="ui mini circular labels">
+                            <a class="ui green empty label" type="button"
+                                data-side-changed="first">
+
+                            </a>
+                            <a class="ui empty label" type="button"
+                                data-side-changed="second">
+
+                            </a>
+
+                            <a class="ui empty label" type="button"
+                                data-side-changed="third">
+
+                            </a>
+
+                        </div>
+                        <!-- end of shape controls -->
+
+                    </section>
+                </div>
+
+            </section>
 
         </article>
 
@@ -492,92 +1265,78 @@
 
     <!-- start of footer  -->
     <footer class="marginless paddless">
+        <section class="ui vertical inverted segment">
 
+            <div class="ui centered middle aligned stackable equal height padded grid">
+                <div class="five wide column">
+                    <h4 class="ui inverted header">website name</h4>
+                    <div class="ui inverted list">
+                        <div class="item">
+                            <img class="ui tiny centered rounded image"
+                            src="./static/images/logo.png" alt="logo" />
+                        </div>
 
-        <section class="ui inverted vertical segment paddless-TB">
-
-
-            <div class="ui container">
-                <div class="ui stackable centered middle aligned divided equal height padded grid">
-                    <div class="four wide column">
-                        <h4 class="ui inverted header">About</h4>
-                        <div class="ui list">
-                            <a class="item" href="#root">Sitemap</a>
-                            <a class="item" href="#root">Contact Us</a>
-                            <a class="item" href="#root">Religious Ceremonies</a>
-                            <a class="item" href="#root">Gazebo Plans</a>
+                        <div class="item">
+                            <i class="mail icon"></i>
+                            <div class="content">
+                                <a href="#">
+                                    help@website.com</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="computer icon"></i>
+                            <div class="content">
+                                <a href="#home">website-name.com</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="four wide column">
-                        <h4 class="ui inverted header">Services</h4>
-                        <div class="ui  list">
-                            <a class="item" href="#root">Banana Pre-Order</a>
-                            <a class="item" href="#root">DNA FAQ</a>
-                            <a class="item" href="#root">How To Access</a>
-                            <a class="item" href="#root">Favorite X-Men</a>
-                        </div>
+                </div>
+                <div class="five wide column">
+                    <h4 class="ui inverted header">information links</h4>
+                    <div class="ui inverted link animated list">
+                        <a href="#" class="item">cookie policy</a>
+                        <a href="#" class="item">Frequently Asked Questions</a>
+                        <a href="#" class="item">Terms &amp; conditions</a>
                     </div>
-                    <div class="left aligned seven wide column">
-                        <h4 class="ui inverted header">Footer Header</h4>
-                        <p>
-                            Extra space for a call to action inside the footer that could
-                            help re-engage users.
-                        </p>
+                </div>
+                <div class="five wide column">
+                    <h4 class="ui inverted header">Shortcut links</h4>
+                    <div class="ui inverted link animated list">
+                        <a href="#" class="item">Sitemap</a>
+                        <a href="#" class="item">RSS feed</a>
+                        <a href="#home" class="item">back to top</a>
                     </div>
                 </div>
             </div>
+            <h6 class="ui center aligned tiny inverted header stretching">
+                &copy;
+                <span id="insertedDate">
+                </span> &nbsp;
+                <span class="signature">upToTime designs</span>
+                &nbsp;
+                all rights reserved
+            </h6>
+            <div class="ui horizontal divider">
 
+            </div>
         </section>
-
     </footer>
     <!-- end of footer  -->
 
-    <svg class="svg" style="position: absolute"
-        height="0" width="0">
-        <clipPath id="splash"
-            clipPathUnits="objectBoundingBox">
-            <path
-                d="M0.501,0.769 L0.367,1 l0,-0.268,-0.232,0.134 L0.268,0.635 l-0.268,0 L0.232,0.501,0.001,0.367 l0.268,0,-0.134,-0.232 L0.367,0.268 l0,-0.268 L0.501,0.232,0.635,0.001 l0,0.268,0.232,-0.134 L0.733,0.367 l0.268,0 L0.769,0.501 l0.232,0.134,-0.268,0,0.134,0.232 L0.635,0.733 l0,0.268">
 
-            </path>
-        </clipPath>
-    </svg>
-
-
-    <svg class="svg" style="position: absolute"
-        height="0" width="0">
-        <clipPath id="splash2" clipPathUnits="objectBoundingBox">
-            <path d="M0.642,0.999 c-0.008,-0.003,-0.014,-0.01,-0.021,-0.025 c-0.008,-0.016,-0.015,-0.041,-0.02,-0.071 c-0.003,-0.015,-0.007,-0.042,-0.007,-0.051 l-0.001,-0.006,0.009,0.012 c0.031,0.041,0.053,0.079,0.061,0.103 c0.003,0.009,0.004,0.02,0.002,0.026 c-0.002,0.009,-0.014,0.016,-0.023,0.012 M0.336,0.937 c-0.006,-0.002,-0.014,-0.006,-0.017,-0.009 c-0.004,-0.005,-0.006,-0.009,-0.006,-0.017 c0,-0.015,0.01,-0.034,0.042,-0.08 c0.031,-0.044,0.042,-0.065,0.047,-0.085 c0.001,-0.006,0.002,-0.009,0.001,-0.016 c0,-0.01,-0.002,-0.015,-0.007,-0.022 c-0.003,-0.004,-0.011,-0.011,-0.015,-0.013 c-0.004,-0.002,-0.011,-0.001,-0.016,0.001 c-0.006,0.003,-0.018,0.016,-0.03,0.034 c-0.019,0.026,-0.029,0.035,-0.038,0.035 c-0.008,0,-0.017,-0.007,-0.019,-0.015 c-0.002,-0.008,0.001,-0.015,0.018,-0.034 c0.016,-0.018,0.02,-0.026,0.02,-0.035 c0,-0.005,-0.003,-0.012,-0.007,-0.016 c-0.005,-0.005,-0.009,-0.007,-0.015,-0.007 c-0.009,0,-0.016,0.003,-0.037,0.018 c-0.006,0.004,-0.015,0.01,-0.018,0.011 c-0.006,0.003,-0.007,0.003,-0.012,0.003 c-0.004,0,-0.006,0,-0.009,-0.002 c-0.006,-0.004,-0.011,-0.012,-0.011,-0.019 c0,-0.005,0.003,-0.011,0.007,-0.016 c0.004,-0.005,0.013,-0.012,0.029,-0.023 c0.021,-0.015,0.028,-0.021,0.033,-0.031 c0.004,-0.008,0.003,-0.018,-0.002,-0.023 c-0.005,-0.005,-0.011,-0.007,-0.024,-0.007 c-0.016,0,-0.029,0.002,-0.07,0.013 c-0.041,0.01,-0.045,0.011,-0.058,0.014 c-0.028,0.006,-0.044,0.005,-0.052,-0.001 c-0.005,-0.004,-0.006,-0.011,-0.002,-0.016 c0.008,-0.009,0.03,-0.014,0.082,-0.019 c0.047,-0.004,0.055,-0.005,0.067,-0.007 c0.038,-0.005,0.058,-0.012,0.06,-0.022 c0.001,-0.004,-0.001,-0.013,-0.004,-0.019 c-0.007,-0.015,-0.022,-0.022,-0.047,-0.025 c-0.016,-0.001,-0.035,0,-0.074,0.005 c-0.011,0.001,-0.025,0.003,-0.031,0.004 c-0.008,0.001,-0.016,0.001,-0.03,0.002 c-0.018,0,-0.02,0,-0.026,-0.002 c-0.016,-0.005,-0.023,-0.014,-0.022,-0.031 c0,-0.011,0.004,-0.016,0.012,-0.02 c0.003,-0.002,0.006,-0.002,0.014,-0.002 c0.016,0,0.031,0.003,0.076,0.016 c0.046,0.013,0.064,0.017,0.084,0.018 c0.019,0.001,0.03,-0.002,0.039,-0.011 c0.007,-0.008,0.01,-0.018,0.01,-0.032 c0,-0.007,-0.001,-0.009,-0.002,-0.012 c-0.006,-0.012,-0.016,-0.019,-0.045,-0.03 c-0.026,-0.01,-0.037,-0.017,-0.041,-0.025 c-0.002,-0.005,-0.002,-0.014,0.001,-0.02 c0.003,-0.005,0.005,-0.007,0.009,-0.007 c0.006,0,0.011,0.004,0.03,0.023 c0.02,0.02,0.028,0.025,0.037,0.026 c0.006,0,0.01,-0.002,0.017,-0.009 c0.02,-0.022,0.018,-0.039,-0.007,-0.054 c-0.007,-0.004,-0.011,-0.006,-0.035,-0.018 c-0.025,-0.012,-0.033,-0.019,-0.033,-0.029 c0,-0.008,0.009,-0.019,0.018,-0.024 c0.005,-0.002,0.006,-0.003,0.011,-0.002 c0.007,0,0.013,0.003,0.02,0.01 c0.007,0.007,0.012,0.014,0.027,0.036 c0.019,0.028,0.027,0.036,0.036,0.034 c0.005,-0.001,0.011,-0.008,0.016,-0.018 c0.013,-0.029,0.005,-0.057,-0.027,-0.092 c-0.01,-0.011,-0.022,-0.022,-0.046,-0.042 c-0.033,-0.028,-0.044,-0.039,-0.052,-0.051 c-0.006,-0.009,-0.008,-0.014,-0.009,-0.021 c0,-0.005,0,-0.006,0.002,-0.011 c0.003,-0.006,0.009,-0.012,0.018,-0.017 c0.017,-0.01,0.03,-0.009,0.041,0.003 c0.011,0.013,0.016,0.025,0.035,0.088 c0.016,0.052,0.028,0.075,0.045,0.087 c0.008,0.006,0.015,0.008,0.026,0.008 c0.01,0,0.019,-0.002,0.031,-0.009 c0.013,-0.007,0.017,-0.013,0.017,-0.027 c0,-0.009,-0.002,-0.017,-0.008,-0.037 c-0.005,-0.016,-0.008,-0.028,-0.008,-0.034 c0,-0.011,0.007,-0.018,0.018,-0.019 c0.007,0,0.011,0.001,0.015,0.006 c0.006,0.007,0.008,0.014,0.013,0.039 c0.002,0.009,0.004,0.02,0.005,0.023 c0.004,0.013,0.009,0.021,0.015,0.024 c0.004,0.002,0.01,0.003,0.015,0.002 c0.011,-0.003,0.016,-0.012,0.018,-0.032 c0.001,-0.015,0,-0.035,-0.009,-0.096 c-0.005,-0.031,-0.006,-0.045,-0.005,-0.063 c0,-0.013,0.001,-0.017,0.002,-0.022 c0.003,-0.011,0.007,-0.017,0.015,-0.021 c0.006,-0.003,0.018,-0.003,0.025,0 c0.014,0.005,0.02,0.017,0.02,0.037 c0,0.018,-0.003,0.036,-0.017,0.085 c-0.01,0.037,-0.013,0.049,-0.016,0.065 c-0.005,0.034,0.004,0.053,0.025,0.054 c0.004,0,0.008,0,0.009,-0.001 c0.007,-0.003,0.014,-0.01,0.02,-0.022 c0.001,-0.003,0.005,-0.012,0.009,-0.02 c0.003,-0.008,0.007,-0.018,0.009,-0.022 c0.006,-0.012,0.014,-0.018,0.022,-0.017 c0.005,0.001,0.011,0.004,0.014,0.007 c0.007,0.009,0.005,0.017,-0.012,0.05 c-0.01,0.018,-0.013,0.029,-0.011,0.037 c0.001,0.006,0.004,0.01,0.01,0.014 c0.007,0.005,0.013,0.007,0.019,0.007 c0.008,0,0.014,-0.003,0.022,-0.012 c0.009,-0.01,0.017,-0.024,0.031,-0.054 c0.021,-0.048,0.031,-0.063,0.043,-0.07 c0.004,-0.002,0.005,-0.002,0.011,-0.002 c0.006,0,0.007,0,0.012,0.003 c0.011,0.006,0.018,0.014,0.019,0.023 c0.001,0.008,-0.005,0.02,-0.016,0.032 c-0.007,0.008,-0.018,0.018,-0.046,0.041 c-0.033,0.027,-0.049,0.045,-0.053,0.058 c-0.005,0.017,0.005,0.033,0.023,0.036 c0.012,0.002,0.027,-0.004,0.045,-0.019 c0.003,-0.003,0.016,-0.015,0.027,-0.027 c0.011,-0.012,0.024,-0.024,0.027,-0.027 c0.012,-0.011,0.024,-0.019,0.033,-0.022 c0.005,-0.001,0.015,-0.001,0.018,0.001 c0.005,0.003,0.006,0.012,0.003,0.02 c-0.006,0.012,-0.018,0.021,-0.053,0.043 c-0.04,0.025,-0.053,0.035,-0.061,0.045 c-0.004,0.006,-0.005,0.008,-0.006,0.013 c-0.002,0.008,0.001,0.015,0.007,0.022 c0.002,0.003,0.004,0.005,0.004,0.006 c0,0.002,0.004,0.012,0.008,0.018 c0.004,0.006,0.009,0.01,0.015,0.013 c0.006,0.002,0.02,0.003,0.028,0 c0.016,-0.004,0.035,-0.014,0.07,-0.035 c0.023,-0.014,0.039,-0.022,0.049,-0.026 c0.005,-0.002,0.008,-0.002,0.014,-0.002 c0.007,0,0.008,0,0.011,0.002 c0.004,0.003,0.007,0.008,0.009,0.014 c0.001,0.005,0.001,0.007,-0.003,0.011 c-0.008,0.009,-0.022,0.014,-0.078,0.026 c-0.048,0.01,-0.065,0.015,-0.08,0.023 c-0.022,0.012,-0.024,0.028,-0.007,0.046 c0.006,0.007,0.013,0.011,0.023,0.013 c0.009,0.002,0.034,0.002,0.056,-0.001 c0.036,-0.005,0.048,-0.004,0.057,0.005 c0.007,0.008,0.009,0.02,0.006,0.041 c-0.001,0.009,-0.002,0.01,-0.003,0.01 c-0.001,0,-0.001,0,0,0.001 c0.001,0.001,0.001,0.002,-0.001,0.006 c-0.004,0.008,-0.012,0.012,-0.023,0.01 c-0.01,-0.002,-0.02,-0.006,-0.051,-0.022 c-0.043,-0.023,-0.053,-0.027,-0.069,-0.026 c-0.009,0,-0.013,0.002,-0.019,0.007 c-0.007,0.006,-0.013,0.024,-0.012,0.032 c0.001,0.005,0.005,0.012,0.009,0.015 c0.005,0.004,0.016,0.009,0.031,0.015 c0.023,0.009,0.032,0.012,0.037,0.018 c0.007,0.007,0.009,0.015,0.004,0.025 c-0.004,0.008,-0.008,0.011,-0.015,0.011 c-0.005,0,-0.009,-0.001,-0.024,-0.008 c-0.015,-0.007,-0.021,-0.009,-0.029,-0.01 c-0.009,-0.001,-0.017,0.002,-0.024,0.009 c-0.007,0.006,-0.008,0.014,-0.004,0.021 c0.006,0.009,0.015,0.015,0.055,0.036 c0.018,0.01,0.036,0.019,0.041,0.023 c0.011,0.007,0.02,0.017,0.023,0.024 c0.005,0.01,0.002,0.021,-0.007,0.031 c-0.014,0.016,-0.03,0.016,-0.052,-0.002 c-0.012,-0.01,-0.024,-0.023,-0.054,-0.063 c-0.02,-0.025,-0.03,-0.035,-0.039,-0.04 c-0.008,-0.004,-0.014,-0.001,-0.019,0.007 c-0.002,0.003,-0.002,0.005,-0.002,0.011 c0,0.013,0.004,0.022,0.026,0.059 c0.02,0.033,0.022,0.048,0.007,0.057 c-0.003,0.002,-0.005,0.002,-0.009,0.002 c-0.012,0,-0.02,-0.009,-0.038,-0.041 c-0.016,-0.03,-0.022,-0.038,-0.029,-0.045 c-0.01,-0.009,-0.021,-0.009,-0.029,-0.001 c-0.008,0.008,-0.008,0.02,-0.001,0.048 c0.009,0.033,0.009,0.037,0.01,0.047 c0,0.009,0,0.01,-0.002,0.014 c-0.006,0.011,-0.022,0.014,-0.03,0.004 c-0.005,-0.006,-0.007,-0.014,-0.013,-0.037 c-0.006,-0.029,-0.011,-0.039,-0.021,-0.043 c-0.005,-0.002,-0.014,-0.002,-0.019,0.001 c-0.004,0.002,-0.008,0.008,-0.01,0.013 c-0.001,0.005,-0.001,0.024,0.001,0.041 c0.002,0.017,0.002,0.03,0,0.035 c-0.001,0.003,-0.004,0.007,-0.007,0.008 c-0.006,0.003,-0.015,0.002,-0.02,-0.003 c-0.006,-0.006,-0.006,-0.015,0.001,-0.044 c0.005,-0.02,0.006,-0.028,0.006,-0.035 c0,-0.014,-0.005,-0.019,-0.02,-0.02 c-0.009,-0.001,-0.015,0.001,-0.022,0.004 c-0.007,0.004,-0.013,0.009,-0.018,0.017 c-0.01,0.017,-0.016,0.036,-0.024,0.082 c-0.009,0.054,-0.014,0.071,-0.022,0.084 c-0.007,0.01,-0.017,0.013,-0.029,0.01 M0.827,0.656 c-0.004,-0.001,-0.007,-0.003,-0.01,-0.006 c-0.004,-0.004,-0.005,-0.008,-0.005,-0.014 c0,-0.01,0.008,-0.019,0.018,-0.02 c0.01,-0.002,0.022,0.009,0.022,0.021 c0,0.012,-0.012,0.023,-0.024,0.02 M0.013,0.622 c-0.007,-0.003,-0.011,-0.01,-0.012,-0.018 c-0.001,-0.008,0.005,-0.017,0.012,-0.02 c0.004,-0.002,0.011,-0.002,0.015,0 c0.004,0.002,0.009,0.007,0.011,0.011 c0.007,0.016,-0.01,0.034,-0.025,0.027 M0.908,0.468 c-0.024,-0.002,-0.064,-0.007,-0.064,-0.008 c0,-0.001,0.041,-0.018,0.061,-0.025 c0.03,-0.011,0.05,-0.015,0.067,-0.015 c0.01,0,0.012,0,0.016,0.002 c0.005,0.002,0.009,0.006,0.011,0.009 c0.002,0.004,0.002,0.013,0,0.017 c-0.005,0.009,-0.016,0.015,-0.036,0.018 c-0.008,0.001,-0.045,0.002,-0.055,0.001 M0.134,0.309 c-0.057,-0.008,-0.096,-0.018,-0.116,-0.032 c-0.006,-0.004,-0.012,-0.01,-0.014,-0.014 c-0.002,-0.004,-0.001,-0.011,0,-0.015 c0.01,-0.023,0.046,-0.012,0.106,0.031 c0.015,0.011,0.042,0.032,0.041,0.032 c0,0,-0.008,-0.001,-0.017,-0.002"></path></clipPath>
-    </svg>
-
-    <div class="clipped"></div>
 
     <!-- inject js -->
-    <script src="./static/jQuery/jquery-3.3.1.js"></script>
-    <script src="./static/fomantic/semantic.js"></script>
+    <script src="./static/js/jQuery/jquery-3.3.1.js"></script>
+    <script src="./static/css/fomantic/semantic.js"></script>
+
+    <script src="./static/customised/js/custom.js" type="text/javascript" charset="utf-8"></script>
+    <!--start of base js -->
+
     <!-- base js -->
     <script type="text/javascript" charset="utf-8">
-        $('#searchform').modal({
-            blurring: true,
-            closable: false,
-            transition: 'scale'
-        }).modal('attach events',
-            '.button.triggerModalItem',
-            'show');
-
-        $('.selection.dropdown').dropdown({
-            on: 'click',
-            // you can use any ui transition
-            transition: 'slide'
-            //action: 'combo'
-        });
 
 
-        $('.ui.rating').rating();
 
-        $('.hasDimmerItem .triggerDimmer').dimmer({
-            on: 'hover'
-        });
 
     </script>
     <!-- endinject js -->

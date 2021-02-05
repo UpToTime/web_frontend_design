@@ -16,11 +16,10 @@
     <link rel="icon" href="./static/images/logo.png" sizes="32x32">
     <!-- inject:css -->
     <link rel="stylesheet" href="./static/css/fomantic/semantic.css">
-    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="./static/customised/css/custom.css">
 
     <!-- endinject -->
     <style type="text/css" media="screen">
-
 
 
     </style>
@@ -30,63 +29,58 @@
 
 
         <!-- start of top mini navigation -->
-        <nav class="ui fluid top fixed large borderless menu" id="topNav">
+        <nav class="ui  top fixed large secondary inverted borderless menu" id="topNav">
 
-            <div class="item">
+            <a href="#home" class="item">
                 <img class="logo" src="./static/images/logo.png" alt="" />
-            </div>
+            </a>
 
-            <section class="menu left">
+            <section class="left menu">
 
                 <!-- start of social media links -->
-                <a class="fitted item" href="mailto:brandname@mail.com">
-                    <i class="mail icon"></i>
-
-                </a>
-
 
                 <a class="fitted item">
-                    <i class="twitter icon"></i>
+                    <i class="inverted circular twitter icon"></i>
 
                 </a>
                 <a class="fitted item">
-                    <i class="facebook icon"></i>
+                    <i class="inverted circular facebook icon"></i>
 
                 </a>
                 <a class="fitted item">
-                    <i class="instagram icon"></i>
+                    <i class="inverted circular instagram icon"></i>
 
                 </a>
                 <!-- end of social media links -->
 
             </section>
 
-            <a class="header item" href="#home">brand name</a>
+            <a class="header right item no-mobile" href="#home">brand name</a>
 
-            <section class="menu right">
+            <section class="right menu">
 
                 <!-- start of dropdown -->
-                <div class="ui simple floating inverted dropdown item">
+                <div class="ui floating  dropdown item">
                     <span class="text header">menu</span>
                     <i class="ellipsis vertical icon"></i>
                     <div class="menu">
                         <div class="item">
-                            <i class="circular inverted twitter icon"></i>
+
                             twitter
                         </div>
 
                         <div class="item">
-                            <i class="circular inverted facebook icon"></i>
+
                             facebook
                         </div>
                         <div class="item">
-                            <i class="circular inverted instagram icon"></i>
+
                             instagram
                         </div>
 
 
                         <a class="item" href="telto:+2547">
-                            <i class="clockwise rotated circular inverted call icon"></i>
+
                             phone number
                         </a>
 
@@ -118,11 +112,11 @@
 
                 <h1 class="ui center aligned big header">
                     brand name
+                    <div class="sub header">
+                        Tag line
+                    </div>
                 </h1>
 
-                <h2 class="ui center aligned small header">
-                    Tag line
-                </h2>
 
                 <div class="ui clearing divider">
 
@@ -138,7 +132,7 @@
                         </q>
                     </p>
 
-                    <span class="ui primary text signature">
+                    <span class="ui primary text signed">
                         &mdash; manager name
                     </span>
                 </blockquote>
@@ -148,7 +142,7 @@
 
                 </div>
 
-                <a href="#0" class="ui large circular primary  button stateful">
+                <a href="#" class="ui large circular primary  button stateful">
                     sign up
                 </a>
 
@@ -186,30 +180,32 @@
     <!-- start of page content -->
     <main class="ui vertical segment no-borders">
 
-        <article class="ui centered middle aligned stackable equal width padded grid">
+        <article class="ui centered top aligned stackable equal width padded grid">
 
             <section class="row" id="services">
 
                 <!-- start of one service-->
 
-                <figure class="left aligned column">
+                <div class="left aligned column">
+                    <picture>
 
-                    <img class="ui fluid rounded image shadowed"
-                    src="./static/images/horizon.jpg" alt="logo image" />
+                        <img class="ui fluid rounded image shadowed"
+                        src="./static/images/horizon.jpg" alt="logo image" />
 
-                </figure>
+                    </picture>
+                </div>
 
                 <div class="left aligned column">
 
 
                     <h3 class="ui header">what we do</h3>
-                    <p>
+                    <p class="big-letter">
                         Te eum doming eirmod, nominati pertinacia
                         argumentum ad his. Ex eam alia facete scriptorem,
                         est autem aliquip detraxit at. Usu ocurreret referrentur at, c
                         u epicurei appellantur vix. Cum ea laoreet recteque e
                     </p>
-                    <a class="ui fluid circular secondary button" href="#">
+                    <a class="ui fluid circular secondary button stateful" href="#">
                         read more
                     </a>
 
@@ -222,7 +218,7 @@
 
             <section class="row">
                 <div class="ui centered  leaderboard test ad"
-                    data-text="advertising section,include any adverts"
+                    data-text="leaderboard advertising section"
                     >
 
                 </div>
@@ -237,14 +233,14 @@
 
 
                     <h3 class="ui header">About us</h3>
-                    <p>
+                    <p class="big-letter">
                         Te eum doming eirmod, nominati pertinacia
                         argumentum ad his. Ex eam alia facete scriptorem,
                         est autem aliquip detraxit at. Usu ocurreret referrentur at, c
                         u epicurei appellantur vix. Cum ea laoreet recteque e
                     </p>
 
-                    <a class="ui fluid circular secondary button" href="#">
+                    <a class="ui fluid circular secondary button stateful" href="#">
                         read more
                     </a>
                 </div>
@@ -287,9 +283,11 @@
                                         address
                                     </div>
                                     <div class="description">
-                                        Te eum doming eirmod, nominati pertinacia
-                                        argumentum ad his. Ex eam alia facete scriptorem,
-                                        est autem aliquip detraxit at.
+                                        <p>
+                                            Te eum doming eirmod, nominati pertinacia
+                                            argumentum ad his. Ex eam alia facete scriptorem,
+                                            est autem aliquip detraxit at.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -300,9 +298,11 @@
                                         mailing &amp; calling
                                     </div>
                                     <div class="description">
-                                        Te eum doming eirmod, nominati pertinacia
-                                        argumentum ad his. Ex eam alia facete scriptorem,
-                                        est autem aliquip detraxit at.
+                                        <p>
+                                            Te eum doming eirmod, nominati pertinacia
+                                            argumentum ad his. Ex eam alia facete scriptorem,
+                                            est autem aliquip detraxit at.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -366,25 +366,15 @@
                         </div>
 
                         <div class="item">
-                            <i class="green large certificate icon"></i>
+                            <i class="green checkmark icon"></i>
                             <div class="content">
                                 <a class="header">feature title</a>
                                 <div class="description">
-                                    Te eum doming eirmod, nominati pertinacia
-                                    argumentum ad his. Ex eam alia facete scriptorem,
-                                    est autem aliquip detraxit at.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <i class="green large certificate icon"></i>
-                            <div class="content">
-                                <a class="header">feature title</a>
-                                <div class="description">
-                                    Te eum doming eirmod, nominati pertinacia
-                                    argumentum ad his. Ex eam alia facete scriptorem,
-                                    est autem aliquip detraxit at.
+                                    <p>
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his. Ex eam alia facete scriptorem,
+                                        est autem aliquip detraxit at.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -394,9 +384,25 @@
                             <div class="content">
                                 <a class="header">feature title</a>
                                 <div class="description">
-                                    Te eum doming eirmod, nominati pertinacia
-                                    argumentum ad his. Ex eam alia facete scriptorem,
-                                    est autem aliquip detraxit at.
+                                    <p>
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his. Ex eam alia facete scriptorem,
+                                        est autem aliquip detraxit at.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <i class="green checkmark icon"></i>
+                            <div class="content">
+                                <a class="header">feature title</a>
+                                <div class="description">
+                                    <p>
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his. Ex eam alia facete scriptorem,
+                                        est autem aliquip detraxit at.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -421,7 +427,7 @@
                                     <input type="email" name="email" id="email" placeholder="your e-maill address" value="" />
                                 </div>
                                 <div class="field">
-                                    <label for="fullname">fullname</label>
+                                    <label for="fullname">full name</label>
                                     <input type="text" name="fullname" placeholder="your name" id="fullname" value="" />
                                 </div>
                             </div>
@@ -447,7 +453,9 @@
 
             </section>
 
+            <div class="ui hidden horizontal divider">
 
+            </div>
         </article>
 
 
@@ -479,29 +487,31 @@
     <footer class="marginless paddless">
 
 
-        <section class="ui basic segment">
+        <section class="ui vertical segment">
 
             <div class="ui stackable centered middle aligned equal height padded grid">
                 <div class="four wide column">
-                    <h4 class="ui header">About</h4>
+                    <h4 class="ui header">information links</h4>
                     <div class="ui list">
-                        <a class="item" href="#0">Sitemap</a>
-                        <a class="item" href="#Contact">Contact Us</a>
-                        <a class="item" href="#root">Religious Ceremonies</a>
+                        <a class="item" href="#home">home page</a>
+                        <a class="item" href="#Contact">cookie policy</a>
+                        <a class="item" href="#0">terms of use &amp; privacy </a>
                         <a class="item" href="#home">back to top</a>
                     </div>
                 </div>
                 <div class="four wide column">
-                    <h4 class="ui header">Services</h4>
+                    <h4 class="ui header">useful links</h4>
                     <div class="ui animated list">
-                        <a class="item" href="#root">Banana Pre-Order</a>
-                        <a class="item" href="#root">DNA FAQ</a>
-                        <a class="item" href="#root">How To Access</a>
-                        <a class="item" href="#root">Favorite X-Men</a>
+                        <a class="item" href="#0">Sitemap</a>
+                        <a class="item" href="#0">FAQ</a>
+                        <a class="item" href="#0">support</a>
+                        <a class="item" href="#0">RSS feed</a>
                     </div>
                 </div>
                 <div class="left aligned seven wide column">
-                    <h4 class="ui header">Footer Header</h4>
+                    <h4 class="ui dividing header">website name</h4>
+                    <img class="ui tiny left floated circular image"
+                    src="./static/images/logo.png" alt="logo" />
                     <p>
                         Extra space for a call to action inside the footer that could
                         help re-engage users.
@@ -509,16 +519,20 @@
                 </div>
             </div>
 
-            <h6 class="ui center aligned tiny grey dividing header">
+            <h6 class="ui center aligned tiny grey stretching header">
                 &copy;
-                <span class="insertedDate">
-                    2019
+                <span id="insertedDate">
+
                 </span>
                 <span class="signature">
-                    semantic &amp; fomantic ui &nbsp;
+                    upToTime designs &nbsp;
                 </span>
                 all rights reserved
             </h6>
+
+            <div class="ui clearing divider">
+
+            </div>
         </section>
 
     </footer>
@@ -531,7 +545,7 @@
     <script src="./static/js/jQuery/jquery-3.3.1.js"></script>
     <script src="./static/css/fomantic/semantic.js"></script>
     <!-- base js -->
-    <script src="./custom.js"></script>
+    <script src="./static/customised/js/custom.js"></script>
 
     <!-- endinject js -->
 </body>

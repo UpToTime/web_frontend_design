@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0, width=device-width">
+    <meta name="robots" content="all">
+
+    <meta name="msapplication-TileColor" content="#060606">
+    <meta name="msapplication-TileImage" content="./manifests/ms-icon-144x144.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#060606">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#060606">
+    <link rel="apple-touch-icon" sizes="57x57" href="./manifests/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./manifests/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./manifests/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./manifests/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./manifests/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./manifests/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./manifests/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./manifests/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./manifests/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./manifests/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./manifests/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./manifests/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./manifests/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./manifests/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+
+    <meta name="description" content="
+    well designed,beautiful and modern
+    user interface html5 templates.
+    semantic tags and aria supported and good user experience
+    website theme templates,
+    ">
+    <meta name="keywords" content="html5 and css3 templates,
+    front-end templates,
+    fomantic ui templates
+    ,semantic ui templates,
+    ,free customisable website templates
+    ">
+    <meta name="author" content="stephen muiruri">
+
+
+    <title>clean shelf supermarket remake</title>
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="./static/css/fomantic/semantic.cyborg.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="./static/css/fomantic/semantic.css" media="(prefers-color-scheme: light),(prefers-color-scheme:no-preference)">
+    <link rel="stylesheet" href="./static/vendors/datatables.net/DataTables/css/dataTables.semanticui.css">
+    <link rel="stylesheet" href="./static/customised/css/custom.css">
+    <!-- endinject:css -->
+    <style type="text/css" media="screen">
+        .clipped-div {
+            background: #00B5AD;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            clip-path: circle(60% at 5% 50%);
+            /*clip-path: inset(0 0 0 50% round 10% 0% 0% 10%);
+*/
+        }
+@media (max-width:800px) {
+            .clipped-div {
+                background: #00B5AD;
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                min-height: 100%;
+                z-index: -1;
+
+                clip-path: circle(65% at 50% 0);
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- start of page header -->
+    <header>
+        <!-- start of top smallnav -->
+        <nav class="ui top fixed inverted mini borderless menu" id="topNav">
+
+            <div class="item">
+                <img class="logo" src="./static/images/logo.png" alt="" />
+            </div>
+            <div class="right header item" id="sidebarToggle" href="#">
+                brand name
+            </div>
+
+            <section class="menu right">
+
+                <!-- start of dropdown -->
+                <div class="ui floating simple dropdown item">
+                    <span class="text">Social links</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item">
+                            <i class="twitter icon"></i>
+                            twitter
+                        </div>
+
+                        <div class="item">
+                            <i class="facebook icon"></i>
+                            facebook
+                        </div>
+                        <div class="item">
+                            <i class="instagram icon"></i>
+                            instagram
+                        </div>
+
+                        <a class="item" href="mailto:brandname@mail.com">
+                            <i class="mail icon"></i>
+                            email
+                        </a>
+
+
+                    </div>
+                </div>
+                <!-- end of dropdown -->
+
+                <!-- start of dropdown -->
+                <div class="ui floating simple dropdown item">
+                    <span class="text">Call Us</span>
+                    <i class="phone icon"></i>
+                    <div class="menu">
+                        <div class="header">
+                            Phone One
+                        </div>
+                        <div class="item">
+                            07000000
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="header">
+                            Phone two
+                        </div>
+                        <div class="item">
+                            070000000
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="header">
+                            Phone three
+                        </div>
+                        <div class="item">
+                            070000000
+                        </div>
+
+                    </div>
+                </div>
+                <!--end of dropdown -->
+            </section>
+
+        </nav>
+        <!-- end of top smallnav -->
+        <div class="ui horizontal divider">
+
+        </div>
+
+        <section class="ui vertical inverted basic segment paddless-TB">
+
+            <!-- start of svg wave in header -->
+            <svg class="ui fluid centered image"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,224L48,202.7C96,181,192,139,288,149.3C384,160,480,224,576,261.3C672,299,768,309,864,261.3C960,213,1056,107,1152,85.3C1248,64,1344,128,1392,160L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+
+                </path>
+            </svg>
+            <!-- end of svg wave in header -->
+
+        </section>
+
+
+    </header>
+    <!-- end of page header -->
+
+    <!-- start of sticky main navigation menu -->
+    <aside class="ui padded grid column">
+        <nav class="ui sticky two item borderless padded menu tabbed"
+            data-sticks-to="#mainContent"
+            >
+            <div class="header item" data-tab="sign-up">
+                sign up
+            </div>
+            <div class="header item" data-tab="sign-in">
+                sign in
+            </div>
+        </nav>
+
+    </aside>
+
+    <!-- end of sticky main navigation menu -->
+
+
+    <!-- start of page contents -->
+    <main class="ui vertical massive basic segment" id="mainContent">
+
+        <article class="ui middle aligned centered stackable equal width horizontallly padded grid">
+            <!-- start of tab contents column -->
+            <section class="sixteen wide column">
+                <!-- start of one tab item -->
+                <div class="ui active tab vertical basic segment" data-tab="sign-up">
+
+                    <h3 class="ui left floated header">sign up</h3>
+                    <div class="ui clearing divider">
+
+                    </div>
+                    <section class="ui middle aligned stackable equal width padded grid">
+
+                        <!-- start of row -->
+                        <div class="row">
+                            <!-- start of a clipped background div -->
+                            <div class="clipped-div">
+
+                            </div>
+                            <!-- end of a clipped background div -->
+                            <figure class="left aligned column">
+                                <div class="ui vertical basic segment">
+                                    <h4 class="ui header">become a member</h4>
+                                    <p class="ui text">
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his. Ex eam alia facete scriptorem,
+                                        est autem aliquip detraxit at.
+                                        Usu ocurreret referrentur.
+                                    </p>
+
+                                    <img class="ui medium centered rounded image"
+                                    src="./static/images/logo.png"
+                                    alt="sign-up illustration" />
+                                    <!-- start of text content after image -->
+                                    <!-- start of text content after image -->
+                                </div>
+                            </figure>
+                            <!-- another column -->
+                            <div class="column">
+                                <section class="ui raised segment">
+                                    <form class="ui fluid form" action="."
+                                        method="post"
+                                        accept-charset="utf-8">
+                                        <!-- start of grouped input fields -->
+                                        <div class="three fields">
+                                            <div class="field">
+                                                <label>First name</label>
+                                                <input placeholder="First Name" type="text">
+                                            </div>
+                                            <div class="field">
+                                                <label for="middle_name">middle name</label>
+                                                <input type="text" name="middle_name"
+                                                id="middle_name"
+                                                placeholder="middle name"
+                                                value="" />
+                                            </div>
+                                            <div class="field">
+                                                <label>Last name</label>
+                                                <input placeholder="Last Name" type="text">
+                                            </div>
+                                        </div>
+                                        <!-- end of grouped input fields -->
+                                        <div class="field">
+                                            <label for="email">email</label>
+                                            <input type="email" name="email"
+                                            id="email"
+                                            placeholder="e-mail address"
+                                            value="" />
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="username">username</label>
+                                            <input type="text" name="username"
+                                            id="username"
+                                            placeholder="unique username"
+                                            value="" />
+                                        </div>
+
+                                        <div class="equal width fields">
+                                            <div class="field">
+                                                <label for="password1">password</label>
+                                                <input type="password" name="password1" id="password1"
+                                                placeholder="enter password"
+                                                value="" />
+                                            </div>
+
+                                            <div class="field">
+
+                                                <label for="password2">confrim password</label>
+                                                <input type="password" placeholder="confirm password"
+                                                name="password2" id="password2" value="" />
+                                            </div>
+
+                                        </div>
+
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input tabindex="0" class="hidden" type="checkbox">
+                                                <label>I agree to the Terms and Conditions</label>
+                                            </div>
+                                        </div>
+                                        <button class="ui circular large primary button" type="submit">Submit</button>
+                                    </form>
+
+                                </section>
+                            </div>
+                            <!-- end of row -->
+                        </div>
+                    </section>
+
+
+                </div>
+
+                <!-- end of one tab item -->
+                <div class="ui tab vertical  basic segment" data-tab="sign-in">
+
+                    <h3 class="ui left floated header">sign in</h3>
+                    <div class="ui clearing divider">
+
+                    </div>
+                    <section class="ui middle aligned centered stackable equal width padded grid">
+
+                        <!-- start of row -->
+                        <div class="row">
+                            <!-- start of a clipped background div -->
+                            <div class="clipped-div">
+
+                            </div>
+                            <!-- end of a clipped background div -->
+                            <figure class="left aligned column">
+
+                                <!-- start of text content after image -->
+                                <h4 class="ui header">sign in to your member account</h4>
+                                <p class="ui text">
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem,
+                                    est autem aliquip detraxit at.
+                                    Usu ocurreret referrentur at
+                                </p>
+                                <!-- start of text content after image -->
+
+                                <img class="ui medium centered rounded image"
+                                src="./static/images/semantic_logo.png"
+                                alt="sign-up illustration" />
+
+                            </figure>
+                            <!-- another column -->
+                            <div class="column">
+                                <section class="ui raised segment">
+                                    <form class="ui fluid large form" action="."
+                                        method="post"
+                                        accept-charset="utf-8">
+                                        <!-- start of  input field -->
+                                        <div class="field">
+                                            <label for="username">username</label>
+                                            <input type="text" name="username"
+                                            id="username"
+                                            placeholder="your username"
+                                            value="" />
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="email">email</label>
+                                            <input type="email" name="email"
+                                            id="email"
+                                            placeholder="e-mail address"
+                                            value="" />
+                                        </div>
+
+
+                                        <!-- end of input field -->
+
+                                        <div class="field">
+                                            <label for="password1">password</label>
+                                            <input type="password" name="password1" id="password1"
+                                            placeholder="enter password"
+                                            value="" />
+                                        </div>
+
+
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input tabindex="0" class="hidden" type="checkbox">
+                                                <label>remember me</label>
+                                            </div>
+                                        </div>
+                                        <button class="ui circular large primary submit button" type="submit">Sign in</button>
+                                    </form>
+
+                                </section>
+                            </div>
+                            <!-- end of row -->
+                        </div>
+                    </section>
+
+
+
+
+                </div>
+            </section>
+            <!-- end of tab contents column -->
+        </article>
+
+    </main>
+    <!-- end of page contents -->
+
+    <!-- start of footer  -->
+    <footer>
+        <section class="ui vertical inverted basic segment paddless-TB">
+            <svg class="ui fluid image"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,160L60,170.7C120,181,240,203,360,224C480,245,600,267,720,229.3C840,192,960,96,1080,69.3C1200,43,1320,85,1380,106.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+
+                </path>
+            </svg>
+
+
+
+            <div class="ui centered stackable equal height padded grid">
+
+                <div class="four wide column">
+                    <h4 class="ui grey header">brand name</h4>
+                    <address class="ui list">
+                        <div class="item">
+                            <i class="users icon"></i>
+                            <div class="content">
+                                Semantic UI
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="marker icon"></i>
+                            <div class="content">
+                                New York, NY
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="mail icon"></i>
+                            <div class="content">
+                                <a href="mailto:jack@semantic-ui.com">jack@semantic-ui.com</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="box icon"></i>
+                            <div class="content">
+                                <a href="http://www.semantic-ui.com">semantic-ui.com</a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui grey header">Services</h4>
+                    <div class="ui animated list">
+                        <a href="#" class="item">Banana Pre-Order</a>
+                        <a href="#" class="item">DNA FAQ</a>
+                        <a href="#" class="item">How To Access</a>
+                        <a href="#" class="item">Favorite X-Men</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui grey header">information links</h4>
+                    <div class="ui animated list">
+                        <a href="#" class="item">cookie policy</a>
+                        <a href="#" class="item">Frequently Asked Questions</a>
+                        <a href="#" class="item">Terms of use &amp; Privacy policy</a>
+                        <a href="#" class="item">Favorite X-Men</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui grey header">Shortcut links</h4>
+                    <div class="ui animated list">
+                        <a href="#" class="item">Sitemap</a>
+                        <a href="#" class="item">Contact Us</a>
+                        <a href="#" class="item">home</a>
+                        <a href="#" class="item">Gazebo Plans</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <h6 class="ui center aligned tiny grey header stretching">
+                &copy; 2019 semantic &amp; fomantic ui &nbsp; all rights reserved
+            </h6>
+            <div class="ui horizontal divider">
+
+            </div>
+        </section>
+    </footer>
+    <!-- end of footer  -->
+    <!-- inject js -->
+
+    <script src="./static/js/jQuery/jquery-3.3.1.js"></script>
+    <script src="./static/css/fomantic/semantic.js"></script>
+    <!-- base js -->
+
+    <!-- base js -->
+    <!--start of custom js -->
+    <script src="./static/customised/js/custom.js" type="text/javascript" charset="utf-8">
+
+    </script>
+
+    <!-- endinject js -->
+</body>
+</html>
