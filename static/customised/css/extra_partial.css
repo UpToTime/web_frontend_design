@@ -1,0 +1,480 @@
+/* extended custom styling used after patrial css includes
+elements with animation
+*/
+
+
+
+/* start of styling element with text flashing */
+.flashing_words:before {
+    content: attr(data-words-one);
+    -webkit-animation-name: flashing_word;
+    -moz-animation-name: flashing_word;
+    animation-name: flashing_word;
+
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    -webkit-animation-duration: 6000ms;
+    -moz-animation-duration: 6000ms;
+    animation-duration: 6000ms;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+/* flashing_words animation effect*/
+@keyframes flashing_word {
+    0% {
+        content: attr(data-words-one);
+        opacity: 0.5;
+    }
+    10% {
+        content: attr(data-words-one);
+        opacity: 1;
+    }
+    19% {
+        content: attr(data-words-one);
+        opacity: 0.5;
+    }
+    20% {
+        content: attr(data-words-two);
+        opacity: 0.5;
+    }
+    30% {
+        content: attr(data-words-two);
+        opacity: 1;
+    }
+    39% {
+        content: attr(data-words-two);
+        opacity: 0.5;
+    }
+    40% {
+        content: attr(data-words-three);
+        opacity: 0.5;
+    }
+    50% {
+        content: attr(data-words-three);
+        opacity: 1;
+    }
+    59% {
+        content: attr(data-words-three);
+        opacity: 0.5;
+    }
+    60% {
+        content: attr(data-words-four);
+        opacity: 0.5;
+    }
+    70% {
+        content: attr(data-words-four);
+        opacity: 1;
+    }
+    79% {
+        content: attr(data-words-four);
+        opacity: 0.5;
+    }
+    80% {
+        content: attr(data-words-five);
+        opacity: 0.5;
+    }
+    90% {
+        content: attr(data-words-five);
+        opacity: 1;
+    }
+
+    100% {
+        content: attr(data-words-five);
+        opacity: 0.5;
+    }
+}
+/* end of styling element with text flashing */
+
+/* start of marquee effect styling */
+.marquee_wrapper {
+    display: block;
+    width: 100%;
+    margin: 0.5vh auto;
+    padding: 1vh;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    text-align: inherit;
+    color: #000;
+    background-color: currentColor;
+}
+.marquee_wrapper .marquee_contents_scrolled {
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    /*width: 100%;*/
+    /*padding-left: 100%;*/
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: inherit;
+    -webkit-animation-name: marquee_scroll_effect;
+    -moz-animation-name: marquee_scroll_effect;
+    animation-name: marquee_scroll_effect;
+
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -webkit-animation-duration: 20000ms;
+    -moz-animation-duration: 20000ms;
+    animation-duration: 20000ms;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    animation-direction: alternate;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes marquee_scroll_effect {
+    from {
+        transform: translate(100%,0);
+    }
+    to {
+        transform: translate(-100%,0);
+    }
+}
+/* end of marquee effect styling */
+
+
+
+
+/* start of text with a glowing effect */
+
+.glow_text {
+    display: table;
+    font-size: 4.5rem;
+    /*margin-left: 5px;*/
+    text-align: center;
+
+}
+.glow_text.coloured {
+    color: #e7eef1;
+
+}
+.glow_text .glowing_item {
+    padding: 0;
+    display: table-cell;
+    text-align: center;
+    text-shadow: 0 0 10px #00b3ff;
+}
+.glow_text.activated .glowing_item {
+    /* activated class added thru JavaScript */
+    -webkit-animation-name: text-glow;
+    -moz-animation-name: text-glow;
+    animation-name: text-glow;
+
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+    /* animation-duration depends on number of letters
+multiplied by 500ms */
+    -webkit-animation-duration: 3500ms;
+    -moz-animation-duration: 3500ms;
+    animation-duration: 3500ms;
+
+    /* animation-iteration-count: infinite;*/
+}
+.glow_text.activated .glowing_item:nth-child(1) {
+    -webkit-animation-delay: 0ms;
+    -moz-animation-delay: 0ms;
+    animation-delay: 0ms;
+
+}
+.glow_text.activated .glowing_item:nth-child(2) {
+    -webkit-animation-delay: 250ms;
+    -moz-animation-delay: 250ms;
+    animation-delay: 250ms;
+
+}
+.glow_text.activated .glowing_item:nth-child(3) {
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    animation-delay: 500ms;
+
+}
+.glow_text.activated .glowing_item:nth-child(4) {
+    -webkit-animation-delay: 1000ms;
+    -moz-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+
+}
+.glow_text.activated .glowing_item:nth-child(5) {
+    -webkit-animation-delay: 1250ms;
+    -moz-animation-delay: 1250ms;
+    animation-delay: 1250ms;
+
+}
+
+.glow_text.activated .glowing_item:nth-child(6) {
+    -webkit-animation-delay: 1750ms;
+    -moz-animation-delay: 1750ms;
+    animation-delay: 1750ms;
+
+}
+.glow_text.activated .glowing_item:nth-child(7) {
+    -webkit-animation-delay: 2250ms;
+    -moz-animation-delay: 2250ms;
+    animation-delay: 2250ms;
+
+}
+.glow_text.activated .glowing_item:nth-child(8) {
+    -webkit-animation-delay: 2750ms;
+    -moz-animation-delay: 2750ms;
+    animation-delay: 2750ms;
+
+}
+.glow_text.activated .glowing_item:nth-child(9) {
+    -webkit-animation-delay: 3250ms;
+    -moz-animation-delay: 3250ms;
+    animation-delay: 3250ms;
+
+}
+
+
+
+
+@keyframes text-glow {
+
+    0%,100% {
+        color: #fff;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff;
+    }
+    5%,95% {
+        color: #111;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        text-shadow: none;
+    }
+
+}
+/*end of text with a glowing effect */
+
+
+
+/* start of text in svg styling and text is animated */
+.svg_text_wrapper {
+    width: 100%;
+    height: 15rem;
+    margin: 0 auto;
+    position: relative;
+
+}
+.svg_text {
+    width: 100%;
+    height: 50%;
+    vertical-align: middle;
+    color: #939393;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Passion7One';
+    font-size: 6rem;
+    text-transform: capitalize;
+    fill: green;
+    /* fill was green */
+    stroke: red;
+    fill-opacity: 1;
+    stroke-width: 1.5px;
+    letter-spacing: 1px;
+    stroke-linejoin: round;
+    /*stroke-dasharray: 0, 100%;*/
+
+}
+.svg_text.has_visibility_efx.activated {
+    stroke-linejoin: round;
+    stroke-dasharray: 0, 100%;
+    -webkit-animation-name: svg_text_animation;
+    -moz-animation-name: svg_text_animation;
+    animation-name: svg_text_animation;
+
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    -webkit-animation-duration: 7000ms;
+    -moz-animation-duration: 7000ms;
+    animation-duration: 7000ms;
+
+    -webkit-animation-delay: 20ms;
+    -moz-animation-delay: 20ms;
+    animation-delay: 20ms;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    /*animation:forwards*/
+}
+
+/* start of animation for svg text*/
+
+@keyframes svg_text_animation {
+    /* use ms insteadof seconds
+    1s = 1000ms i.e 0.5s = 500ms */
+    0% {
+        stroke-dasharray: 0, 100%;
+        fill: transparent;
+    }
+    90% {
+        stroke-dasharray: 100%;
+        fill: transparent;
+    }
+    100% {
+        stroke-dasharray: 120%;
+        fill: #01da1bfd;
+    }
+}
+
+/* end of animation for svg text*/
+
+
+/* end of text in svg styling and text is animated */
+
+
+/* start of wave like svg with a wave effect */
+
+/* start of adjust wave color */
+.svg_wave .inverted_color {
+    fill: #fff;
+}
+/* end of adjust wave color */
+
+.svg_wave .waving_path {
+    animation-name: waving_effect;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* start of stop wave effect on a certain element */
+.svg_wave .unwaving_path {
+    animation-delay: 1s;
+    animation-play-state: paused;
+}
+/* end of stop wave effect on a certain element */
+
+/* start of waving like animation effect */
+@keyframes waving_effect {
+    0% {
+        d: path(
+        "M0,192 C220,100,400,100,660,192 C880,290,1100,290,1440,192L1440 400 L0 400"
+        );
+    }
+    /* change 192 to 100 and from 0%*/
+    25% {
+        d: path(
+        "M0,100 C220,100,400,292,660,292 C880,292,1100,100,1440,100 L1440 400 L0 400"
+        );
+    }
+    /* change 100 and 290 from above 0% */
+    50% {
+        d: path(
+        "M0,192 C220,290,400,290,660,192 C880,100,1100,100,1440,192L1440 400 L0 400"
+        );
+    }
+    /* change based on 25% */
+    75% {
+        d: path(
+        "M0,292 C220,292,400,100,660,100 C880,100,1100,292,1440,292 L1440 400 L0 400"
+        );
+    }
+    100% {
+        d: path(
+        "M0,192 C220,100,400,100,660,192 C880,290,1100,290,1440,192L1440 400 L0 400"
+        );
+    }
+}
+/* end of waving like animation effect */
+
+
+/* end of wave like svg with a wave effect */
+
+
+
+/* start of styling page level svg element */
+.svg_wrapper {
+    min-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    outline: 0;
+
+    vertical-align: top !important;
+    line-height: 0 !important;
+    color: #fff;
+    background-color: inherit;
+
+    /* inverted color code is
+    #060606*/
+}
+
+.svg_slanted {
+    /* display: block ;*/
+    height: auto;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    vertical-align: top;
+    line-height: 0;
+    color: #fff;
+    fill: #4c545736;
+    fill-opacity: 1;
+}
+
+/* end of styling page level svg element */
+
+
+
+
+
+/* start of styling for image with svg effects */
+
+.svg_rect_effect {
+    width: inherit;
+    height: 100%;
+    -webkit-clip-path: url(#theSVGRects);
+    clip-path: url(#theSVGRects);
+
+
+}
+.overlay_rect_effect {
+    width: 100%;
+    height: 100%;
+}
+
+.splasher_svg {
+    background-color: transparent;
+}
+
+.splashed_background {
+    /* clip inline svg to element */
+    -webkit-clip-path: url("#theSVGSplashEfx");
+    clip-path: url("#theSVGSplashEfx");
+
+}
+
+/* end of styling for image with svg effects */

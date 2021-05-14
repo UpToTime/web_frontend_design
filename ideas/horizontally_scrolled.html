@@ -1,0 +1,650 @@
+<!DOCTYPE HTML>
+
+<html itemscope itemtype="https://schema.org/WebPage" dir="ltr" lang="en">
+
+<head>
+    <!-- start of basic meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0">
+
+    <meta name="robots" content="all">
+
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" ">
+
+    <!-- end  of basic meta tags -->
+
+    <!-- start of manifestation meta tags -->
+    <meta name="msapplication-TileColor" content="#060606">
+
+    <meta name="msapplication-TileImage"
+    content="./manifests/ms-icon-144x144.png">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#060606">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#060606">
+
+    <link rel="apple-touch-icon" sizes="57x57"
+    href="./manifests/apple-icon-57x57.png">
+
+    <link rel="apple-touch-icon" sizes="60x60"
+    href="./manifests/apple-icon-60x60.png">
+
+    <link rel="apple-touch-icon" sizes="72x72"
+    href="./manifests/apple-icon-72x72.png">
+
+    <link rel="apple-touch-icon" sizes="76x76"
+    href="./manifests/apple-icon-76x76.png">
+
+    <link rel="apple-touch-icon" sizes="114x114"
+    href="./manifests/apple-icon-114x114.png">
+
+    <link rel="apple-touch-icon" sizes="120x120"
+    href="./manifests/apple-icon-120x120.png">
+
+    <link rel="apple-touch-icon" sizes="144x144"
+    href="./manifests/apple-icon-144x144.png">
+
+    <link rel="apple-touch-icon" sizes="152x152"
+    href="./manifests/apple-icon-152x152.png">
+
+    <link rel="apple-touch-icon" sizes="180x180"
+    href="./manifests/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"
+    href="./manifests/android-icon-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+    href="./manifests/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="96x96"
+    href="./manifests/favicon-96x96.png">
+
+    <link rel="icon" type="image/png" sizes="16x16"
+    href="./manifests/favicon-16x16.png">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon"
+    href="./manifests/favicon.ico">
+
+    <link rel="manifest" href="./manifest.json">
+    <!-- end of manifestation meta tags -->
+
+    <title> </title>
+    <!-- start of social meta tags -->
+    <!-- COMMON TAGS -->
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="60 characters max for Google">
+    <meta itemprop="description" content="160 characters description">
+    <meta itemprop="image" content=".logo.png">
+    <!-- Open Graph general (Facebook, Pinterest & LinkedIn) -->
+    <meta property="og:title"
+    content="60 characters max for Open graph (Facebook, Pinterest, Linke">
+
+    <meta property="og:description"
+    content="68 characters for Open graph (Facebook, Pinterest, LinkedIn">
+    <meta property="og:image" content="/static/1200by628rec.png">
+
+    <meta property="og:url" content=".">
+    <meta property="og:site_name" content="Domain name without .com">
+    <meta property="og:locale" content="en">
+
+    <meta property="og:type" content="website">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="60 characters max for twiiter">
+    <meta property="twitter:description" content="120 ">
+    <meta property="twitter:image:src" content="">
+
+    <!-- end of social meta tags -->
+    <!-- start css injection -->
+    <link rel="stylesheet" type="text/css"
+    href="./static/frameworks/fomantic/semantic.css"
+    media="(prefers-color-scheme: dark)">
+
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/frameworks/fomantic/semantic.css"
+    media="(prefers-color-scheme: light),
+    (prefers-color-scheme:no-preference)">
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/base.css"
+    media="">
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/partial.css"
+    media="">
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/extra_partial.css"
+    media="">
+    <!-- not necessary
+                                                                                                                                                                                                                                    <link rel="stylesheet"
+                                                                                                                                                                                                                                    href="./static/frameworks/javascript/plugins/datatables.net/DataTables/css/dataTables.semanticui.css">
+                                                                                                                                                                                                                                -->
+    <!-- end css injection -->
+
+    <!-- start of css dynamic styling -->
+    <style media="screen">
+
+        .blurr_wrapper:hover .blurred_internally {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+        }
+        .blurr_wrapper:hover .blurred_externally {
+            /* blur the outer elements */
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+        #Horizontal_wrapper .columnY {
+            overflow-x: scroll;
+
+            /* white-space: nowrap;*/
+        }
+        .marquee_content_item {
+            background-color: rgba(0,0,0,0.6);
+        }
+        .marquee_content_item .button {
+            margin-top: 2%;
+        }
+        .marquee_content_item .left.floated.button {
+            margin-left: 3%;
+        }
+
+        .recentered_image {
+            display: block;
+            position: relative;
+            z-index: -1;
+        }
+
+        .content_info {
+            position: absolute;
+            left: 0;
+            bottom: 10%;
+            z-index: 1;
+            margin-bottom: 0;
+            color: whitesmoke;
+        }
+        .push_down {
+            margin-top: 2% !important;
+        }
+        .plain_link {
+            float: left;
+            font-size: 2rem;
+        }
+        .Horizontal_page_wrapper {
+            display: block;
+            width: 100%;
+            overflow-x: scroll;
+            white-space: nowrap;
+            margin: 0 auto;
+            padding: 0;
+
+        }
+        .single_page {
+            display: inline-block;
+            min-width: 100vw;
+            /* height: auto;*/
+            white-space: initial;
+        }
+        .image_frame {
+            position: relative;
+            margin: 0 auto;
+            padding: 0;
+            width: 300px;
+            height: 300px;
+            /*border: 2px solid black;*/
+            border-radius: 8px;
+            color: #fff;
+            /*box-shadow: 3px 3px 25px 5px currentColor;*/
+            background-color: currentColor;
+        }
+        .image_frame .framed_image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0 auto;
+            border-radius: inherit;
+        }
+        .pile_effect {
+            position: relative;
+            border-radius: 8px;
+        }
+        .pile_effect::before,.pile_effect::after {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: visible;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(34, 36, 38, 0.15);
+            border-radius: inherit;
+            background-color: inherit;
+
+        }
+        .pile_effect::before {
+            -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+            z-index: -2;
+        }
+        .pile_effect::after {
+            -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+            z-index: -1;
+        }
+
+        .flipper_wrapper {
+            display: block;
+            width: 90%;
+            height: 200px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .flipped_content {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            /* transform-style enables translation on z-axis */
+            transition-property: transform;
+            transition-duration: 1500ms;
+            transition-timing-function: ease;
+        }
+        .flipped_content_item {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            /*all sides zero value centers elements*/
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+
+
+        .flipped_content .infront_flip {
+            /* raised above other elements */
+            transform: translateZ(2.5rem);
+
+        }
+        .flipped_content .behind_flip {
+            /* turned to be behind sinling element */
+            transform: rotateY(180deg);
+
+
+        }
+
+        .flipped_content_item .moved_down {
+            transform: translateY(50%);
+        }
+        .flipped_content_item .moved_above {
+            transform: translateY(50px) translateZ(20px);
+        }
+
+        .flipper_wrapper:hover .flipped_content {
+            transform: rotateY(180deg);
+            /* 180deg == 0.5turn */
+        }
+
+        .overlayed_content {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            width: 90%;
+            height: 500px;
+
+        }
+        .overlay_right {
+            display: inline-block;
+            height: 70%;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .overlay_left {
+            display: inline-block;
+            height: auto;
+            /*margin-left: -40px;*/
+            position: absolute;
+            bottom: 20%;
+            background-color: rgba(0,0,0,0.85);
+        }
+
+        .gradient {
+            color: inherit;
+            mix-blend-mode: difference;
+            background-image: linear-gradient(to
+            bottom ,
+            currentColor
+            90%,transparent);
+        }
+        .td-img {
+            margin-bottom: 1vh;
+        }
+@media only screen and (min-width:768px) {
+            .overlay_left {
+                right: -5%;
+                bottom: 35%;
+            }
+
+        }
+
+    </style>
+    <!-- start of css dynamic styling -->
+</head>
+
+<body class="">
+
+    <!-- start of page header contents -->
+    <header class="gradient single_pageY min_banner_w">
+
+        <!-- start of top fixed smallnav -->
+        <nav class="ui top fixed borderless secondary link menu"
+            id="SubNavigation">
+
+
+            <a href="#PageTop" class="header item"
+                accesskey="h">
+                <img class="logo raised_shadowed"
+                src="./static/images/logo.png"
+                alt="uon logo"
+                width="2.5rem"
+                height="100%" />
+                &nbsp;
+                <span class="uppercased_text">
+                    up to time
+                </span>
+            </a>
+
+            <div class="right menu no_mobile">
+
+                <!-- start of social media links -->
+
+                <a class="fitted item"
+                    href="https://www.twitter.com"
+                    title="visit our twitter page">
+                    <i class="inverted circular twitter icon"></i>
+
+                </a>
+                <a class="fitted item"
+                    title="facebook page">
+                    <i class="inverted circular facebook icon"></i>
+
+                </a>
+                <a class="fitted item"
+                    title="youtube channel">
+                    <i class="inverted circular youtube icon"></i>
+
+                </a>
+
+                <a class="fitted item" href="mailto:pr@uonbi.ac.ke"
+                    title="support email address">
+                    <i class="inverted circular mail icon"></i>
+
+                </a>
+
+                <a class="fitted item"
+                    title="our main phone number"
+                    href="tel:(+254) 020-4910000">
+                    <i class="inverted circular clockwise rotated phone icon"></i>
+
+                </a>
+                <!-- end of social media links -->
+
+            </div>
+
+
+            <!-- start of dropdown -->
+            <div class="right menu no_computer">
+                <button class="ui floating simple dropdown item"
+                    tabindex="0">
+                    <span class="text header">get in touch</span>
+                    <i class="dropdown icon"></i>
+                    <nav class="menu" tabindex="-1">
+                        <!-- start of social media links -->
+
+                        <a class="item"
+                            href="https://www.twitter.com">
+                            <i class="twitter t icon"></i>
+                            twitter page
+                        </a>
+                        <a class="item">
+                            <i class="facebook f icon"></i>
+                            facebook page
+                        </a>
+                        <a class="item">
+                            <i class="youtube y icon"></i>
+                            youtube channel
+                        </a>
+
+                        <a class="item" href="mailto:pr@uonbi.ac.ke">
+                            <i class="mail icon"></i>
+                            support email
+                        </a>
+
+                        <a class="item"
+                            title="our phone number"
+                            href="tel:(+254) 020-4910000">
+                            <i class="clockwise rotated phone icon"></i>
+                            phone number
+                        </a>
+                        <!-- end of social media links -->
+
+
+                    </nav>
+                </button>
+
+            </div>
+
+            <!-- end of dropdown -->
+
+        </nav>
+        <!-- end of top fixed smallnav -->
+
+        <!-- start of header text content i.e call to action contents -->
+
+        <div class="min_banner_wrapper below_fixed_menu plain_neomorph">
+
+            <div class="ui hidden section divider" role="separator">
+
+            </div>
+            <div class="ui middle aligned stackable relaxed padded grid">
+
+
+                <section class="left floated left aligned seven wide column">
+
+
+                    <div class="ui hidden horizontal divider">
+
+                    </div>
+
+                    <a class="ui large basic icon button" href="#">
+                        check out contents <i class="down arrow icon"></i>
+                    </a>
+
+
+
+                    <div class="aspect_container">
+                        <div class="aspect_contents">
+                            <img class="fluid object_fitted"
+                            src="./static/images/horizon.jpg" alt="" />
+                            <h2 class="ui bottom attached basic label">squared I items</h2>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- start of carousel images in 3D -->
+                <section class="middle aligned eleven wide column">
+
+                    <figure class="aspect_sq overlayed_contenut">
+
+                        <img class="overlay_righty"
+                        src="./static/images/light-bulb.jpg"
+                        alt="alt image tag"
+
+                        />
+                        <figcaption class="no_mobile yplain_figcaption_text overlay_left">
+                            Te eum doming eirmod, nominati
+                            pertinacia argumentum ad his.
+                            Ex eam alia facete scriptorem, est autem
+                            aliquip detraxit at. Usu ocurreret referrentur
+                            at,cu epicurei appellantur vix.
+                            Cum ea laoreet recteque electram,
+                            eosalteru ...
+                        </figcaption>
+                    </figure>
+
+
+                </section>
+                <!-- end of carousel images in 3D -->
+
+
+            </div>
+
+
+        </div>
+
+        <!-- end of header text content i.e call to action contents -->
+
+    </header>
+    <!-- end of page header contents -->
+
+
+
+
+    <div class="ui vertical basic segment Horizontal_page_wrapper unscrolled">
+        <!-- start of page contents wrapper -->
+        <div class="ui centered stackable padded grid single_page" id="MainContent">
+
+            <!-- start of main page contents -->
+
+            <figure class="no_mobile no_computer image_frame pile_effect aspect_sq">
+
+                <img class="framed_image"
+                src="./static/images/semantic_logo.png"
+                alt="alt image tag"
+                width="90%"
+                height="90%" />
+
+            </figure>
+
+
+            <div class="ui hidden section divider">
+
+            </div>
+
+            <figure class="aspect_sq overlayed_contenut">
+
+                <img class="overlay_righty"
+                src="./static/images/light-bulb.jpg"
+                alt="alt image tag"
+                width="100%"
+                height="100%" />
+                <figcaption class="no_mobile plain_figcaption_text overlay_left">
+                    Te eum doming eirmod, nominati
+                    pertinacia argumentum ad his.
+                    Ex eam alia facete scriptorem, est autem
+                    aliquip detraxit at. Usu ocurreret referrentur
+                    at,cu epicurei appellantur vix.
+                    Cum ea laoreet recteque electram,
+                    eosalteru ...
+                </figcaption>
+            </figure>
+
+
+            <div class="left aligned eight wide column">
+
+                <figure class="aspect_sq">
+
+                    <img class="contents framed_imagie"
+                    src="./static/images/logo.png"
+                    alt="alt image tag"
+                    />
+                    <figcaption class="ui bottom attached basic
+                        label">
+                        hellll helll
+                    </figcaption>
+                </figure>
+            </div>
+
+
+            <!-- end of main page contents -->
+
+        </div>
+        <!-- end of page contents wrapper -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start of footer  -->
+
+    <!-- end of footer  -->
+
+
+    <!-- start of inject js -->
+    <noscript>
+        please enable JavaScript.It's required for smooth experience
+    </noscript>
+
+    <script src="./static/frameworks/javascript/jquery-3.3.1.js"
+        type="text/javascript" charset="utf-8">
+
+    </script>
+
+    <script src="./static/frameworks/fomantic/semantic.js" type="text/javascript"
+        charset="utf-8">
+    </script>
+    <!-- end of inject js -->
+
+    <!--start of custom js -->
+    <script src="./static/customised/js/base.js" type="text/javascript"
+        charset="utf-8">
+    </script>
+    <script type="text/javascript" charset="utf-8"
+        src="./static/frameworks/javascript/plugins/datatables.net/DataTables/js/jquery.dataTables.js">
+    </script>
+    <script type="text/javascript" charset="utf-8"
+        src="./static/frameworks/javascript/plugins/datatables.net/DataTables/js/dataTables.semanticui.js">
+    </script>
+    <script src="./static/customised/js/Dtables.js"
+        type="text/javascript" charset="utf-8">
+    </script>
+
+    <script type="application/javascript" charset="utf-8">
+        $(document).ready(function() {
+            //jquery functions
+        }); //end of ready function
+    </script>
+    <!--end of custom js -->
+
+</body>
+
+</html>

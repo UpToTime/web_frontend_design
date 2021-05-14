@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+
+<html itemscope itemtype="https://schema.org/WebPage" dir="ltr" lang="en">
+
+<head>
+    <!-- start of basic meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0">
+
+    <meta name="robots" content="all">
+
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" ">
+
+    <!-- end  of basic meta tags -->
+
+    <!-- start of manifestation meta tags -->
+    <meta name="msapplication-TileColor" content="#060606">
+
+    <meta name="msapplication-TileImage"
+    content="./manifests/ms-icon-144x144.png">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#060606">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#060606">
+
+    <link rel="apple-touch-icon" sizes="57x57"
+    href="./manifests/apple-icon-57x57.png">
+
+    <link rel="apple-touch-icon" sizes="60x60"
+    href="./manifests/apple-icon-60x60.png">
+
+    <link rel="apple-touch-icon" sizes="72x72"
+    href="./manifests/apple-icon-72x72.png">
+
+    <link rel="apple-touch-icon" sizes="76x76"
+    href="./manifests/apple-icon-76x76.png">
+
+    <link rel="apple-touch-icon" sizes="114x114"
+    href="./manifests/apple-icon-114x114.png">
+
+    <link rel="apple-touch-icon" sizes="120x120"
+    href="./manifests/apple-icon-120x120.png">
+
+    <link rel="apple-touch-icon" sizes="144x144"
+    href="./manifests/apple-icon-144x144.png">
+
+    <link rel="apple-touch-icon" sizes="152x152"
+    href="./manifests/apple-icon-152x152.png">
+
+    <link rel="apple-touch-icon" sizes="180x180"
+    href="./manifests/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"
+    href="./manifests/android-icon-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+    href="./manifests/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="96x96"
+    href="./manifests/favicon-96x96.png">
+
+    <link rel="icon" type="image/png" sizes="16x16"
+    href="./manifests/favicon-16x16.png">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon"
+    href="./manifests/favicon.ico">
+
+    <link rel="manifest" href="./manifest.json">
+    <!-- end of manifestation meta tags -->
+
+    <title> </title>
+    <!-- start of social meta tags -->
+    <!-- COMMON TAGS -->
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="60 characters max for Google">
+    <meta itemprop="description" content="160 characters description">
+    <meta itemprop="image" content=".logo.png">
+    <!-- Open Graph general (Facebook, Pinterest & LinkedIn) -->
+    <meta property="og:title"
+    content="60 characters max for Open graph (Facebook, Pinterest, Linke">
+
+    <meta property="og:description"
+    content="68 characters for Open graph (Facebook, Pinterest, LinkedIn">
+    <meta property="og:image" content="/static/1200by628rec.png">
+
+    <meta property="og:url" content=".">
+    <meta property="og:site_name" content="Domain name without .com">
+    <meta property="og:locale" content="en">
+
+    <meta property="og:type" content="website">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="60 characters max for twiiter">
+    <meta property="twitter:description" content="120 ">
+    <meta property="twitter:image:src" content="">
+
+    <!-- end of social meta tags -->
+    <!-- start css injection -->
+    <link rel="stylesheet" type="text/css"
+    href="./static/frameworks/fomantic/semantic.slate.css"
+    media="(prefers-color-scheme: dark)">
+
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/frameworks/fomantic/semantic.css"
+    media="(prefers-color-scheme: light),
+    (prefers-color-scheme:no-preference)">
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/base.css"
+    media="">
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/partial.css"
+    media="">
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/extra_partial.css"
+    media="">
+    <!-- end css injection -->
+
+    <!-- start of css dynamic styling -->
+    <style>
+        .plain_logo_img {
+            height: 10rem;
+            margin: 0 auto;
+        }
+        .figure_text {
+            text-align: inherit;
+            margin: 0 auto;
+            padding: 2px;
+            max-width: 80ch;
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #f5f5f5;
+        }
+        .touch_slider_wrapper {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .slides_wrapper {
+            width: 500%;
+            height: 100%;
+            display: flex;
+        }
+        .slide_content {
+
+            width: 20%;
+            height: 100%;
+            margin: 0;
+
+        }
+        .slide_image_item {
+            width: 100%;
+            height: 100%;
+        }
+        .slide_indicators {
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            display: flex;
+        }
+        .touch_indicator {
+            height: 10px;
+            width: 50px;
+            color: gray;
+            border: 2px solid #000;
+
+        }
+        input[name="touch_controller"] {
+            display: none;
+            visibility: hidden;
+        }
+        #TouchControlOne:checked ~ .moveable {
+            margin-left: 0;
+        }
+        #TouchControlTwo:checked ~ .moveable {
+            margin-left: -20%;
+        }
+        #TouchControlThree:checked ~ .moveable {
+            margin-left: -40%;
+        }
+        #TouchControlFour:checked ~ .moveable {
+            margin-left: -60%;
+        }
+        #TouchControlFive:checked ~ .moveable {
+            margin-left: -80%;
+        }
+
+    </style>
+    <!-- start of css dynamic styling -->
+</head>
+
+<body>
+    <!-- start of page header contents -->
+    <header class="unmargin_vertically unpad">
+        <!-- start of top navigation menu -->
+
+        <nav class="ui top fixed borderless link menu">
+            <!-- start of top navigation menu contents i.e links -->
+            <a class="item" href="#">
+                <i class="facebook f icon"></i>
+            </a>
+            <!-- end of top navigation menu contents i.e links -->
+        </nav>
+
+        <!-- end of top navigation menu -->
+
+        <!-- start of call to action contents -->
+
+        <div class="ui vertical basic fitted segment below_fixed_menu">
+            <!-- start of brand logo -->
+            <figure class="">
+                <img class="ui centered image plain_logo_img drop_shadowed"
+                src="./static/images/logo_clear.png"
+                alt="brand logo"
+                width="100%"
+                height="10rem" />
+                <figcaption class="ui center aligned large header uppercased_text">
+                    sample short tagline
+                </figcaption>
+            </figure>
+            <!-- end of brand logo -->
+
+            <div class="ui hidden horizontal divider" role="separator">
+
+            </div>
+
+
+            <!-- start of header text contents -->
+            <div class="ui centered middle aligned stackable equal width grid">
+
+                <section class="left aligned eight wide column">
+                    <h1 class="ui header uppercased_text">
+                        ad copy heading
+                        <span class="sub header lowercased_text">
+
+                            Te eum doming eirmod, nominati pertinacia
+                            argumentum ad his.
+                        </span>
+
+                    </h1>
+
+                    <a class="ui circular button stateful" href="#">cta a</a>
+                </section>
+
+
+                <section class="middle aligned twelve wide column">
+
+                    <div class="touch_slider_wrapper positioned_relative">
+
+
+
+                        <!-- start of touch_controller images -->
+
+                        <div class="slides_wrapper">
+
+                            <!-- start of hidden radio inputs -->
+                            <input type="radio"
+                            name="touch_controller"
+                            id="TouchControlOne"
+                            checked="true" />
+
+                            <input type="radio"
+                            name="touch_controller"
+                            id="TouchControlTwo" />
+
+                            <input type="radio"
+                            name="touch_controller"
+                            id="TouchControlThree" />
+
+                            <input type="radio"
+                            name="touch_controller"
+                            id="touch_control_one" />
+
+                            <input type="radio"
+                            name="touch_controller"
+                            id="TouchControlFour" />
+
+                            <input type="radio"
+                            name="touch_controller"
+                            id="TouchControlFive" />
+                            <!-- end of hidden radio inputs -->
+
+
+
+
+                            <figure class="slide_content moveable">
+                                <img class="slide_image_item"
+                                src="./static/images/logo.png"
+                                height="100%"
+                                width="100%"
+                                alt="sample image tag" />
+                                <figcaption class="slide_text_item figure_text
+                                    capitalised_text">
+                                    text blah blah blha
+                                </figcaption>
+                            </figure>
+                            <figure class="slide_content">
+                                <img class="slide_image_item"
+                                src="./static/images/semantic_logo.png"
+                                height="100%"
+                                width="100%"
+                                alt="sample image tag" />
+                                <figcaption class="slide_text_item figure_text
+                                    capitalised_text">
+                                    text blah blah blha
+                                </figcaption>
+                            </figure>
+                            <figure class="slide_content">
+                                <img class="slide_image_item"
+                                src="./static/images/logo.png"
+                                height="100%"
+                                width="100%"
+                                alt="sample image tag" />
+                                <figcaption class="slide_text_item figure_text
+                                    capitalised_text">
+                                    text blah blah blha
+                                </figcaption>
+                            </figure>
+                            <figure class="slide_content">
+                                <img class="slide_image_item"
+                                src="./static/images/logo.png"
+                                height="100%"
+                                width="100%"
+                                alt="sample image tag" />
+                                <figcaption class="slide_text_item figure_text
+                                    capitalised_text">
+                                    text blah blah blha
+                                </figcaption>
+                            </figure>
+                            <figure class="slide_content">
+                                <img class="slide_image_item"
+                                src="./static/images/logo.png"
+                                height="100%"
+                                width="100%"
+                                alt="sample image tag" />
+                                <figcaption class="slide_text_item figure_text
+                                    capitalised_text">
+                                    text blah blah blha
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end of touch_controller images -->
+                        <!-- start of image wrapped in label -->
+                        <div class="slide_indicators">
+                            <label for="TouchControlOne"
+                                class="touch_indicator"
+                                id="SlideOne">
+
+                            </label>
+                            <label for="TouchControlTwo"
+                                class="touch_indicator"
+                                id="SlideTwo">
+
+                            </label>
+
+                            <label for="TouchControlThree"
+                                class="touch_indicator"
+                                id="SlideThree">
+
+                            </label>
+
+                            <label for="TouchControlFour"
+                                class="touch_indicator"
+                                id="SlideFour">
+
+                            </label>
+
+                            <label for="TouchControlFive"
+                                class="touch_indicator"
+                                id="SlideFive">
+
+                            </label>
+                        </div>
+
+                        <!-- end of image wrapped in label -->
+
+
+                    </div>
+
+
+                </section>
+
+            </div>
+            <!-- end of header text contents -->
+
+
+
+
+        </div>
+
+        <!-- end of call to action contents -->
+
+
+
+
+    </header>
+    <!-- end of page header contents -->
+
+    <!-- start of main page navigation -->
+
+    <!-- end of main page navigation -->
+
+    <!-- end of main page contents -->
+
+    <!-- start of footer  -->
+
+    <!-- end of footer  -->
+
+
+    <!-- start of inject js -->
+    <noscript>
+        please enable JavaScript.It's required for smooth experience
+    </noscript>
+
+    <script src="./static/frameworks/javascript/jquery-3.3.1.js"
+        type="text/javascript" charset="utf-8">
+
+    </script>
+
+    <script src="./static/frameworks/fomantic/semantic.js" type="text/javascript"
+        charset="utf-8">
+    </script>
+    <!-- end of inject js -->
+
+    <!--start of custom js -->
+    <script src="./static/customised/js/base.js" type="text/javascript"
+        charset="utf-8">
+    </script>
+
+    <script type="application/javascript" charset="utf-8">
+        $(document).ready(function() {
+            //jquery functions
+        }); //end of ready function
+    </script>
+    <!--end of custom js -->
+
+</body>
+
+</html>

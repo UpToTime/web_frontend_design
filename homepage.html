@@ -1,0 +1,964 @@
+<!DOCTYPE HTML>
+
+<html dir="ltr" lang="en">
+
+<head>
+    <!-- start of basic meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="height=device-height,
+    width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    target-densitydpi=device-dpi">
+
+    <meta name="robots" content="all">
+
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" ">
+
+    <!-- end  of basic meta tags -->
+
+    <!-- start of manifestation meta tags -->
+    <meta name="msapplication-TileColor" content="#060606">
+
+    <meta name="msapplication-TileImage"
+    content="./manifests/ms-icon-144x144.png">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#060606">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#060606">
+
+    <link rel="apple-touch-icon" sizes="57x57"
+    href="./manifests/apple-icon-57x57.png">
+
+    <link rel="apple-touch-icon" sizes="60x60"
+    href="./manifests/apple-icon-60x60.png">
+
+    <link rel="apple-touch-icon" sizes="72x72"
+    href="./manifests/apple-icon-72x72.png">
+
+    <link rel="apple-touch-icon" sizes="76x76"
+    href="./manifests/apple-icon-76x76.png">
+
+    <link rel="apple-touch-icon" sizes="114x114"
+    href="./manifests/apple-icon-114x114.png">
+
+    <link rel="apple-touch-icon" sizes="120x120"
+    href="./manifests/apple-icon-120x120.png">
+
+    <link rel="apple-touch-icon" sizes="144x144"
+    href="./manifests/apple-icon-144x144.png">
+
+    <link rel="apple-touch-icon" sizes="152x152"
+    href="./manifests/apple-icon-152x152.png">
+
+    <link rel="apple-touch-icon" sizes="180x180"
+    href="./manifests/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"
+    href="./manifests/android-icon-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+    href="./manifests/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="96x96"
+    href="./manifests/favicon-96x96.png">
+
+    <link rel="icon" type="image/png" sizes="16x16"
+    href="./manifests/favicon-16x16.png">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon"
+    href="./manifests/favicon.ico">
+
+    <link rel="manifest" href="./manifest.json">
+    <!-- end of manifestation meta tags -->
+
+    <title> basic home page design </title>
+    <!-- start of social meta tags -->
+    <!-- COMMON TAGS -->
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="60 characters max for Google">
+    <meta itemprop="description" content="160 characters description">
+    <meta itemprop="image" content=".logo.png">
+    <!-- Open Graph general (Facebook, Pinterest & LinkedIn) -->
+    <meta property="og:title"
+    content="60 characters max for Open graph (Facebook, Pinterest, Linke">
+
+    <meta property="og:description"
+    content="68 characters for Open graph (Facebook, Pinterest, LinkedIn">
+    <meta property="og:image" content="/static/1200by628rec.png">
+
+    <meta property="og:url" content=".">
+    <meta property="og:site_name" content="Domain name without .com">
+    <meta property="og:locale" content="en">
+
+    <meta property="og:type" content="website">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="60 characters max for twiiter">
+    <meta property="twitter:description" content="120 ">
+    <meta property="twitter:image:src" content="">
+
+    <!-- end of social meta tags -->
+    <!-- start css injection -->
+    <link rel="stylesheet" type="text/css"
+    href="./static/frameworks/fomantic/semantic.cyborg.css"
+    media="(prefers-color-scheme: dark)">
+
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/frameworks/fomantic/semantic.css"
+    media="(prefers-color-scheme: light),
+    (prefers-color-scheme:no-preference)">
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/base.css"
+    media="screen">
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/partial.css"
+    media="screen">
+    <!-- end css injection -->
+
+    <!-- start of css dynamic styling -->
+    <style>
+
+        #BelowTheFold,.banner_wrapper {
+            border: 0;
+        }
+        .glow_text,.glowing_item {
+            color: #111;
+            text-shadow: none !important;
+        }
+
+        .hide_svg_space {
+            display: block;
+            width: 100%;
+            border: 0;
+            border-radius: 0;
+        }
+    </style>
+    <!-- end of css dynamic styling -->
+</head>
+
+<body>
+    <!-- start of page header contents -->
+    <header class="unmargin_vertically knockout_efx unpad" id="AboveTheFold">
+
+        <!-- start of top mini navigation -->
+        <nav class="ui fixed top borderless secondary inverted menu
+            simple_tint_over" id="MainNavigation">
+
+            <div class=" menu no_mobile">
+
+                <a href="#Services" class="item capitalised_text">
+                    services offered
+                </a>
+                <a href="#Features" class="item capitalised_text">
+                    features available
+                </a>
+                <a href="#GetInTouch" class="item capitalised_text">
+                    get in touch
+                </a>
+                <!-- start of dropdown -->
+                <button class="ui simple dropdown item" tabindex="0">
+
+                    <span class="text header">quick contact</span>
+                    <i class="dropdown icon"></i>
+
+
+                    <nav class="menu" tabindex="-1">
+
+
+                        <a class="item"
+                            title="emailing address brand-info@domain.com"
+                            href="mailto:brand-info@domain.com">
+                            <i class="inverted circular small envelope icon"
+                                arialabel="envelope icon">
+                            </i>
+                            emailing address
+                        </a>
+
+                        <a class="item"
+                            title="phone number +254"
+                            href="telto:+254">
+                            <i class="inverted circular small phone icon"
+                                arialabel="phone icon">
+                            </i>
+                            contact number
+                        </a>
+
+                    </nav>
+
+                </button>
+                <!-- end of dropdown -->
+
+            </div>
+
+
+            <!-- start of dropdown -->
+            <button class="ui simple dropdown item no_computer" tabindex="0">
+                <i class="ellipsis vertical icon"></i>
+
+                <span class="text header">menu</span>
+
+
+                <nav class="link menu" tabindex="-1">
+
+                    <a href="#Services" class="item capitalised_text">
+                        services offered
+                    </a>
+                    <a href="#Features" class="item capitalised_text">
+                        features available
+                    </a>
+                    <a href="#GetInTouch" class="item capitalised_text">
+                        get in touch
+                    </a>
+
+                    <div class="divider" role="separator">
+
+                    </div>
+
+                    <!-- start of nested dropdown -->
+                    <div class="item">
+                        <i class="dropdown icon"></i>
+                        <span class="text header capitalised_text">
+                            quick contact
+                        </span>
+
+                        <!-- start of inner-inner menu -->
+                        <nav class="link menu">
+                            <!-- start of inner items -->
+                            <a class="item"
+                                title="emailing address brand-info@domain.com"
+                                href="mailto:brand-info@domain.com">
+                                <i class="inverted circular small envelope icon"
+                                    arialabel="envelope icon">
+                                </i>
+                                emailing address
+                            </a>
+
+                            <a class="item"
+                                title="phone number +254"
+                                href="telto:+254">
+                                <i class="inverted circular small phone icon"
+                                    arialabel="phone icon">
+                                </i>
+                                contact number
+                            </a>
+                            <!-- end of inner items -->
+                        </nav>
+
+                        <!-- end of inner-inner menu -->
+
+
+                    </div>
+                    <!-- end of nested dropdown -->
+                    <div class="divider" role="separator">
+
+                    </div>
+
+                </nav>
+
+            </button>
+            <!-- end of dropdown -->
+
+            <a href="#AboveTheFold" class="header right item">
+                <span class="uppercased_text">
+                    Brand name &nbsp;
+                </span>
+
+                <img class="logo raised_shadowed"
+                src="./static/images/logo.png"
+                width="40"
+                height="40"
+                alt="brand logo image" />
+
+            </a>
+        </nav>
+        <!-- end of top navigation -->
+
+        <div class="banner_wrapper">
+
+            <div class="ui hidden section divider" role="separator">
+
+            </div>
+
+            <article class="ui centered middle aligned stackable padded grid">
+
+
+                <header class="left aligned eight wide column">
+                    <h1 class="uppercased_text knockout_contents
+                        glow_text activatedy">
+                        <span class="glowing_item">b</span>
+                        <span class="glowing_item">r</span>
+                        <span class="glowing_item">a</span>
+                        <span class="glowing_item">n</span>
+                        <span class="glowing_item">d</span>
+                        <span class="glowing_item">e</span>
+                        <span class="glowing_item">d</span>
+
+
+                    </h1>
+
+                    <div class="ui hidden section divider no_mobile" role="separator">
+
+                    </div>
+
+                </header>
+
+
+                <section class="left aligned eight wide column">
+
+                    <blockquote class="custom_blockquote glassed">
+                        <p class="mark_quote">
+                            Te eum doming eirmod, nominati pertinacia
+                            argumentum ad his. Ex eam alia facete scriptorem,
+                            est autem aliquip detraxit at. Usu ocurreret
+                            referrentur.
+                        </p>
+
+                        <footer class="ui right floated right aligned tiny header
+                            uppercased_text">
+                            &mdash; quote author <wbr />
+                            <span class="sub header
+                                lowercased_text">author role</span>
+                        </footer>
+                        <!-- clear above floats -->
+                        <div class="ui hidden clearing divider" aria-hidden="true">
+
+                        </div>
+                    </blockquote>
+
+
+                    <a href="#0" class="ui left floated circular secondary
+                        button stateful">
+                        sign up
+                    </a>
+
+                    <a href="#0" class="ui right floated circular grey
+                        button stateful">
+                        sign in
+                    </a>
+
+                    <!-- clear above floats -->
+                    <div class="ui hidden clearing divider" aria-hidden="true">
+
+                    </div>
+
+
+                </section>
+
+                <div class="ui hidden horizontal divider no_computer"
+                    role="separator">
+
+                </div>
+
+            </article>
+
+            <figure class="ui fluid image hide_svg_space">
+                <svg class="styling_svg svg_wave"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 1440 400">
+                    <path class="first_path_wave waving_path"
+                        d="M0,192C220,100,400,100,660,192C880,290,1100,290,1440,192L1440 400L0 400"
+                        fill-opacity="0.5"
+                        fill="#e7eef1"
+                        stroke="#abb8c388"
+                        stroke-width="1px">
+                        <!-- fill previous color #abb8c388 -->
+                    </path>
+                    <path class="second_path_wave bg_colored"
+                        d="M0,192C220,100,400,100,660,192C880,290,1100,290,1440,192 L1440 400L0 400"
+                        fill-opacity="1.2"
+                        stroke="none"
+                        stroke-width="0">
+                    </path>
+                </svg>
+            </figure>
+
+        </div>
+
+        <!-- end of hero section -->
+
+
+    </header>
+    <!-- end of page header contents -->
+
+
+    <!-- start of main page contents -->
+    <div class="ui vertical basic segment" id="TheFold">
+
+        <main class="ui centered  stackable equal width padded grid whole_page">
+            <!-- start of dynamic page contents -->
+
+            <article class="top aligned row" id="Services"
+                itemscope
+                itemtype="http://schema.org/Article">
+
+                <!-- start of one service-->
+
+                <header class="center aligned column">
+                    <figure class="ui centered fluid image">
+
+                        <img class="fancy_border raised_shadowed lazy_loaded"
+                        src="./static/images/logo_clear.png"
+                        data-src="./static/images/light-bulb.jpg"
+                        alt="light-bulb image from www.pexels.com"
+
+                        height="300" />
+
+                        <figcaption class="ui above pointing basic label">
+                            image caption text
+                        </figcaption>
+                    </figure>
+
+                </header>
+
+                <section class="left aligned column">
+                    <h3 class="ui header uppercased_text">what we do</h3>
+                    <p class="big_letter">
+                        Te eum doming eirmod, nominati pertinacia
+                        argumentum ad his. Ex eam alia facete scriptorem,
+                        est autem aliquip detraxit at. Usu ocurreret
+                        referrentur at, c
+                        u epicurei appellantur vix. Cum ea laoreet recteque e
+                    </p>
+                    <a class="ui fluid circular secondary button stateful"
+                        href="#0">
+                        read more
+                    </a>
+
+                </section>
+
+                <!--- end of one service -->
+
+            </article>
+            <div class="ui hidden horizontal divider" aria-hidden="true">
+
+            </div>
+            <!-- start of advert section -->
+            <aside class="row">
+
+                <div class="ui centered leaderboard test ad"
+                    data-text="Leaderboard advert display">
+
+                </div>
+
+
+            </aside>
+            <!-- end of advert section -->
+            <div class="ui hidden horizontal divider" aria-hidden="true">
+
+            </div>
+
+            <article class="middle aligned row" id="AboutUs">
+
+                <!-- start of one service-->
+                <section class="left aligned column">
+
+                    <h3 class="ui header uppercased_text">About us</h3>
+                    <p class="big_letter">
+                        Te eum doming eirmod, nominati pertinacia
+                        argumentum ad his. Ex eam alia facete scriptorem,
+                        est autem aliquip detraxit at. Usu ocurreret
+                        referrentur at, c
+                        u epicurei appellantur vix. Cum ea laoreet recteque e
+                    </p>
+
+                    <a class="ui fluid circular secondary button stateful" href="#">
+                        read more
+                    </a>
+                </section>
+
+
+                <figure class="center aligned column">
+                    <img class="ui centered fluid image fancy_border
+                    raised_shadowed"
+                    src="./static/images/light-bulb.jpg"
+                    alt="an image about the brand"
+                    width="600"
+                    height="400" />
+
+                    <figcaption class="ui top pointing basic label">
+                        image caption text
+                    </figcaption>
+                </figure>
+
+                <!--- end of one service -->
+            </article>
+
+            <div class="ui hidden horizontal divider" aria-hidden="true">
+
+            </div>
+
+            <article class="top aligned row positioned_relative"
+                id="GetInTouch">
+
+                <img class="parallax_image object_fitted"
+                src="./static/images/light-bulb.jpg"
+                alt="brand logo"
+                height="400"
+                />
+
+                <div class="left aligned column">
+
+                    <section class="glassed">
+
+                        <h4 class="ui header capitalised_text">
+                            how to reach us
+                            <div class="sub header lowercased_text">
+                                Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his.
+                            </div>
+                        </h4>
+
+                        <dl class="ui middle aligned divided list">
+
+                            <div class="item">
+                                <dt class="header uppercased_text">
+                                    <i class="map marker icon"></i>
+                                    address
+                                </dt>
+                                <dd class="description">
+                                    <p>
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his. Ex eam alia facete scriptorem,
+                                        est autem aliquip detraxit at.
+                                    </p>
+                                </dd>
+                            </div>
+
+                            <div class="item">
+                                <dt class="header uppercased_text">
+                                    <i class="open envelope icon"></i>
+                                    mailing &amp; calling
+                                </dt>
+                                <dd class="description">
+                                    <p>
+                                        Te eum doming eirmod, nominati pertinacia
+                                        argumentum ad his. Ex eam alia facete scriptorem,
+                                        est autem aliquip detraxit at.
+                                    </p>
+                                </dd>
+                            </div>
+
+                        </dl>
+
+                    </section>
+
+                </div>
+
+                <div class="left aligned column">
+
+                    <section class="glassed">
+
+                        <h4 class="ui header capitalised_text">
+                            write to us
+                            <span class="sub header lowercased_text">
+                                Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his.
+                            </span>
+                        </h4>
+
+                        <form class="ui form" action="." method="post" accept-charset="utf-8">
+
+                            <div class="two fields">
+
+                                <div class="field">
+                                    <label for="email">email</label>
+                                    <input type="email" name="email" id="email" placeholder="your e-maill address" value="" />
+                                </div>
+                                <div class="field">
+                                    <label for="fullname">full name</label>
+                                    <input type="text" name="fullname"
+                                    placeholder="your name"
+                                    id="fullname" value="" />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="text-contents">text message</label>
+
+                                <textarea name="text-contents"
+                                    id="text-contents"
+                                    rows="2" cols="2"
+                                    placeholder="text content"></textarea>
+                            </div>
+                            <button class="ui circular  basic negative clear button" type="clear">
+                                clear
+                            </button>
+                            <button class="ui right floated circular medium positive
+                                submit button" type="submit">
+                                send
+                            </button>
+                        </form>
+
+                    </section>
+
+                </div>
+
+            </article>
+
+            <div class="ui hidden horizontal divider">
+
+            </div>
+
+            <article class="middle aligned row positioned_relative" id="Features">
+                <section class="left aligned column">
+
+                    <h4 class="ui header uppercased_text">
+                        features
+                    </h4>
+
+                    <dl class="ui middle aligned relaxed celled animated list">
+
+                        <div class="item">
+
+                            <dt class="header capitalised_text">
+                                <i class="green checkmark icon"></i>
+                                feature one title
+                            </dt>
+                            <dd class="description">
+                                <p>
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem,
+                                    est autem aliquip detraxit at.
+                                </p>
+                            </dd>
+
+                        </div>
+
+                        <div class="item">
+
+                            <dt class="header capitalised_text">
+                                <i class="green checkmark icon"></i>
+
+                                feature two title
+                            </dt>
+                            <dd class="description">
+                                <p>
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem,
+                                    est autem aliquip detraxit at.
+                                </p>
+                            </dd>
+
+                        </div>
+
+                        <div class="item">
+
+                            <dt class="header capitalised_text">
+                                <i class="green checkmark icon"></i>
+                                feature three title
+                            </dt>
+                            <dd class="description">
+                                <p>
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem,
+                                    est autem aliquip detraxit at.
+                                </p>
+                            </dd>
+
+                        </div>
+
+                        <div class="item">
+
+                            <dt class="header capitalised_text">
+                                <i class="green checkmark icon"></i>
+                                feature four title
+                            </dt>
+                            <dd class="description">
+                                <p>
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem,
+                                    est autem aliquip detraxit at.
+                                </p>
+                            </dd>
+
+                        </div>
+                    </dl>
+
+                </section>
+
+                <section class="left aligned column" id="NewsLetterSub">
+                    <h4 class="ui header uppercased_text">
+                        frequently asked questions
+                        <span class="sub header lowercased_text">
+                            Te eum doming eirmod, nominati pertinacia
+                            argumentum ad his. Ex eam alia facete.
+                        </span>
+                    </h4>
+
+                    <details class="custom_accordion">
+                        <summary class="marker_enabled capitalised_text">
+                            sample question
+                        </summary>
+                        <div class="contents">
+                            <p>
+                                <b>short answer</b>  Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurrershortsrshorrentur at, c
+                                u epicurei appellantur vix.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                    <details class="custom_accordion">
+                        <summary class="marker_enabled capitalised_text">
+                            sample question
+                        </summary>
+                        <div class="contents">
+                            <p>
+                                <b>short answer</b>  Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurrershortsrshorrentur at, c
+                                u epicurei appellantur vix.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                    <details class="custom_accordion">
+                        <summary class="marker_enabled capitalised_text">
+                            sample question
+                        </summary>
+                        <div class="contents">
+                            <p>
+                                <b>short answer</b>  Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurrershortsrshorrentur at, c
+                                u epicurei appellantur vix.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                    <details class="custom_accordion">
+                        <summary class="marker_enabled capitalised_text">
+                            sample question
+                        </summary>
+                        <div class="contents">
+                            <p>
+                                <b>short answer</b>  Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete scriptorem,
+                                est autem aliquip detraxit at. Usu ocurrershortsrshorrentur at, c
+                                u epicurei appellantur vix.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <div class="ui hidden horizontal divider" aria-hidden="true">
+
+                    </div>
+
+
+
+                    <a class="ui fluid small circular secondary button stateful" href="#0">
+                        view all
+                    </a>
+                </section>
+
+            </article>
+
+            <div class="ui hidden horizontal divider"
+                role="separator">
+
+            </div>
+
+            <article class="row">
+                <div class="left aligned ten wide column" id="NewsLetterSub">
+
+                    <section class="ui raised segment">
+
+                        <h4 class="ui header uppercased_text">
+                            newsletter subscription
+                            <span class="sub header lowercased_text">
+                                Te eum doming eirmod, nominati pertinacia
+                                argumentum ad his. Ex eam alia facete.
+                            </span>
+                        </h4>
+                        <form class="ui form stateful" action="." method="post"
+                            accept-charset="utf-8">
+                            <label for="email">email</label>
+                            <div class="ui fluid action input">
+                                <input id="email" placeholder="your e-mail address"
+                                type="email">
+                                <button class="ui positive submit button"
+                                    type="submit">
+                                    subscribe
+                                </button>
+                            </div>
+                        </form>
+
+                    </section>
+                </div>
+
+            </article>
+
+
+
+
+
+            <div class="ui hidden horizontal divider"
+                role="separator">
+
+            </div>
+            <aside class="ui inline cookie nag" role="alert">
+                <p class="title lowercased_text">
+                    We use cookies to ensure you get the best
+                    experience on our website
+                </p>
+                <i class="red close icon"
+                    arialabel="click to close alert"></i>
+            </aside>
+            <!-- end of dynamic page contents -->
+
+
+        </main>
+
+
+    </div>
+
+    <!-- end of main page contents -->
+
+    <!-- start of main page separator-->
+    <svg class="styling_svg separation_svg"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none">
+        <path class="first_path inverted_color"
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+            fill-opacity="1">
+        </path>
+    </svg>
+    <!-- end of main page separator -->
+
+
+
+
+    <!-- start of footer  -->
+    <footer class="page_footer" id="BelowTheFold">
+
+        <div class="ui vertical basic segment">
+
+            <div class="ui stackable centered middle aligned equal height
+                padded grid">
+
+                <section class="five wide column">
+                    <h5 class="ui header uppercased_text">information links</h5>
+                    <dl class="ui animated relaxed list">
+                        <dt class="item">
+                            <a class="" href="index.html">home page</a>
+                        </dt>
+                        <dt class="item">
+                            <a class="" href="#0">cookie policy</a>
+                        </dt>
+
+                        <dt class="item">
+                            <a class="" href="#0">terms of use &amp; privacy </a>
+                        </dt>
+
+                        <dt class="item">
+                            <a class="plain_link" href="#AboveTheFold">back to top</a>
+                        </dt>
+
+                    </dl>
+                </section>
+                <section class="five wide column">
+                    <h5 class="ui header uppercased_text">useful links</h5>
+                    <dl class="ui animated list">
+
+                        <dt class="item">
+                            <a class="" href="#0">FAQ</a>
+                        </dt>
+                        <dt class="item">
+                            <a class="" href="#0">support</a>
+                        </dt>
+                        <dt class="item">
+                            <a class="" href="#0">RSS feed</a>
+                        </dt>
+
+                    </dl>
+                </section>
+                <section class="left aligned six wide column">
+                    <h6 class="ui dividing header uppercased_text">website name</h6>
+                    <img class="ui tiny left floated circular image"
+                    src="./static/images/logo.png" alt="logo" />
+                    <p>
+                        Extra space for a call to action inside the footer that could
+                        help re-engage users.
+                    </p>
+                </section>
+            </div>
+            <!-- role=contentinfo -->
+            <p class="ui center aligned small grey header full_width_text">
+                &copy;
+                <span id="insertedDate">
+
+                </span>
+                <span class="signed uppercased_text">
+                    &nbsp; up To Time designs &nbsp;
+                </span>
+                all rights reserved
+            </p>
+
+            <div class="ui inverted horizontal divider" role="separator">
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- end of footer  -->
+
+
+
+
+    <!-- start of inject js -->
+    <noscript>
+        please enable JavaScript.It's required for smooth experience
+    </noscript>
+
+    <script src="./static/frameworks/javascript/jquery-3.3.1.js"
+        type="text/javascript" charset="utf-8">
+
+    </script>
+
+    <script src="./static/frameworks/fomantic/semantic.js" type="text/javascript"
+        charset="utf-8">
+    </script>
+    <!-- end of inject js -->
+
+    <!--start of custom js -->
+    <script src="./static/customised/js/base.js" type="text/javascript"
+        charset="utf-8">
+    </script>
+
+    <script type="application/javascript" charset="utf-8">
+        $(document).ready(function() {
+            //jquery functions
+        }); //end of ready function
+    </script>
+    <!--end of custom js -->
+
+</body>
+
+</html>

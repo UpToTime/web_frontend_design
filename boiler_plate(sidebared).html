@@ -1,0 +1,603 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0,minimum-scale=1.0,viewport-fit=cover">
+    <meta name="robots" content="all">
+
+    <meta name="msapplication-TileColor" content="#060606">
+    <meta name="msapplication-TileImage" content="./manifests/ms-icon-144x144.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#060606">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#060606">
+    <link rel="apple-touch-icon" sizes="57x57" href="./manifests/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./manifests/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./manifests/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./manifests/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./manifests/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./manifests/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./manifests/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./manifests/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./manifests/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./manifests/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./manifests/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./manifests/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./manifests/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./manifests/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+
+    <meta name="description" content="
+    well designed,beautiful and modern
+    user interface html5 templates.
+    semantic tags and aria supported and good user experience
+    website theme templates,
+    ">
+    <meta name="keywords" content="html5 and css3 templates,
+    front-end templates,
+    fomantic ui templates
+    ,semantic ui templates,
+    ,free customisable website templates
+    ">
+    <meta name="author" content="stephen muiruri">
+    <!-- dark mode support -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+
+    <title>front-end designs</title>
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- inject:css -->
+    <!-- start css injection -->
+    <link rel="stylesheet" type="text/css"
+    href="./static/frameworks/fomantic/semantic.cyborg.css"
+    media="(prefers-color-scheme: dark)">
+
+
+    <link id="MainTheme" rel="stylesheet" type="text/css"
+    href="./static/frameworks/fomantic/semantic.css"
+    media="(prefers-color-scheme: light),
+    (prefers-color-scheme:no-preference)">
+
+    <link rel="stylesheet" type="text/css"
+    href="./static/customised/css/basecss"
+    media="">
+
+    <!-- end css injection -->
+
+    <!-- start of css dynamic styling -->
+    <style type="text/css">
+        .exterior_parallax {
+            background-image: url('./static/images/light-bulb.jpg');
+        }
+        .interior_parallax {
+            background-image: url('./static/images/horizon.jpg');
+
+        }
+        .overlaped_text {
+            position: relative;
+
+        }
+        .overlapping_text {
+            position: relative;
+            z-index: 1;
+            /* width: 100%;
+            height: 100%;*/
+            margin-left: 2px;
+            font-size: 2rem;
+            color: papayawhip;
+
+        }
+        .overlapping_text:before {
+            content: " ";
+            height: 200%;
+            width: 100%;
+            position: absolute;
+            top: -20%;
+            left: 1px;
+            z-index: -1;
+            box-shadow: -7px 0px 7px rgba(0,0,0,0.99);
+
+        }
+        .greyish {
+            background-color: #c4c4c4 !important;
+        }
+        .text_in_3D:not(.inverted) {
+            font-size: 3.5rem !important;
+            text-align: center;
+            text-transform: uppercase !important;
+
+            color: #f5f5f5;
+            /*color: #c4c4c4;*/
+            /*background-color: currentColor;*/
+            text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 6px 1px #919191,
+            1px 7px 1px #919191,
+            1px 8px 1px #919191,
+            1px 9px 1px #919191,
+            1px 10px 1px #919191,
+            1px 18px 6px rgba(16,16,16,0.4),
+            1px 22px 10px rgba(16,16,16,0.2),
+            1px 25px 35px rgba(16,16,16,0.2),
+            1px 30px 60px rgba(16,16,16,0.4);
+        }
+
+        .inverted.text_in_3D {
+            font-size: 3.5rem !important;
+            text-align: center;
+            text-transform: uppercase !important;
+            /* color: #f5f5f5;*/
+            color: currentColor !important;
+            /* background-color: currentColor;*/
+            max-width: 30ch !important;
+            text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #f5f5f5,
+            1px 3px 1px #f5f5f5,
+            1px 4px 1px #f5f5f5,
+            1px 5px 1px #f5f5f5,
+            1px 6px 1px #f5f5f5,
+            1px 7px 1px #f5f5f5,
+            1px 8px 1px #f5f5f5,
+            1px 9px 1px #f5f5f5,
+            1px 10px 1px #f5f5f5,
+            1px 18px 6px rgba(16,16,16,0.4),
+            1px 22px 10px rgba(16,16,16,0.2),
+            1px 25px 35px rgba(16,16,16,0.2),
+            1px 30px 60px rgba(16,16,16,0.4);
+        }
+
+        .perspexing {
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+            -webkit-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+
+        }
+
+        .perspexed_item:nth-child(odd) {
+            transform: skew(60deg,-30deg) scaleY(0.647);
+        }
+
+        .perspexed_item:nth-child(even) {
+            transform: skew(0deg,-30deg) scaleY(1.33);
+
+        }
+
+        .cubic_wrapper {
+            display: block;
+            position: relative;
+            /*  top: 0;
+            left: 0;*/
+            /* width: 400px;
+            height: 400px;*/
+            /* this determines the width and height
+            the cubicles */
+            margin: auto;
+            width: 50%;
+            height: auto;
+            background-color: blue;
+            transform-style: preserve-3d;
+            perspective-origin: 50% 50%;
+            perspective: 800px;
+            /* transform: translateZ(-10rem);*/
+
+            /*overflow: hidden;*/
+            /*will-change: transform;*/
+
+
+        }
+        .cubicles {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: inherit;
+            margin: 0 auto;
+            text-align: center;
+            /* background-color: grey;*/
+
+            transform-style: preserve-3d;
+            /*transform-origin: 50% 100%;
+            transform: rotateY(40deg) rotateX(10deg);*/
+            -webkit-animation-name: cubic_turn;
+            -moz-animation-name: cubic_turn;
+            animation-name: cubic_turn;
+
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            animation-timing-function: linear;
+
+            -webkit-animation-duration: 15000ms;
+            -moz-animation-duration: 15000ms;
+            animation-duration: 15000ms;
+            animation-fill-mode: alternate;
+
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+        }
+        .cubicle_item {
+            display: block;
+            /* dont use inline-block*/
+            width: 10rem;
+            height: 10rem;
+            margin: 0 auto;
+            padding: 0;
+            position: absolute;
+            /* left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);*/
+            /*   left: 0;
+            backface-visibility: hidden;*/
+
+            /*height: 100%;*/
+            transform-style: inherit;
+            opacity: 0.95;
+
+        }
+        .cubicle_item img {
+            width: 100%;
+            height: 70%;
+
+        }
+        .cubicle_item .cubicle_text_item {
+            width: 100%;
+            max-width: 80ch;
+            height: 30%;
+            margin: 0;
+            padding: 1px 3px;
+            font-size: 0.5rem;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #f5f5f5;
+        }
+
+        .cubicle_item.front_face {
+            /*  transform: translatez(250px);*/
+            transform: rotateY(0deg) translatez(5rem);
+
+
+        }
+        .cubicle_item.back_face {
+            transform: rotateY(180deg) translatez(5rem);
+
+            background: pink;
+        }
+        .cubicle_item.left_face {
+            /* transform: rotateY(-90deg) translateX(-100px);
+            transform-origin: left;*/
+            transform: rotateY(-90deg) translatez(5rem);
+
+            background: purple;
+        }
+        .cubicle_item.right_face {
+            /*transform: rotateY(90deg) translateX(100px);
+            transform-origin: right;*/
+            transform: rotateY(90deg) translatez(5rem);
+
+            background: brown;
+        }
+        .cubicle_item.top_face {
+            /* transform: rotateX(-90deg) translateY(-200px);*/
+            transform-origin: top;
+            transform: rotateX(-90deg) translatez(-5rem);
+
+            background: grey;
+        }
+        .cubicle_item.bottom_face {
+            /*transform: rotateX(90deg) translateY(200px);*/
+            transform-origin: bottom;
+            transform: rotateX(90deg) translatez(-5rem);
+
+            background: green;
+        }
+
+@keyframes cubic_turn {
+            0% {
+                transform: rotateY(0deg);
+                /* it was y only*/
+            }
+            100% {
+                /*transform: rotateX(360deg) rotateY(160deg);*/
+                transform: rotateY(360deg);
+            }
+        }
+
+
+        .dot {
+
+            width: 20vw;
+            height: 20vh;
+            background: blue;
+            motion-path: path("M88.59247,162.82867C320.2707,160.804,275.8324,92.88333,318.27347,162.82867C360.71454,232.77402,88.59247,219.09927,88.59247,219.09927C88.59247,219.09927,322.7633,266.0997,322.7633,266.0997C322.7633,266.0997,302.79105,267.0989,322.7633,266.0997C342.73557,265.1005,342.73557,266.54373,342.73557,266.54373");
+            offset-path: path("M88.59247,162.82867C320.2707,160.804,275.8324,92.88333,318.27347,162.82867C360.71454,232.77402,88.59247,219.09927,88.59247,219.09927C88.59247,219.09927,322.7633,266.0997,322.7633,266.0997C322.7633,266.0997,302.79105,267.0989,322.7633,266.0997C342.73557,265.1005,342.73557,266.54373,342.73557,266.54373");
+
+            -webkit-animation-name: propel;
+            -moz-animation-name: propel;
+            animation-name: propel;
+
+            -webkit-animation-timing-function: ease;
+            -moz-animation-timing-function: ease;
+            animation-timing-function: ease;
+
+            -webkit-animation-duration: 15000ms;
+            -moz-animation-duration: 15000ms;
+            animation-duration: 15000ms;
+            animation-direction: alternate;
+            /* animation-fill-mode: forwards;*/
+
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+        }
+@keyframes propel {
+            0% {
+                motion-offset: 0%;
+                offset-distance: 0%;
+            }
+            100% {
+                motion-offset: 100%;
+                offset-distance: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="ui centered stackable padded grid">
+
+
+        <div class="sixteen wide column">
+
+            <figure class="ui fluid image">
+                <img class="" src="./static/images/296408.svg" alt="" />
+
+                <figcaption class="dot"></figcaption>
+            </figure>
+
+
+        </div>
+
+
+
+
+        <div class="row">
+
+
+            <div class="sixteen wide column">
+
+                <div class="cubic_wrapper">
+                    <ul class="cubicles">
+                        <li class="cubicle_item front_face">
+                            <figure class="unmargin_vertically
+                                positioned_relative">
+                                <img class="ui centered image"
+                                src="./static/images/logo.png"
+                                alt="alt text value"
+                                width="300px"
+                                height="150px" />
+                                <figcaption class="cubicle_text_item signature">
+                                    front ....
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem.
+                                </figcaption>
+                            </figure>
+
+                        </li>
+                        <li class="cubicle_item back_face">
+                            <figure class="unmargin_vertically
+                                positioned_relative">
+                                <img class="ui centered image"
+                                src="./static/images/logo.png"
+                                alt="alt text value"
+                                width="300px"
+                                height="150px" />
+                                <figcaption class="cubicle_text_item signature">
+                                    back....
+
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem.
+                                </figcaption>
+                            </figure>
+
+                        </li>
+                        <li class="cubicle_item left_face">
+                            <figure class="unmargin_vertically
+                                positioned_relative">
+                                <img class="ui centered image"
+                                src="./static/images/logo.png"
+                                alt="alt text value"
+                                width="300px"
+                                height="150px" />
+                                <figcaption class="cubicle_text_item signature">
+                                    left....
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem.
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="cubicle_item right_face">
+                            <figure class="unmargin_vertically
+                                positioned_relative">
+                                <img class="ui centered image"
+                                src="./static/images/logo.png"
+                                alt="alt text value"
+                                width="300px"
+                                height="150px" />
+                                <figcaption class="cubicle_text_item signature">
+                                    right.....
+                                    Te eum doming eirmod, nominati pertinacia
+                                    argumentum ad his. Ex eam alia facete scriptorem.
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <!-- remove li for top_face and bottom_face -->
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="ui centered raised card laid_backY">
+            <picture class="image">
+                <img class="object_fitteYd"
+                src="./static/images/logo.png"
+                alt=""
+                width="100%"
+                height="100%" />
+                <!-- start of extra image laid on top -->
+                <img class="overlayed_image"
+                src="./static/images/pexels_thirdman.png"
+                alt=""
+                width="100%"
+                height="100%" />
+                <!-- end of extra image laid on top -->
+
+            </picture>
+
+            <p class="content">
+                <span class="left floated meta capitalised_text">
+                    nationality
+                </span>
+                <span class="right floated meta uppercased_text">
+                    <b class="signed">
+                        country name
+                    </b>
+                    <i class="flag icon" arialabel="country flag"></i>
+                </span>
+            </p>
+
+            <p class="content">
+                <span class="left floated meta capitalised_text">
+                    date of birth
+                </span>
+                <span class="right floated meta uppercased_text">
+                    <b class="lowercased_text signed">
+                        <time datetime="20-10-2000">
+                            20-10-2000
+                        </time>
+                    </b>
+                    <small class="signed">
+                        / 20 yrs
+                    </small>
+
+                </span>
+            </p>
+            <p class="content">
+                <span class="left floated meta capitalised_text">
+                    height
+                </span>
+                <span class="right floated meta uppercased_text">
+                    <b class="signed">
+                        168 m
+                    </b>
+                    <small class="lowercased_text signed">
+                        / 6ft 2inch
+                    </small>
+                </span>
+            </p>
+            <p class="content">
+                <span class="left floated meta capitalised_text">
+                    weight
+                </span>
+                <span class="right floated meta uppercased_text">
+                    <b class="signed">
+                        100 kg
+                    </b>
+                    <small class="lowercased_text signed">
+                        / 50 lbs
+                    </small>
+                </span>
+            </p>
+            <p class="content">
+                <span class="left floated meta capitalised_text">
+                    position
+                </span>
+                <span class="right floated meta uppercased_text">
+                    <b class="signed">
+                        10
+                    </b>
+                    <small class="lowercased_text signed">
+                        / striker
+                    </small>
+                </span>
+            </p>
+
+        </div>
+
+
+
+
+
+    </header>
+
+    <!-- start of inject js -->
+    <noscript>
+        please enable JavaScript.It's required for smooth experience
+    </noscript>
+
+    <script src="./static/frameworks/javascript/jquery-3.3.1.js"
+        type="text/javascript" charset="utf-8">
+
+    </script>
+
+    <script src="./static/frameworks/fomantic/semantic.js" type="text/javascript"
+        charset="utf-8">
+    </script>
+    <!-- end of inject js -->
+
+    <!--start of custom js -->
+    <script src="./static/customised/js/baseY.js" type="text/javascript"
+        charset="utf-8">
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        var Mainstylesheet = document.getElementById("MainTyheme");
+        // default file path
+        var NormalFile = './static/frameworks/fomantic/semantic.css';
+        var DarkFile = './static/frameworks/fomantic/semantic.slate.css';
+
+        // Mainstylesheet.x = NormalFile;
+        /* console.log(Mainstylesheet.x);*/
+        // assign new css file
+        //  Mainstylesheet.x = 'pathname/style1'
+        // == Mainstylesheet.x ? 'pathname/style2': 'pathname/style2';
+        /*  if (Mainstylesheet.x || Mainstylesheet.x === NormalFile) {
+            Mainstylesheet.href = DarkFile;
+            console.log(Mainstylesheet)
+        } else {
+            Mainstylesheet.href = NormalFile;
+        }
+*/
+
+        //  Mainstylesheet.href = Mainstylesheet.x + '.css':
+    </script>
+
+
+    <script type="application/javascript" charset="utf-8">
+        $(document).ready(function() {
+            //jquery functions
+        }); //end of ready function
+    </script>
+    <!--end of custom js -->
+
+</body>
+
+</html>

@@ -1,0 +1,512 @@
+/*
+custom styling
+*/
+
+
+
+
+.text_in_3D:not(.inverted) {
+    font-size: 3.5rem !important;
+    text-align: center;
+    text-transform: uppercase !important;
+
+    color: #f5f5f5;
+    /*color: #c4c4c4;*/
+    /*background-color: currentColor;*/
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.inverted.text_in_3D {
+    font-size: 3.5rem !important;
+    text-align: center;
+    text-transform: uppercase !important;
+    /* color: #f5f5f5;*/
+    color: currentColor !important;
+    /* background-color: currentColor;*/
+    max-width: 30ch !important;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #f5f5f5,
+    1px 3px 1px #f5f5f5,
+    1px 4px 1px #f5f5f5,
+    1px 5px 1px #f5f5f5,
+    1px 6px 1px #f5f5f5,
+    1px 7px 1px #f5f5f5,
+    1px 8px 1px #f5f5f5,
+    1px 9px 1px #f5f5f5,
+    1px 10px 1px #f5f5f5,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+/* end of 3d texe effect*/
+
+
+
+
+
+
+
+
+
+
+.layered3DText {
+    font-size: 4rem !important;
+
+}
+.layered3DText.faceRight .z-text {
+    /* Tip: Apply CSS transforms here */
+    /* rotateX() == up/down */
+    /* rotateY() == left/right */
+    transform: rotateX(5deg) rotateY(30deg);
+}
+.layered3DText.faceLeft .z-text {
+    /* Tip: Apply CSS transforms here */
+    /* rotateX() == up/down */
+    /* rotateY() == left/right */
+    transform: rotateX(5deg) rotateY(-30deg);
+}
+
+
+
+
+
+
+
+/* Force Simple Scrollbars */
+.scrolled ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+
+}
+.scrolled ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    /* match border-radius with the thumb */
+}
+.scrolled ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+.scrolled ::-webkit-scrollbar-thumb:window-inactive {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.scrolled ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 135, 139, 0.8);
+}
+
+
+
+
+
+
+/*marquee {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    /*  background-color: inherit;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+
+}*/
+
+/*marquee-wrapper {
+    list-style: none;
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    /*   justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    flex-shrink: 0;
+    /* text-align: center;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4);
+    /* 5rem; */
+/* white-space: nowrap;*
+}*/
+/* styling for multiple images in divs
+.foldable {
+    /*position: relative;
+            margin: 0;*
+    padding: 0 !important;
+    display: block;
+    /*width: 100%;*
+    height: 300px !important;
+}
+.foldable .parts {
+    position: relative;
+    display: inline-block;
+    float: left;
+    * floating left removes space in between divs*
+    top: 0;
+    /*margin: 0 !important;*
+    padding: 0px 5px;
+    width: 20%;
+    height: inherit;
+    background-color: #333;
+    background-image: url('./static/images/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foldable .parts.one {
+    background-position: top left;
+    transform: rotateY(30deg) skewY(-10deg);
+}
+.foldable .parts.two {
+    background-position: 25%  center;
+    left: -2%;
+    transform: rotateY(30deg) skewY(10deg) translateY(4px);
+    /* avoided using translateX used left positioning*
+}
+.foldable .parts.three {
+    background-position: 50% center;
+    left: -4%;
+    transform: rotateY(30deg) skewY(-10deg) translateY(-6px);
+}
+.foldable .parts.four {
+    background-position: 75% center;
+    left: -6%;
+    transform: rotateY(30deg) skewY(10deg) translateY(8px);
+}
+.foldable .parts.five {
+    background-position: 100% center;
+    left: -8%;
+    transform: rotateY(30deg) skewY(-10deg) translateY(-10px);
+}*/
+
+
+
+
+
+
+/*marquee-content {
+    display: inline-block;
+    padding: 0;
+    margin-right: 1px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    /*margin-right: 2px;*/
+
+/* overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+    margin: 2px;*/
+/* text-align: center;
+    width: var(--marquee-element-width);
+    font-size: calc(var(--marquee-height)*3/4);
+    /* 5rem; *
+   /* white-space: nowrap;*
+}*/
+
+.marquee-content .active {
+    z-index: 1;
+}
+
+
+
+.vignette {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.vignette > img {
+    /*removes gap below image*/
+    display: block;
+}
+.vignette::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    box-shadow: inset 0px 0px 100px rgba(0,0,0,0.6);
+}
+
+.book {
+    height: 250px;
+    width: 60%;
+    background: blue;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: auto;
+    perspective: 1000px;
+}
+.book .cover {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 20px;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    background: yellow;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+.book:hover .cover {
+    transform: rotateY(-180deg);
+}
+.book .cover .sides {
+    display: block;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.cover .sides.front {
+    background: green;
+}
+.cover .sides.back {
+    background: pink;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+/* styling a multiple div background-image
+.subdivided {
+    height: 450px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0 auto;
+    /*padding-top: 50%;
+            margin: 2rem auto;
+            width: 80%;*
+}
+.subdivided > .blocks {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    perspective: 1000px;
+}
+.subdivided > .blocks > .part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../images/horizon.jpg");
+    background-size: auto 100%;
+    box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+
+.subdivided > .blocks > .part.main {
+    height: 100%;
+    width: 100%;
+    transform: rotateY(30deg);
+    transform-origin: 0 50%;
+}
+.subdivided > .blocks:nth-of-type(1) {
+    height: 80%;
+    top: 10%;
+    left: 17%;
+    width: 15%;
+}
+.subdivided > .blocks:nth-of-type(2) {
+    top: 0;
+    left: 35%;
+}
+.subdivided > .blocks:nth-of-type(3) {
+    height: 80%;
+    top: 10%;
+    left: 64%;
+    width: 15%;
+}
+
+.subdivided > .blocks:nth-of-type(1) > .part.main {
+    background-position: 4% 50%;
+    background-size: auto 130%;
+}
+.subdivided > .blocks:nth-of-type(2) > .part.main {
+    background-position: 50% 0;
+
+}
+.subdivided > .blocks:nth-of-type(3) > .part.main {
+    background-position: 96% 50%;
+    background-size: auto 130%;
+}
+.subdivided > .blocks > .part.left {
+    height: 100%;
+    width: 20%;
+    transform-origin: 0 50%;
+    transform: rotateY(-60deg) translateX(-100%);
+    /*filter: brightness(40%);*
+}
+.subdivided > .blocks:nth-of-type(1) > .part.left {
+    background-position: 0% 50%;
+    background-size: auto 130%;
+}
+.subdivided > .blocks:nth-of-type(2) > .part.left {
+    background-position: 29% 0%;
+
+}
+.subdivided > .blocks:nth-of-type(3) > .part.left {
+    background-position: 78% 50%;
+    background-size: auto 130%;
+
+}*/
+
+
+/* reflection styling */
+.reflected {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+
+    margin-bottom: 350px;
+
+    -webkit-box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+    /*background-color: #333;*/
+
+    background-image: url('../../images/horizon.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+}
+
+.reflected::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -81%;
+    height: 80%;
+    width: inherit;
+    transform: rotateX(180deg);
+    /* margin-bottom: 200px;*/
+
+    background-color: #333;
+    background-image: inherit;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* adding a liner gradient */
+.reflected::before {
+    content: "";
+    position: absolute;
+    bottom: -81%;
+    width: inherit;
+    height: 80%;
+    z-index: 100;
+    /* margin: 0 auto;*/
+    background-image: linear-gradient(to
+    bottom,
+    rgba(255,255,255,0.3),
+    #ffff 60%,
+    #ffff);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* unique border radius */
+
+
+.hasPerfective {
+    perspective: 1000px;
+}
+.hasTransformation {
+    transform: rotateY(15deg);
+}
+
+
+
+/* most mobile phones are below a width of 768px */
+@media only screen and (max-width: 768px) {
+
+
+    .subdivided {
+        height: 350px;
+    }
+
+
+    .foldable {
+        height: 300px !important;
+    }
+    .foldable .parts {
+        /*padding: 2px;*/
+        width: calc(100% / 4.5);
+
+        /* changed dynamically in internal stylesheet
+   background-image: url('./static/images/logo.png');*/
+    }
+
+
+
+}
+
+
+/* most tablets width are beyond 786px */
+@media only screen and (min-width:768px) {
+
+
+    .foldable {
+        height: 400px !important;
+    }
+    .foldable .parts {
+        /*padding: 2px;*/
+        width: calc(100% / 5);
+
+        /* changed dynamically in internal stylesheet
+   background-image: url('./static/images/logo.png');*/
+    }
+
+
+
+
+
+
+}

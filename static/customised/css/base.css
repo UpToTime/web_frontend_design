@@ -1,0 +1,1526 @@
+/* custom base styling and important overrides
+required on all web pages
+*/
+
+
+
+/* keynote base styling starts from mobile then
+adjusted to other media device
+frame is 16 per ms
+R.A.I.L
+(Response.Animation.Idle.Load)
+mobile browser font is 16px
+*/
+
+
+/* importing necessary fonts from fonts.css files
+contains 3 different fonts
+*/
+@import url(./fonts.css);
+
+/* start of color scheme support */
+:root {
+    /* this tags are also included in html head meta tags*/
+    color-scheme: light dark;
+    supported-color-scheme: light dark;
+    /* --pale_color: #e7eef1;*/
+}
+/* end of color scheme support */
+
+
+
+/* start of extending global elements */
+
+html {
+    height: 100%;
+    /*  min-height: 100vh;*/
+    /* increase fontsize*/
+    font-size: 16px;
+    color: #000000fb;
+    /* fonts should be here */
+    font-family: 'Montserrat500N', Arial, Helvetica, sans-serif;
+    /* check for support */
+    /*scroll-snap-type: y or block proximity;*/
+    /* end of check */
+
+}
+
+body {
+    min-height: 100vh;
+    /* overide semantic min-width of 320 */
+    width: 100%;
+    font-family: 'Montserrat500N' !important;
+    font-size: 16px;
+    /*
+    moved to root
+       height: 100%;
+    min-width: 100vw
+    */
+    overflow-y: auto;
+    -webkit-scroll-behaviour: smooth;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* overscroll-behavior: none;*/
+    /* font-weight was  400;*/
+    /*scroll-padding: 4em;
+    was 4.25em*/
+}
+#AboveTheFold,#TheFold,#BelowTheFold {
+    margin: 0 auto;
+    position: relative;
+    min-width: 100%;
+    height: auto;
+}
+.stuck_full_nav {
+    /* contains sticky position */
+    display: block;
+    min-height: 5rem;
+    width: 100%;
+    top: 200px;
+    /*will-change: transform;*/
+}
+.element_whitespace {
+    /* outside element */
+    margin: 3vw;
+    /* inside element */
+    padding: 4vw;
+}
+.horizontal_pages_wrapper {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    text-align: left;
+    overflow-x: scroll;
+    white-space: nowrap;
+    /* enables a horizontal scrollbar */
+    -webkit-scroll-behaviour: smooth;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /* scroll-snap-type: x proximity;*/
+}
+.horizontal_page_content {
+    display: inline-block;
+    /* vertical-align: middle;*/
+    white-space: normal;
+    min-width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    /* margin-right: -14px;*/
+    padding: 0;
+}
+.vertically_on_top {
+    vertical-align: top;
+}
+.positioned_relative {
+    position: relative !important;
+}
+.recentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.page_footer {
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    border-top: 0.5vh solid currentColor;
+}
+
+.whole_page {
+    min-height: 100vh;
+}
+.new_flow {
+    padding: 0;
+    /* display: flow-root;*/
+    /* helps with issues about collapsing margin*/
+}
+/* start of element with x/z transformation and perspective */
+.perspectives {
+    perspective: 1000px;
+    perspective-origin: center center;
+    transform-style: preserve-3d;
+}
+/* end of element with z transformation and perspective */
+
+.snapping_content {
+    /* uncomment later on full support implementation
+    used together with scroll-behavior */
+    scroll-snap-align: center;
+    scroll-margin: 4em;
+    scroll-padding: 2em;
+}
+
+button:not(.button):not(.label) {
+    /*all: unset;*/
+    outline: none;
+    border: none;
+    border-radius: 0;
+    text-align: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+blockquote {
+    margin: 1vh auto;
+    padding: 0.5em 0.2em;
+    line-break: auto;
+    max-width: 70ch;
+    text-align: inherit;
+    color: inherit;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+}
+
+figcaption:not(.ui) {
+    min-width: 50%;
+    max-width: 45ch;
+    height: auto;
+    margin: 0 auto;
+    white-space: normal;
+    text-align: inherit;
+    font-family: 'Montserrat400N',sans-serif;
+    font-size: 0.7rem;
+    color: currentColor;
+    /* text-shadow: 0 1px 1px rgba(0,0,0,0.35);*/
+}
+figure .ui.bottom.attached.label {
+    text-align: left;
+    width: 100%;
+
+}
+.tinted {
+    background-color: #00000059 !important;
+}
+.tint_over:not(.knockout_contents) {
+    background-color: rgba(0,0,0,0.55);
+    /*  background-blend-mode: luminosity;*/
+    color: #fff;
+    mix-blend-mode: screen;
+    /*  if bg-color is white and text is black
+    mix-blend-mode is multiply*/
+}
+.simple_tint_over {
+    /* almost glassy color */
+    background-color: rgba(0,0,0,0.2) !important;
+    color: currentColor;
+}
+.simple_skew {
+    position: relative;
+    transform: skew(-4deg,-4deg);
+    background-color: #f0f9ff;
+    box-shadow: 0 5px 14px #091f3a1a;
+    border-radius: 10px;
+}
+.simple_skew_wall:before,.simple_skew_wall:after {
+    content: " ";
+    position: absolute;
+}
+.simple_skew_wall:before {
+    width: 15px;
+    height: 100%;
+    top: 0;
+    left: -15px;
+    transform-origin: right bottom;
+    transform: skewY(45deg);
+    background-color: #e0e0e0;
+}
+.simple_skew_wall:after {
+    /* placed on top */
+    width: 100%;
+    height: 15px;
+    top: -15px;
+    left: 0;
+    transform-origin: bottom left;
+    transform: skewX(45deg);
+    background-color: #efefef;
+}
+.simple_skew_shadowed:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* height: 100%;
+    width: 100%;*/
+    background-color: inherit;
+    /* f0f9ff*/
+    border-radius: inherit;
+    transform: skew(-4deg,-4deg);
+    z-index: -10;
+}
+.simple_skew .offset_skew {
+    transform: skew(4deg,4deg);
+}
+img {
+    image-rendering: auto;
+    max-width: 100%;
+
+}
+.td-img {
+    /* parent of image in table cell */
+    width: 100%;
+    height: 20rem;
+    /* some margin if button below it */
+    margin-bottom: 1.5vh;
+}
+/* aspect ratio calc = height/width */
+.responsive_aspect {
+    height: 312px;
+    width: 250px;
+    min-width: 320px;
+    min-height: 180px;
+}
+/* start of styling element with aspect ratio */
+.aspect_container {
+    display: block;
+    position: relative;
+    max-width: 320px;
+
+}
+.aspect_container:after {
+    content: " ";
+    display: block;
+    padding-top: 100%;
+    /* for various aspect ratio eg 16:9
+    change padding-top like below
+    horizontal sq = calc(100% / (16/9))
+    vertical sq = calc(100% * (16/9))
+    */
+
+}
+
+.aspect_contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.aspect_contents img.fluid {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+
+.object_fitted {
+    /* make images responsive and cropping */
+    -webkit-object-fit: cover;
+    object-fit: cover;
+    -webkit-object-position: center center;
+    object-position: center center;
+
+}
+
+
+.custom_video {
+    /* make videos responsive and cover element*/
+    -webkit-object-fit: cover;
+    object-fit: cover;
+}
+
+
+table {
+    empty-cells: hide;
+}
+
+dl p {
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+/* start of styling details and summary elements
+to appear like accordion  */
+/* apply some styles from semantic ui accordion element*/
+details,summary {
+    outline: none;
+}
+.marker_disabled::-webkit-details-marker,
+.marker_disabled::marker {
+    /* -webkit support*/
+    display: none;
+}
+.marker_enabled::marker,
+.marker_enabled::-webkit-details-marker {
+    /* support for Firefox */
+    display: inline-block;
+    float: none;
+    opacity: 1;
+    width: 1.25em;
+    height: 1em;
+    margin: 0 0.25rem 0 0;
+    padding: 0;
+    font-size: 1em;
+    color: currentColor;
+    -webkit-transition: opacity 0.1s ease, -webkit-transform 0.1s ease;
+    transition: opacity 0.1s ease, -webkit-transform 0.1s ease;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    transition: transform 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease;
+    vertical-align: baseline;
+    -webkit-transform: none;
+    transform: none;
+}
+details {
+    max-width: 100%;
+    width: 90%;
+    margin: 1em auto;
+    padding: 0;
+    border-radius: 0.28571429rem;
+    text-align: inherit;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15), 0 0 0 1px rgba(34, 36, 38, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15), 0 0 0 1px rgba(34, 36, 38, 0.15);
+}
+summary {
+    margin: 0;
+    padding: 0.75em 1em;
+    color: currentColor;
+    font-family: 'Grenze700I',serif;
+    text-align: inherit;
+    /*font-weight was 700 ;*/
+    max-width: 65ch;
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+    -webkit-transition: background 0.1s ease, color 0.1s ease;
+    transition: background 0.1s ease, color 0.1s ease;
+}
+details[open] summary {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.87);
+}
+details .contents {
+    /* style elements after summary element*/
+    display: block;
+    padding: 0.5em 1em 1.5em;
+    margin: 1% auto;
+    text-align: inherit;
+}
+details .contents:last-child {
+    margin-top: 2%;
+}
+/* end of styling details and summary elements
+to appear like accordion */
+
+/* start of styling element with dash line above it */
+.dashed_above {
+    position: relative !important;
+}
+.dashed_above:before {
+    content: " ";
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 20%;
+    height: 2%;
+    border: 2px solid currentColor;
+    border-radius: 10%;
+}
+/* end of styling element with dash line above it */
+
+/* end of extending global elements */
+
+
+/* start of typography and font overrides */
+
+h1,h2,h3,
+h4,h5,h6,th,
+.ui.header:not(.displayed_font) {
+    font-family: 'Grenze800N',serif !important;
+    /*font-weight was 700 ;*/
+    max-width: 60ch;
+}
+.header:not(.ui):not(.sub),.title {
+    font-family: 'Grenze700N',serif !important;
+    /*font-weight was 700 ;*/
+    max-width: 60ch;
+}
+.sub.header {
+    font-family: 'Grenze600N',serif !important;
+    max-width: inherit;
+}
+.menu .item {
+    font-family: 'Grenze400I',serif !important;
+    text-transform: uppercase;
+    /*font-weight: bold !important;*/
+}
+.menu .text.header {
+    font-family: 'Grenze500I',serif !important;
+    text-transform: capitalize;
+}
+.ui.sub.header {
+    font-family: 'Grenze700N',serif !important;
+    max-width: 65ch;
+}
+.signed,.numeric_text {
+    font-family: 'Grenze400I',serif !important;
+}
+.signature {
+    font-family: 'Alex Brush',serif !important;
+    /* font-weight is 400 */
+}
+.text:not(.ui) {
+    font-family: 'Montserrat500N',sans-serif !important;
+}
+.button {
+    font-family: 'Montserrat800N',sans-serif !important;
+}
+.value {
+    font-family: 'Alex Brush',serif !important;
+}
+label,.label:not(.ui) {
+    font-family: 'Montserrat700N',sans-serif !important;
+}
+
+input,.ui.input {
+    font-family: 'Montserrat500N',sans-serif !important;
+}
+.displayed_font {
+    font-family: 'Passion7One',serif !important;
+    max-width: 60ch;
+}
+
+/* start of text transformation */
+p,q,.description,.text {
+    max-width: 70ch;
+}
+
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.uppercased_text {
+    text-transform: uppercase !important;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+}
+.capitalised_text {
+    text-transform: capitalize !important;
+}
+.lowercased_text {
+    text-transform: lowercase !important;
+}
+
+.full_width_text {
+    max-width: 100% !important;
+}
+/* start of styling stroke effect on text */
+.stroked_text {
+    /*font-size: 2.5rem;*/
+    letter-spacing: 1px;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    color: #000;
+    /* color was transparent */
+}
+.native_stroked_text {
+    /* all browser support stroke effect */
+    /* font-size: 2.5rem;*/
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-shadow: -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+/* end of styling stroke effect on text */
+
+.big_letter:first-letter {
+    font-size: 3rem;
+    font-family: 'Montserrat600N',Sans-Serif;
+    font-style: normal;
+    display: inline-block;
+    margin: 1.2% auto;
+    line-height: 1;
+    -webkit-initial-letter: 4;
+    initial-letter: 4;
+
+}
+.mark_sentence:first-line {
+    text-transform: uppercase;
+}
+/* start of rotated text */
+.sideway_text {
+    writing-mode: vertical-lr;
+    /* writing-mode: tb-lr;*/
+    /* prefer the mixed rule
+    text-orientation: sideways;*/
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    text-align: right;
+
+}
+/* end of rotated text */
+
+/* start of rotated and upright text on all screens */
+.upright_text_all {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    transform: rotate(180deg);
+    text-align: center;
+
+}
+.upright_text_alternative {
+    width: 1ch;
+    text-transform: uppercase;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: center;
+
+}
+/* end of rototed and upright text all screens */
+
+/* end of text transformation */
+
+
+/* end of typography and font overrides */
+
+
+/* start of various elements adjustments */
+
+.unborder_radius {
+    /* remove round border for menus*/
+    border-radius: 0 !important;
+
+}
+
+.unborder {
+    /* remove borders from segment component*/
+    border-radius: 0 !important;
+    border: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.unmargin_vertically {
+    /* no top and bottom margin */
+    margin: 0 auto !important;
+}
+
+.unpad {
+    /* no padding in element*/
+    padding: 0 !important;
+}
+
+
+.unpad_vertically {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+
+.plain_link {
+    display: inline-block;
+    width: auto;
+    min-height: 1.5em;
+    text-align: inherit;
+    vertical-align: middle;
+    text-decoration: underline;
+    font-size: 0.99rem;
+    font-family: 'Grenze500I',serif;
+    cursor: auto;
+}
+
+
+/* add quotation marks to element*/
+.mark_quote {
+    text-align: inherit;
+    color: currentColor;
+
+}
+.mark_quote:before,
+.mark_quote:after {
+    font-size: 2em;
+    font-family: 'Grenze300I',serif;
+
+}
+.mark_quote:before {
+    content: '\201C';
+}
+.mark_quote:after {
+    content: '\201D';
+    /*display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    padding-top: 2%;*/
+    /* margin-bottom: -10%;*/
+    /*transform: translateY(5%);*/
+}
+
+
+.ui.fixed.menu:not(.sidebar) {
+    /* adjust z-index for dropdown to show properly*/
+    z-index: 900;
+}
+
+.ui.sidebar {
+    z-index: 800;
+}
+.top.fixed.menu {
+    min-height: 4.4rem;
+}
+.bottom.fixed.menu {
+    min-height: 4rem;
+    margin-bottom: 1.5vh;
+}
+.native.sticky {
+    /* sticky position */
+    z-index: 10;
+    width: 100%;
+}
+dl .author {
+    /* remove margin added by using h tags */
+    margin: 0 auto !important;
+    /* for dl > dt padding-left = 24px*/
+}
+
+.unstyle_list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    /* margin-bottom: -1.4em;*/
+    /* bottom margin-bottom cause of line height*/
+
+}
+
+.unstyle_list.plain:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+/* .unstyle_list li {
+    display: inline-block;
+}*/
+/* start of styling sticky element to bottom */
+.bottom_stuck {
+    top: 55vh;
+}
+/* end of styling sticky element to bottom */
+
+
+
+/* end of various elements adjustments */
+
+
+
+/* start of custom elements styling */
+.max_banner_wrapper {
+    min-height: 80vh;
+    margin: 0 auto;
+    padding-top: 1em;
+    border-bottom: 1vh solid currentColor;
+}
+.banner_wrapper {
+    min-height: 40vh;
+    margin: 0 auto;
+    padding-top: 1em;
+    border-bottom: 0.7vh solid currentColor;
+}
+.min_banner_wrapper {
+    min-height: 20vh;
+    margin: 0 auto;
+    padding-top: 1em;
+    border-bottom: 0.5vh solid currentColor;
+
+}
+
+.dynamic_height {
+    min-height: 10rem;
+    max-height: calc(100% + 5rem);
+}
+.gradient_bg {
+    /* no positions thus its vertical (top to bottom )*/
+    background-image: -webkit-linear-gradient(rgba(255,255,255,0) 80%,
+    #f1f1f1 100%),
+    linear-gradient(rgba(255,255,255,0) 80%,
+    #f1f1f1 100%);
+}
+.parallax_fixed {
+    display: block;
+    height: 30rem;
+    width: 100%;
+    position: fixed;
+    /*z-index: -1;*/
+    /* top: 0;
+    left: 0;*/
+    background-color: rgba(0,0,0,0.55);
+
+}
+.parallax_fixed_imagey {
+    display: block;
+    position: fixed;
+}
+
+
+
+.parallaxed {
+    /* adds background image to element*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(0,0,0,0.55);
+    color: #fff;
+
+}
+.parallaxed:after {
+    content: " ";
+    /*width: 100%;
+    height: 100%;*/
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    /* background-position: left top;*/
+    /* reduce scroll lag the z issue */
+    /* -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -ms-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);*/
+    transform: translateZ(-1px) scale(1.2);
+    /* add back-image using internal css */
+    background-position: top center;
+    background-image: url('../../images/horizon.jpg');
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    will-change: transfrom;
+}
+.knockout_efx {
+    overflow: hidden;
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    /* add back-image using internal css */
+    background-image: url('../../images/light-bulb.jpg');
+}
+.knockout_contents {
+    background-color: #fff;
+    mix-blend-mode: lighten;
+}
+
+.parallax_image {
+    /* styles and image tag making it a background image */
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*make parent element position relative */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%)
+    translateZ(-2px);
+    z-index: -2;
+
+}
+.parallax_image_blurry {
+    /* styles and image tag making it a background  image and
+    add a blur on top*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*make parent element position relative */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%)
+    translateZ(-2px);
+    z-index: -2;
+    /* extra styling for easy blur effect
+    child elment has class frosted */
+
+}
+
+.parallax_image_blurry img {
+    height: 100%;
+    width: 100%;
+}
+
+.parallax_video {
+    /* makes background video element*/
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+
+}
+
+.frosted {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+.frosted_edges {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+/* start of custom border styling */
+
+.txt-typed > .txt {
+    /* a cursor for the typed text */
+    border-right: 0.2rem solid #777;
+}
+
+.fancy_border {
+    border-radius: 63% 37% 30% 70% / 64% 66% 34% 36%;
+
+}
+.round_border {
+    border-radius: 0.5rem;
+}
+.side_borders {
+    /* adds color to left and right borders*/
+    border-left: 0.5rem solid currentColor !important;
+    border-right: 0.5rem solid currentColor !important;
+    border-radius: 0.5rem !important;
+}
+/* start of styling background element with a border*/
+.fancy_border_bg {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+    padding: 10%;
+    border-radius: 63% 37% 30% 70% / 64% 66% 34% 36%;
+    background-color: pink;
+}
+.fancy_border_bgY:before {
+    content: " ";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: pink;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+
+/* reduce inner image */
+.fancy_border_bg_image {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* start of corner folding effect */
+.folding_corner {
+    position: relative;
+
+}
+.folding_corner:before {
+    content: " ";
+    position: absolute;
+    /* top right corner*/
+    top: 0;
+    right: 0;
+    border-right: 2vw solid black;
+    border-bottom: 2vw solid white;
+    width: 0;
+    /* for cutting effect use border color equal to background color*/
+    background-color: inherit;
+}
+.folding_corner:after {
+    content: " ";
+    position: absolute;
+    /* bottom left corner*/
+    bottom: 0;
+    left: 0;
+    border-right: 4vw solid white;
+    border-bottom: 4vw solid black;
+    /* transparent was black on border-bottom*/
+    width: 0;
+    /* for cutting effect use border color equal to background color*/
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    border-bottom-right-radius: 10px;
+    background-color: transparent;
+}
+/* end of corner folding effect */
+/* end of styling background element with a border*/
+
+
+
+
+/* end of custom border styling */
+
+/* start of box box-shadow style*/
+
+.plain_shadowed {
+    -webkit-box-shadow: 3px 3px 5px 5px rgba(0,0,0,.5);
+    -moz-box-shadow: 3px 3px 5px 5px rgba(0,0,0,.5);
+    box-shadow: 3px 3px 5px 5px rgba(0,0,0,.5);
+}
+.raised_shadowed {
+    /* adds a raised effect to element */
+    -webkit-box-shadow: 0 2px 4px 0 #000000d7, 0 2px 10px 0 #141618e7;
+    -moz-box-shadow: 0 2px 4px 0 #000000d7, 0 2px 10px 0 #141618e7;
+    box-shadow: 0 2px 4px 0 #000000d7, 0 2px 10px 0 #141618e7;
+
+}
+.drop_shadowed {
+    -webkit-filter: drop-shadow(2px 4px 5px #000);
+    filter: drop-shadow(2px 4px 5px #000);
+    /* filter: drop-shadow(20px 20px 5px #000);*/
+}
+/* end of  box-shadow styling
+  -webkit-box-shadow: 0 0 0 2px #FFFFFF inset;
+          box-shadow: 0 0 0 2px #FFFFFF inset;
+#14161800
+*/
+
+/* glassmorphism style */
+.glassed {
+    position: relative;
+    margin: 0.5rem auto;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ffffff2e;
+    color: #000000;
+    /* mix-blend-mode: screen;*/
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    /* below code is not really important */
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+}
+.glassed:before {
+    /* inherits more style from parent */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #ffffff80;
+    /*box-shadow: 0 8px 32px 0 #1f26875e;*/
+    -webkit-filter: blur(6.0px);
+    filter: blur(6.0px);
+    border-radius: 8px;
+    border: 1px solid #ffffff2e;
+    color: #000000;
+    /*  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;*/
+    /* chnage from this
+    color: #000000d9;*/
+
+}
+
+.glassed.opaquely {
+    mix-blend-mode: screen;
+}
+/* end of glassmorphism style*/
+
+
+
+/* start of styles to remove elements from the screen */
+.above_screen_view {
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+.below_screen_view {
+    position: absolute;
+    bottom: -100%;
+}
+/* end of styles to remove elements from the screen */
+
+/* start of styling elements that scroll horizontally */
+
+.horizontal_wrapper {
+    display: block;
+    margin: 0 auto;
+    padding: 2vh 2vw;
+    /*width: 99%;*/
+    max-width: 100%;
+    height: auto;
+    /*height: 20rem;*/
+    position: relative;
+    text-align: inherit;
+    white-space: nowrap;
+    overflow-x: scroll;
+
+    /* enables a horizontal scrollbar */
+    -webkit-scroll-behaviour: smooth;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /* scroll-snap-type: x proximity;*/
+}
+.horizontal_contents {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    text-align: inherit;
+    white-space: normal;
+
+}
+
+.horizontal_contents_item {
+    display: block;
+    width: 100%;
+    min-height: 20rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+
+}
+
+.horizontal_wrapper .unspaced {
+    /* remove space between horizontal_contents if necessary */
+    margin-right: -4px;
+}
+
+/* start of adding some overlapping effect to horizontal_content*/
+.horizontal_wrapper .overlapping {
+    /* add some space above for easy translation on hover */
+    margin-top: 0.9rem;
+    will-change: transform;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+
+}
+.horizontal_wrapper .overlapping:not(:first-child) {
+    margin-left: -4rem;
+}
+
+.horizontal_wrapper .overlapping:hover,
+.horizontal_wrapper .overlapping:focus-within {
+    transform: translateY(-1rem);
+}
+.horizontal_wrapper .overlapping:hover ~ .overlapping,
+.horizontal_wrapper .overlapping:focus-within ~ .overlapping {
+    transform: translateX(4rem);
+    /* removes the left margin */
+}
+/* start of styling inner elements horizontally scrolled */
+.horizontal_contents a {
+    /* push link element a bit */
+    margin-top: 2vh;
+}
+.horizontal_contents_image_item {
+    display: block;
+    position: relative;
+    min-height: inherit;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: inherit;
+}
+/* start of styling inner over image item */
+.horizontal_contents_text_item {
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    z-index: 1;
+    margin: 0;
+    color: #fff;
+    padding: 2px;
+}
+/* end of styling inner over image item */
+/* end of styling inner elements horizontally scrolled */
+
+/* Force Simple Scrollbars */
+.scroll_enbaled::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+}
+.scroll_enbaled::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+}
+.scroll_enbaled::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+.scroll_enbaled::-webkit-scrollbar-thumb:window-inactive {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.scroll_enbaled::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 135, 139, 0.8);
+}
+
+
+.scroll_disabled::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+    width: 0px;
+    height: 0px;
+}
+/* hide scroll bar on ms */
+.scroll_disabled {
+    -ms-overflow-style: none;
+}
+
+
+/* end of adding some overlapping effect to horizontal_content*/
+
+/* end of styling elements that scroll horizontally */
+
+/* start of styling masonry layout */
+.masonry_wrapper {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    column-gap: 1vw;
+    column-fill: balance;
+
+}
+.masonry_contents {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.masonry_contents + .masonry_contents {
+    margin-right: -2px;
+}
+.masonry_wrapper img {
+    width: 100%;
+}
+/* end of styling masonry layout */
+
+
+
+
+
+/* start of svg styling */
+.styling_svg {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-size: 0;
+    height: 100%;
+    border: 0;
+    /*fill-opacity: 1;*/
+}
+.separation_svg {
+    height: auto;
+    min-width: 100%;
+
+}
+svg .inverted_color {
+    fill: #4c545736;
+}
+svg .bg_colored {
+    fill: #fff;
+}
+/* end of svg styling */
+
+
+
+/* clear background color*/
+.no_background_color {
+    background-color: transparent !important;
+}
+
+
+
+/* end of custom elements styling */
+
+
+
+
+/* start of custom media queries */
+
+/* most mobile phones are below a width of 768px */
+@media only screen and (max-width: 767.98px) {
+
+    .no_mobile {
+        display: none !important;
+        visibility: hidden;
+    }
+    .horizontal_pages_wrapper {
+        min-height: 100vh;
+        /*vertical-align: middle;*/
+    }
+
+    .horizontal_contents.overlapping  img {
+        /* add some space on overlapping elements image
+        on small screen */
+        width: 90%;
+    }
+
+
+    .masonry_wrapper {
+        column-count: 1;
+    }
+
+
+    .dynamic_height {
+        height: 150px;
+    }
+
+    /*increase change image heights */
+    .resized_image_height {
+        min-height: 11rem;
+    }
+}
+
+
+/* most tablets width are beyond 768px */
+@media only screen and (min-width:768px) {
+
+    .max_banner_wrapper {
+        min-height: 50vh;
+        padding-top: 3.5em;
+    }
+    .banner_wrapper {
+        min-height: 30vh;
+        padding-top: 3em;
+    }
+    .min_banner_wrapper {
+        min-height: 15vh;
+        padding-top: 1.5em;
+
+    }
+
+    .no_computer {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    .below_fixed_menu {
+        margin-top: 4.45rem !important;
+    }
+    /* adjust distance of sticky wrapper */
+    .bottom_stuck {
+        top: 75vh;
+    }
+
+    .horizontal_pages_wrapper {
+        min-height: 80vh;
+        vertical-align: middle;
+    }
+    .whole_page {
+        min-height: 95vh;
+    }
+
+    .horizontal_wrapper {
+        padding: 1vh 0;
+    }
+
+    .horizontal_contents {
+        width: 33.3%;
+
+    }
+    .horizontal_contents_item {
+        min-height: 25rem;
+    }
+
+    /* increase marquee scrolled item width */
+    .marquee_wrapper .marquee_contents_scrolled {
+        width: 100%;
+    }
+
+    .masonry_wrapper {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        -ms-column-count: 3;
+        column-count: 3;
+    }
+
+    .dynamic_height {
+        height: 350px;
+    }
+
+    .touch_indicator_3D {
+        width: 70%;
+    }
+
+    /* start of rotated and upright text on large screens only */
+    .upright_text_comp {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        /*transform: rotate(180deg);*/
+        text-align: inherit;
+
+    }
+    /* end of rototed and upright text on large screens only */
+
+    /* change image height */
+    .resized_image_height {
+        min-height: 25rem;
+    }
+
+    /* reduce height */
+    .stacked_fold .stacking_fold_content {
+        height: 5vh !important;
+    }
+    .td-img {
+        width: 100%;
+        height: 17rem !important;
+    }
+
+
+}
+
+/* some adjustments on dark mode*/
+@media (prefers-color-scheme:dark) {
+
+    /* start of box shadow adjustments */
+    .plain_shadowed {
+        -webkit-box-shadow: 3px 3px 5px 5px #14161800;
+        -moz-box-shadow: 3px 3px 5px 5px #14161800;
+        box-shadow: 3px 3px 5px 5px #14161800;
+    }
+    .raised_shadowed {
+        /* adds a raised effect to element */
+        -webkit-box-shadow: 0 2px 4px 0 #000000d7, 0 2px 10px 0 #14161800;
+        -moz-box-shadow: 0 2px 4px 0 #000000d7, 0 2px 10px 0 #14161800;
+        box-shadow: 0 2px 4px 0 #000000d7, 0 2px 10px 0 #14161800;
+
+    }
+    .drop_shadowed {
+        -webkit-filter: drop-shadow(2px 4px 5px #14161800);
+        filter: drop-shadow(2px 4px 5px #14161800);
+        /* filter: drop-shadow(20px 20px 5px #000);*/
+    }
+    /* end of  box shadow adjustments */
+
+
+
+
+
+    /* start of change display of scrollbar */
+    .scroll_enbaled::-webkit-scrollbar-track {
+        background-color: #ffffff1a;
+    }
+    .scroll_enbaled::-webkit-scrollbar-thumb {
+        background-color: #ffffff40;
+    }
+    .scroll_enbaled::-webkit-scrollbar-thumb:window-inactive {
+        background-color: #ffffff26;
+    }
+    .scroll_enbaled::-webkit-scrollbar-thumb:hover {
+        background-color: #ffffff59;
+    }
+    /* end of change display of scrollbar */
+    .gradient_bg {
+        background-image: -webkit-linear-gradient(rgba(0,0,0,0) 85%,rgba(0,0,0,0.25) 100%),
+        linear-gradient(rgba(0,0,0,0) 85%,rgba(0,0,0,0.25) 100%);
+
+    }
+
+
+    /* add grayscale effect to images */
+    .grayscaled {
+        -webkit-filter: grayscale(80%);
+        filter: grayscale(80%);
+    }
+    /*change fill color on svg path */
+    svg .inverted_color {
+        fill: #eff6fc;
+
+    }
+    svg .bg_colored {
+        fill: #060606;
+    }
+    thead {
+        background-color: #fff;
+    }
+    .marquee_wrapper {
+        color: #fff;
+        /* background-color: white;*/
+    }
+
+    .stroked_text {
+        -webkit-text-stroke: 2px #fff;
+        text-stroke: 2px #fff;
+        color: #000;
+    }
+    .native_stroked_text {
+        /* all support stroke effect changed colors */
+        color: black;
+        text-shadow: -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
+    }
+
+
+}
+/* end of dark mode adjustments */
+
+
+
+/* start of adjustments made on device with hover
+as main pointing device */
+@media (hover:hover) {
+    .body {
+        background: yellow;
+    }
+}
+
+
+
+/* end of hover check */
