@@ -2,7 +2,48 @@
 elements with animation
 */
 
+/* start of styling element with animating border gradient */
+.gradient_border {
+    display: block;
+    position: relative;
+    /* border size used to determine most things */
+    border-radius: 3px;
+    color: inherit;
+    background: #e7eef1;
+    /* mix-blend-mode: difference;*/
+}
+.gradient_border:before {
+    content: "";
+    display: block;
+    position: absolute;
+    /* use parents border-radius */
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    width: calc(100% + 3px * 2);
+    height: calc(100% + 3px * 2);
+    background-image: -webkit-linear-gradient(60deg,green,
+    grey,transparent,yellow,blue);
+    background-size: 300% 300%;
+    border-radius: calc(2 * 3px);
+    z-index: -1;
 
+}
+.gradient_border.animated:before {
+    animation: GradientEffect
+    3s alternate infinite;
+}
+@keyframes GradientEffect {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+/* end of styling element with animating border gradient */
 
 /* start of styling element with text flashing */
 .flashing_words:before {
@@ -95,6 +136,7 @@ elements with animation
 .marquee_wrapper {
     display: block;
     width: 100%;
+    min-height: 5rem;
     margin: 0.5vh auto;
     padding: 1vh;
     white-space: nowrap;
@@ -302,7 +344,7 @@ multiplied by 500ms */
     /*stroke-dasharray: 0, 100%;*/
 
 }
-.svg_text.has_visibility_efx.activated {
+svg .text_visibility_efx.activated {
     stroke-linejoin: round;
     stroke-dasharray: 0, 100%;
     -webkit-animation-name: svg_text_animation;
@@ -313,9 +355,9 @@ multiplied by 500ms */
     -moz-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
 
-    -webkit-animation-duration: 7000ms;
-    -moz-animation-duration: 7000ms;
-    animation-duration: 7000ms;
+    -webkit-animation-duration: 5000ms;
+    -moz-animation-duration: 5000ms;
+    animation-duration: 5000ms;
 
     -webkit-animation-delay: 20ms;
     -moz-animation-delay: 20ms;
@@ -342,7 +384,8 @@ multiplied by 500ms */
     }
     100% {
         stroke-dasharray: 120%;
-        fill: #01da1bfd;
+        /*fill: #01da1bfd;*/
+        fill: currentColor;
     }
 }
 

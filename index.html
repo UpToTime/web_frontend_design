@@ -1,14 +1,19 @@
 <!DOCTYPE HTML>
 <html itemscope itemtype="https://schema.org/WebPage" dir="ltr" lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0,minimum-scale=1.0,viewport-fit=cover">
+
     <meta name="robots" content="all">
+
+    <meta name="application-name" content="UP TO TIME">
+
+    <meta name="apple-mobile-web-app-title" content="UP TO TIME">
+    <meta name="msapplication-starturl" content="./index.html">
 
     <meta name="msapplication-TileColor" content="#060606">
     <meta name="msapplication-TileImage" content="./manifests/ms-icon-144x144.png">
@@ -31,38 +36,91 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./manifests/favicon-16x16.png">
     <link rel="shortcut icon" type="image/x-icon" href="./manifests/favicon.ico">
     <link rel="manifest" href="./manifest.json">
+    <!-- Place favicon.ico in the root directory -->
 
     <meta name="description" content="
-    well designed,beautiful and modern
-    user interface html5 templates.
-    semantic tags and aria supported and good user experience
-    website theme templates,
+    free,minimalistic,beautiful and modern web templates,
+    developed using html5,css3,javascript and semantic-fomantic ui framework.
+    Features included are semantic tags, aria support,light mode,dark mode,
+    conform to web accessibilty standards,overall good user experience and
+    themable templates for any website.
     ">
-    <meta name="keywords" content="html5 and css3 templates,
-    front-end templates,
-    fomantic ui templates
-    ,semantic ui templates,
-    ,free customisable website templates
+    <meta name="keywords" content="free html5 and css3 templates,
+    modern,futuristic and beautiful front-end web templates,
+    fomantic ui,semantic ui,minimalistic styled web templates,
+    ,semantically arranged and accessible web templates,
+    ,free customisable semantic ui and fomantic ui templates,
+    how to use semantic or fomantic ui,front-end web design.
     ">
     <meta name="author" content="up to time enterprise">
+
+    <!-- start of social meta tags -->
+    <!-- COMMON TAGS -->
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="home page | up to time web design | showcase front-end skills">
+    <meta itemprop="description"
+    content="free,minimalistic,beautiful and modern web templates,
+    developed using html5,css3,javascript and semantic-fomantic ui framework.
+    Features included are semantic tags, aria support,light mode,dark mode,
+    conform to web accessibilty standards,overall good user experience and
+    themable templates for any website.">
+
+    <meta itemprop="image" content="./static/images/logo.png">
+    <!-- Open Graph general (Facebook, Pinterest & LinkedIn) -->
+    <meta property="og:title"
+    content="home page | up to time web design | showcase front-end skills">
+
+    <meta property="og:description"
+    content="free,minimalistic,beautiful and modern web templates,
+    developed using html5,css3,javascript and semantic-fomantic ui framework.
+    Features included are semantic tags, aria support,light mode,dark mode,
+    conform to web accessibilty standards,overall good user experience and
+    themable templates for any website.">
+
+    <meta property="og:image" content="/static/images/logo.png">
+
+    <meta property="og:url" content=".">
+    <meta property="og:site_name"
+    content="https://uptotime.github.io/web_frontend_design/">
+    <meta property="og:locale" content="en">
+
+    <meta property="og:type" content="website">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title"
+    content="home page | up to time web design | showcase front-end skills">
+
+    <meta property="twitter:description"
+    content="free,minimalistic,beautiful and modern web templates,
+    developed using html5,css3,javascript and semantic-fomantic ui framework.
+    Features included are semantic tags, aria support,light mode,dark mode,
+    conform to web accessibilty standards,overall good user experience and
+    themable templates for any website.">
+
+    <meta property="twitter:image:src" content="./static/images/logo.png">
+
+    <!-- end of social meta tags -->
+
+
+
     <!-- dark mode support -->
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
 
-    <title>front-end designs</title>
+    <title>home page | up to time web design | showcase front-end skills </title>
 
-    <!-- Place favicon.ico in the root directory -->
 
     <!-- inject:css -->
     <!-- start css injection -->
     <link rel="stylesheet" type="text/css"
-    href="./static/frameworks/fomantic/semantic.cyborg.css"
-    media="(prefers-color-scheme: dark)">
+    href="./static/frameworks/fomantic/semantic.dark.css"
+    media="(prefers-color-scheme:dark)">
 
 
     <link id="MainTheme" rel="stylesheet" type="text/css"
     href="./static/frameworks/fomantic/semantic.css"
-    media="(prefers-color-scheme: light),
+    media="(prefers-color-scheme:light),
     (prefers-color-scheme:no-preference)">
 
     <link rel="stylesheet" type="text/css"
@@ -73,18 +131,11 @@
     media="screen">
     <!-- end css injection -->
 
-    <!-- start of custom css dynamic styling -->
-    <style media="screen">
-        .frostTy {
-            filter: grayscale(100%);
+    <!-- start of css dynamic styling -->
+    <style type="text/css" media="all">
 
-            /* mix-blend-mode used to style elements
-        inside
-        and backdrop-filter styles elements outside
-        */
-        }
     </style>
-    <!-- end of custom css dynamic styling -->
+    <!-- end of css dynamic styling -->
 
 </head>
 
@@ -95,14 +146,13 @@
         <picture class="parallax_image_blurry">
             <img class="object_fitted frosted"
             src="./static/images/logo.png"
-            alt=""
+            alt="up to time logo"
+            width="500"
             height="500" />
         </picture>
 
-
-
         <!-- start of top fixed smallnav -->
-        <nav class="ui top fixed borderless secondary link menu simple_tint_overy"
+        <nav class="ui top fixed borderless secondary inverted menu simple_tint_over"
             id="MainNavigation">
 
 
@@ -121,31 +171,32 @@
                 <!-- start of social media links -->
 
                 <a class="fitted item"
-                    href="https://www.twitter.com"
-                    title="visit our twitter page">
+                    href="https://www.twitter.com/Up_To_Time"
+                    title="visit up to time twitter account -- https://www.twitter.com/Up_To_Time">
                     <i class="inverted circular twitter icon"></i>
+                </a>
+
+                <a class="fitted item"
+                    href="https://www.linkedin.com/in/up-to-time-enterprise-34231b155"
+                    title="visit up to time linkedin account -- https://www.linkedin.com/in/up-to-time-enterprise-34231b155">
+                    <i class="inverted circular linkedin icon"></i>
 
                 </a>
                 <a class="fitted item"
-                    title="facebook page">
-                    <i class="inverted circular facebook icon"></i>
-
-                </a>
-                <a class="fitted item"
-                    title="youtube channel">
-                    <i class="inverted circular youtube icon"></i>
+                    title="visit up to time github page at -- https://www.github.com/UpToTime">
+                    <i class="inverted circular github icon"></i>
 
                 </a>
 
-                <a class="fitted item" href="mailto:pr@uonbi.ac.ke"
-                    title="support email address">
+                <a class="fitted item" href="mailto:uptotimeservices@gmail.com"
+                    title="up to time email address --  uptotimeservices@gmail.com">
                     <i class="inverted circular mail icon"></i>
 
                 </a>
 
                 <a class="fitted item"
-                    title="our main phone number"
-                    href="tel:(+254) 020-4910000">
+                    title="up to time phone number +254707987922"
+                    href="telto:+254707987922">
                     <i class="inverted circular clockwise rotated phone icon"></i>
 
                 </a>
@@ -164,27 +215,27 @@
                         <!-- start of social media links -->
 
                         <a class="item"
-                            href="https://www.twitter.com">
+                            href="https://www.twitter.com/Up_To_Time">
                             <i class="twitter t icon"></i>
                             twitter account
                         </a>
-                        <a class="item">
+                        <a class="item" href="https://www.linkedin.com/in/up-to-time-enterprise-34231b155">
                             <i class="linkedin icon"></i>
                             LinkedIn account
                         </a>
-                        <a class="item">
+                        <a class="item" href="https://www.github.com/UpToTime">
                             <i class="github icon"></i>
                             github account
                         </a>
 
-                        <a class="item" href="mailto:pr@uonbi.ac.ke">
+                        <a class="item" href="mailto:uptotimeservices@gmail.com">
                             <i class="mail icon"></i>
                             contact email
                         </a>
 
                         <a class="item"
                             title="our phone number"
-                            href="tel:(+254) 020-4910000">
+                            href="telto:+254707987922">
                             <i class="clockwise rotated phone icon"></i>
                             phone number
                         </a>
@@ -212,9 +263,9 @@
             <div class="ui centered middle aligned stackable relaxed padded grid">
 
 
-                <section class="left aligned eight wide column ">
+                <section class="left aligned eight wide column">
 
-                    <h1 class="uppercased_text displayed_font glow_text coloured activatedy">
+                    <h1 class="uppercased_text displayed_font glow_text coloured activated">
                         <span class="glowing_item">u</span>
                         <span class="glowing_item">p</span>
                         <span class="glowing_item">t</span>
@@ -228,20 +279,22 @@
 
                     <blockquote class="custom_blockquote">
                         <p class="mark_quote">
-                            Te eum doming eirmod, nominati pertinacia
-                            argumentum ad his. Ex eam alia facete scriptorem,
-                            est autem aliquip detraxit at. Usu ocurreret
-                            referrentur.
+                            Enjoy <u>Up To Time showcase</u>.
+                            <br>
+                            A collection of web templates designed using latest
+                            well supported web technologies with consideration of
+                            all important ui/ux fundamentals.
+                            This showcase was meant to display,enhance and increase
+                            more knowledge in front-end web development.
+
                         </p>
 
                     </blockquote>
 
 
-                    <div class="ui hidden horizontal divider">
+                    <div class="ui hidden horizontal divider" role="separator">
 
                     </div>
-
-
 
                 </section>
 
@@ -256,198 +309,285 @@
     <!-- end of page header -->
 
     <!-- start of main page contents -->
-    <div class="ui vertical segment" id="TheFold">
+    <div class="ui vertical basic segment whole_page" id="TheFold">
 
-        <main class="ui centered middle aligned stackable padded grid">
+        <main class="ui middle aligned stackable padded relaxed grid">
             <!-- start of dynamic page contents -->
-            <article class="row">
+            <article class="centered row">
                 <header class="left aligned sixteen wide column">
                     <h2 class="ui left aligned header uppercased_text">
-                        popular website remake
+                        web page redesigned
                         <span class="sub header lowercased_text">
-                            sososososos
+                            random redesign of popular brand web templates.
+                            The change in design was meant to add &amp; implement
+                            various modern,semantic and accessible design
+                            fundamentals.
                         </span>
                     </h2>
                 </header>
                 <section class="left aligned sixteen wide column">
 
-                    <h3 class="ui center aligned header">
-                        tap on image to view the before and after
-                    </h3>
+                    <h4 class="ui right floated left aligned tiny header">
+                        tap / hover over image to reveal.
+                    </h4>
+                    <div class="ui hidden clearing divider" role="separator">
 
+                    </div>
                     <ul class="unstyle_list horizontal_wrapper scroll_disabled">
 
                         <li class="horizontal_contents">
                             <!-- start of content that flips over -->
-                            <aside class="flip_wrapper">
+                            <section class="flip_wrapper">
+
                                 <div class="flipped_contents wall_efx">
 
                                     <figure class="flipped_contents_item
                                         infront_flip_item">
-                                        <img class="ui centered rounded image"
-                                        src="./static/images/logo.png"
+                                        <img class="fluid object_fitted"
+                                        src="./media/remake/uon.png"
                                         alt=""
-
-                                        height="300"
+                                        width="320"
+                                        height="320"
                                         />
-                                        <figcaption class="ui bottom attached label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                        <figcaption class="ui bottom attached
+                                            large basic label">
+                                            <b class="uppercased_text signed text_left">
+                                                current design
+                                            </b>
                                         </figcaption>
                                     </figure>
 
                                     <figure class="flipped_contents_item
                                         behind_flip_item">
-
-                                        <img class="ui centered rounded image"
-                                        src="./static/images/light-bulb.jpg"
+                                        <img class="fluid object_fitted"
+                                        src="./media/remake/uon_remake.png"
                                         alt=""
-
-                                        height="300"
+                                        width="320"
+                                        height="320"
                                         />
-                                        <figcaption class="ui bottom attached label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                        <figcaption class="ui bottom attached
+                                            large basic label">
+                                            <b class="uppercased_text signed text_left">
+                                                redesign
+                                            </b>
                                         </figcaption>
                                     </figure>
 
 
                                 </div>
 
-                            </aside>
+
+                            </section>
 
                             <!-- end of content that flips over -->
-                            <div class="ui hidden horizontal divider">
+                            <div class="ui hidden section divider"
+                                role="separator">
 
                             </div>
-                            <a class="ui left floated small button"
-                                href="#0">
-                                view original
-                            </a>
-                            <a class="ui right floated small button"
-                                href="#0">
-                                view redesign
-                            </a>
+                            <div class="ui two tiny horizontal buttons">
+
+                                <a class="ui secondary button"
+                                    href="https://www.uonbi.ac.ke/">
+                                    view original
+                                </a>
+                                <b class="or" aria-description="or"></b>
+                                <a class="ui primary button  "
+                                    href="./education.html">
+                                    view redesign
+                                </a>
+                            </div>
 
                         </li>
                         <li class="horizontal_contents">
                             <!-- start of content that flips over -->
-                            <aside class="flip_wrapper">
+                            <section class="flip_wrapper">
+
                                 <div class="flipped_contents wall_efx">
 
                                     <figure class="flipped_contents_item
                                         infront_flip_item">
-                                        <img class="ui centered rounded image" src="./static/images/logo.png"
+                                        <img class="fluid object_fitted"
+                                        src="./media/remake/airtel.png"
                                         alt=""
-
-                                        height="300"
+                                        width="320"
+                                        height="320"
                                         />
-                                        <figcaption class="ui bottom attached label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                        <figcaption class="ui bottom attached
+                                            large basic label">
+                                            <b class="uppercased_text signed text_left">
+                                                current design
+                                            </b>
                                         </figcaption>
                                     </figure>
+
                                     <figure class="flipped_contents_item
                                         behind_flip_item">
-                                        <img class="ui centered rounded image"
-                                        src="./static/images/light-bulb.jpg"
+                                        <img class="fluid object_fitted"
+                                        src="./media/remake/airtel_remake.png"
                                         alt=""
-
-                                        height="300"
+                                        width="320"
+                                        height="320"
                                         />
-                                        <figcaption class="ui bottom attached label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                        <figcaption class="ui bottom attached
+                                            large basic label">
+                                            <b class="uppercased_text signed text_left">
+                                                redesign
+                                            </b>
                                         </figcaption>
                                     </figure>
 
 
                                 </div>
 
-                            </aside>
+
+                            </section>
 
                             <!-- end of content that flips over -->
-                            <div class="ui hidden horizontal divider">
+                            <div class="ui hidden section divider"
+                                role="separator">
 
                             </div>
-                            <a class="ui left floated small button"
-                                href="#0">
-                                read more
-                            </a>
-                            <a class="ui right floated small button"
-                                href="#0">
-                                read more
-                            </a>
+                            <div class="ui two tiny horizontal buttons">
+
+                                <a class="ui secondary button"
+                                    href="https://www.airtelkenya.com/">
+                                    view original
+                                </a>
+                                <b class="or" aria-description="or"></b>
+                                <a class="ui primary button  "
+                                    href="./business.html">
+                                    view redesign
+                                </a>
+                            </div>
 
                         </li>
                         <li class="horizontal_contents">
                             <!-- start of content that flips over -->
-                            <aside class="flip_wrapper">
+                            <section class="flip_wrapper">
+
                                 <div class="flipped_contents wall_efx">
 
                                     <figure class="flipped_contents_item
                                         infront_flip_item">
-                                        <img class="ui centered rounded image" src="./static/images/logo.png"
+                                        <img class="fluid object_fitted"
+                                        src="./media/remake/cleanshelf.png"
                                         alt=""
-
-                                        height="300"
+                                        width="320"
+                                        height="320"
                                         />
-                                        <figcaption class="ui bottom attached label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                        <figcaption class="ui bottom attached
+                                            large basic label">
+                                            <b class="uppercased_text signed text_left">
+                                                current design
+                                            </b>
                                         </figcaption>
                                     </figure>
+
                                     <figure class="flipped_contents_item
                                         behind_flip_item">
-                                        <img class="ui centered rounded image"
-                                        src="./static/images/light-bulb.jpg"
+                                        <img class="fluid object_fitted"
+                                        src="./media/remake/cleanshelf_remake.png"
                                         alt=""
-
-                                        height="300"
+                                        width="320"
+                                        height="320"
                                         />
-                                        <figcaption class="ui bottom attached label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                        <figcaption class="ui bottom attached
+                                            large basic label">
+                                            <b class="uppercased_text signed text_left">
+                                                redesign
+                                            </b>
                                         </figcaption>
                                     </figure>
 
 
                                 </div>
 
-                            </aside>
+
+                            </section>
 
                             <!-- end of content that flips over -->
-                            <div class="ui hidden horizontal divider">
+                            <div class="ui hidden section divider"
+                                role="separator">
 
                             </div>
-                            <a class="ui left floated small button"
-                                href="#0">
-                                read more
-                            </a>
-                            <a class="ui right floated small button"
-                                href="#0">
-                                read more
-                            </a>
+                            <div class="ui two tiny horizontal buttons">
+
+                                <a class="ui secondary button"
+                                    href="https://cleanshelf.co.ke/">
+                                    view original
+                                </a>
+                                <b class="or" aria-description="or"></b>
+                                <a class="ui primary button  "
+                                    href="./ecommerce.html">
+                                    view redesign
+                                </a>
+                            </div>
 
                         </li>
+                        <li class="horizontal_contents">
+                            <!-- start of content that flips over -->
+                            <section class="flip_wrapper">
+
+                                <div class="flipped_contents wall_efx">
+
+                                    <figure class="flipped_contents_item
+                                        infront_flip_item">
+                                        <img class="fluid object_fitted"
+                                        src="./media/remake/stats.png"
+                                        alt=""
+                                        width="320"
+                                        height="320"
+                                        />
+                                        <figcaption class="ui bottom attached
+                                            large basic label">
+                                            <b class="uppercased_text signed text_left">
+                                                current design
+                                            </b>
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure class="flipped_contents_item
+                                        behind_flip_item">
+                                        <img class="fluid object_fitted"
+                                        src="./media/remake/stats_remake.png"
+                                        alt=""
+                                        width="320"
+                                        height="320"
+                                        />
+                                        <figcaption class="ui bottom attached
+                                            large basic label">
+                                            <b class="uppercased_text signed text_left">
+                                                redesign
+                                            </b>
+                                        </figcaption>
+                                    </figure>
+
+
+                                </div>
+
+
+                            </section>
+
+                            <!-- end of content that flips over -->
+                            <div class="ui hidden section divider"
+                                role="separator">
+
+                            </div>
+                            <div class="ui two tiny horizontal buttons">
+
+                                <a class="ui secondary button"
+                                    href="https://www.premierleague.com/players/5101/Ilkay-G%C3%BCndogan/overview">
+                                    view original
+                                </a>
+                                <b class="or" aria-description="or"></b>
+                                <a class="ui primary button  "
+                                    href="./profile.html">
+                                    view redesign
+                                </a>
+                            </div>
+
+                        </li>
+
 
 
                     </ul>
@@ -456,133 +596,602 @@
                 </section>
 
             </article>
-            <article class="row">
+
+            <article class="centered row">
                 <header class="left aligned sixteen wide column">
                     <h2 class="ui left aligned header uppercased_text">
-                        popular web design
+                        types of web page
                         <span class="sub header lowercased_text">
-                            sososososos
+                            sample below some well designed &amp; attractive
+                            popular type of web pages.
+                            <br />
+                            like; login forms,error page,landing page etc..
                         </span>
                     </h2>
                 </header>
                 <section class="left aligned sixteen wide column">
 
-                    <h3 class="ui center aligned header">
-                        tap on image to view the before and after
-                    </h3>
+                    <h4 class="ui right floated left aligned tiny header">
+                        all templates suite any template engine.
+                    </h4>
+                    <div class="ui hidden clearing divider" role="separator">
 
+                    </div>
                     <ul class="unstyle_list horizontal_wrapper scroll_disabled">
 
                         <li class="horizontal_contents">
                             <!-- start of isometric contents -->
-                            <aside class="wall_efx">
+                            <section class="wall_efx">
 
                                 <div class="aspect_container">
 
                                     <figure class="aspect_contents">
                                         <img class="fluid object_fitted"
-                                        src="./static/images/logo.png"
-                                        alt=""
+                                        src="./media/original/portfolio.png"
+                                        alt="portfolio web page design"
                                         width="320"
-                                        height="300"
+                                        height="320"
                                         />
                                         <figcaption class="ui bottom attached basic label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                            portfolio showcase
                                         </figcaption>
                                     </figure>
 
 
                                 </div>
-                            </aside>
+                            </section>
                             <!-- end of isometric contents -->
-                            <div class="ui hidden horizontal divider">
+                            <div class="ui hidden section divider"
+                                role="separator">
 
                             </div>
                             <a class="ui small primary tertiary button"
-                                href="#0">
-                                view original one
+                                href="./portfolio.html">
+                                view template
                             </a>
                         </li>
                         <li class="horizontal_contents">
                             <!-- start of isometric contents -->
-                            <aside class="wall_efx">
+                            <section class="wall_efx">
 
                                 <div class="aspect_container">
 
                                     <figure class="aspect_contents">
                                         <img class="fluid object_fitted"
-                                        src="./static/images/logo.png"
-                                        alt=""
+                                        src="./media/original/forum.png"
+                                        alt="well designed blogging template"
                                         width="320"
-                                        height="300"
+                                        height="320"
                                         />
                                         <figcaption class="ui bottom attached basic label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                            forum/blogging template
                                         </figcaption>
                                     </figure>
 
 
                                 </div>
-                            </aside>
+                            </section>
                             <!-- end of isometric contents -->
-                            <div class="ui hidden horizontal divider">
+                            <div class="ui hidden section divider"
+                                role="separator">
 
                             </div>
                             <a class="ui small primary tertiary button"
-                                href="#0">
-                                view original one
+                                href="./blogging.html">
+                                view template
                             </a>
                         </li>
                         <li class="horizontal_contents">
                             <!-- start of isometric contents -->
-                            <aside class="wall_efx">
+                            <section class="wall_efx">
 
                                 <div class="aspect_container">
 
                                     <figure class="aspect_contents">
                                         <img class="fluid object_fitted"
-                                        src="./static/images/logo.png"
-                                        alt=""
+                                        src="./media/original/landing_page.png"
+                                        alt="sample landing page design"
                                         width="320"
-                                        height="300"
+                                        height="320"
                                         />
                                         <figcaption class="ui bottom attached basic label">
-                                            Te eum doming eirmod, nominati
-                                            pertinacia argumentum ad his.
-                                            Ex eam alia facete scriptorem, est autem
-                                            aliquip detraxit at. Usu ocurreret referrentur
-                                            at,cu epicurei appellantur vix.
+                                            minimalistic landing page.
                                         </figcaption>
                                     </figure>
 
 
                                 </div>
-                            </aside>
+                            </section>
                             <!-- end of isometric contents -->
-                            <div class="ui hidden horizontal divider">
+                            <div class="ui hidden section divider"
+                                role="separator">
 
                             </div>
                             <a class="ui small primary tertiary button"
-                                href="#0">
-                                view original one
+                                href="./landing.html">
+                                view template
                             </a>
                         </li>
 
+                        <li class="horizontal_contents">
+                            <!-- start of isometric contents -->
+                            <section class="wall_efx">
 
+                                <div class="aspect_container">
+
+                                    <figure class="aspect_contents">
+                                        <img class="fluid object_fitted"
+                                        src="./media/original/messenger.png"
+                                        alt="chatting web page design"
+                                        width="320"
+                                        height="320"
+                                        />
+                                        <figcaption class="ui bottom attached basic label">
+                                            messaging/chat design
+                                        </figcaption>
+                                    </figure>
+
+
+                                </div>
+                            </section>
+                            <!-- end of isometric contents -->
+                            <div class="ui hidden section divider"
+                                role="separator">
+
+                            </div>
+                            <a class="ui small primary tertiary button"
+                                href="./messenger.html">
+                                view template
+                            </a>
+                        </li>
+
+                        <li class="horizontal_contents">
+                            <!-- start of isometric contents -->
+                            <section class="wall_efx">
+
+                                <div class="aspect_container">
+
+                                    <figure class="aspect_contents">
+                                        <img class="fluid object_fitted"
+                                        src="./media/original/error_page.png"
+                                        alt="web error page design"
+                                        width="320"
+                                        height="320"
+                                        />
+                                        <figcaption class="ui bottom attached basic label">
+                                            error page design
+                                        </figcaption>
+                                    </figure>
+
+
+                                </div>
+                            </section>
+                            <!-- end of isometric contents -->
+                            <div class="ui hidden section divider"
+                                role="separator">
+
+                            </div>
+                            <a class="ui small primary tertiary button"
+                                href="./404.html">
+                                view template
+                            </a>
+                        </li>
+
+                        <li class="horizontal_contents">
+                            <!-- start of isometric contents -->
+                            <section class="wall_efx">
+
+                                <div class="aspect_container">
+
+                                    <figure class="aspect_contents">
+                                        <img class="fluid object_fitted"
+                                        src="./media/original/forms.png"
+                                        alt="well designed web forms"
+                                        width="320"
+                                        height="320"
+                                        />
+                                        <figcaption class="ui bottom attached basic label">
+                                            web forms design
+                                        </figcaption>
+                                    </figure>
+
+
+                                </div>
+                            </section>
+                            <!-- end of isometric contents -->
+                            <div class="ui hidden section divider"
+                                role="separator">
+
+                            </div>
+                            <a class="ui small primary tertiary button"
+                                href="./forms.html">
+                                view template
+                            </a>
+                        </li>
+
+                        <li class="horizontal_contents">
+                            <!-- start of isometric contents -->
+                            <section class="wall_efx">
+
+                                <div class="aspect_container">
+
+                                    <figure class="aspect_contents">
+                                        <img class="fluid object_fitted"
+                                        src="./media/original/fancy_element.png"
+                                        alt=""
+                                        width="320"
+                                        height="300"
+                                        />
+                                        <figcaption class="ui bottom attached basic label">
+                                            fancy web elements
+                                        </figcaption>
+                                    </figure>
+
+
+                                </div>
+                            </section>
+                            <!-- end of isometric contents -->
+                            <div class="ui hidden section divider"
+                                role="separator">
+
+                            </div>
+                            <a class="ui small primary tertiary button"
+                                href="./fancy_element.html">
+                                view template
+                            </a>
+                        </li>
 
                     </ul>
 
 
                 </section>
 
+            </article>
+
+
+            <div class="ui hidden horizontal divider" role="separator">
+
+            </div>
+
+            <article class="centered row">
+                <header class="ui left aligned sixteen wide column">
+                    <h3 class="ui header uppercased_text">
+                        useful coding tools
+                        <span class="sub header lowercased_text">
+                            read below details about various important &amp;
+                            fantastic mobile applications, used for
+                            web development (i.e coding) all templates showcased.
+                        </span>
+                    </h3>
+                    <div class="ui hidden section divider">
+
+                    </div>
+                </header>
+
+                <!-- start of stack and tools -->
+                <section class="left aligned middle aligned sixteen wide column">
+                    <ul class="ui centered three stackable raised cards unstyle_list">
+
+                        <li class="card">
+
+                            <picture class="image">
+
+                                <img src="./media/tools/spckio.png"
+                                class="scale_down circled_image object_fittedy"
+                                width="150"
+                                height="150"
+                                alt="play store image of spck io editor application">
+
+                            </picture>
+
+                            <header class="curved_ribbon">
+                                <span class="ribbon_content ui black text">
+                                    <span class="ui green text">
+                                        recommended
+                                    </span>
+                                </span>
+                            </header>
+
+                            <div class="content">
+                                <a class="header uppercased_text" href="https:://www.spck.io.com">
+                                    spck io
+                                </a>
+                                <small class="meta">
+                                    <b class="lowercased_text">type</b>
+                                    <span class="ui medium blue text signed">
+                                        code editor
+                                    </span>
+                                </small>
+
+                                <p class="description">
+                                    Spck Editor lets you write code whenever, wherever.
+                                    Quickly change code snippets, preview them, and commit to any git repository all
+                                    with this tiny (but powerful) JavaScript IDE.
+                                    There's no more need to compromise when developing on your mobile Android device.
+                                    Clone from Github/Gitlab/Bitbucket, AWS CodeCommit, Azure DevOps, or more,
+                                    from your phone.
+                                </p>
+                            </div>
+                            <p class="extra content">
+                                <a class="ui right floated basic secondary icon button"
+
+                                    href="https://play.google.com/store/apps/details?id=io.spck">
+                                    play store link
+                                    <i class="download icon"></i>
+                                </a>
+                                <span class="ui hidden clearing divider"
+                                    role="separator">
+
+                                </span>
+                            </p>
+
+                        </li>
+
+                        <li class="card">
+
+                            <picture class="image">
+
+                                <img src="./media/tools/acode.foxdebug.jpg"
+                                class="scale_down circled_image"
+                                width="150"
+                                height="150"
+                                alt="play store image of acode editor application">
+
+                            </picture>
+
+                            <header class="curved_ribbon">
+                                <span class="ribbon_content ui black text">
+                                    <span class="ui green text">
+                                        recommended
+                                    </span>
+                                </span>
+                            </header>
+
+                            <div class="content">
+                                <a class="header uppercased_text"
+                                    href="www.acode.foxdebug.com">
+                                    acode
+                                </a>
+                                <small class="meta">
+                                    <b class="lowercased_text">type</b>
+                                    <span class="ui medium blue text signed">
+                                        code editor
+                                    </span>
+                                </small>
+
+                                <p class="description">
+                                    Acode is light weight yet powerful code editor and web IDE for android.
+                                    You can use this editor for editing HTML, JavaScript, text.
+                                    You can create website, run the website in browser and
+                                    see error or logs in the console.
+                                    Also edit any kind of source file like
+                                    , python, CSS, html, java, JavaScript, Dart etc.
+                                </p>
+                            </div>
+                            <p class="extra content">
+                                <a class="ui right floated basic secondary icon button"
+                                    href="https://play.google.com/store/apps/details?id=com.foxdebug.acodefree">
+                                    play store link
+                                    <i class="download icon"></i>
+                                </a>
+                                <span class="ui hidden clearing divider"
+                                    role="separator">
+
+                                </span>
+                            </p>
+
+                        </li>
+
+                        <li class="card">
+
+                            <picture class="image">
+
+                                <img src="./media/tools/markor.png"
+                                class="scale_down circled_image"
+                                width="150"
+                                height="150"
+                                alt="play store image of markor application">
+
+                            </picture>
+
+                            <header class="curved_ribbon">
+                                <span class="ribbon_content ui black text">
+                                    <span class="ui green text">
+                                        recommended
+                                    </span>
+                                </span>
+                            </header>
+
+                            <div class="content">
+                                <a class="header uppercased_text"
+                                    href="https//www.gsantner.net/project/markor">
+                                    markor
+                                </a>
+                                <small class="meta">
+                                    <b class="lowercased_text">type</b>
+                                    <span class="ui medium blue text signed">
+                                        mark-up code editor
+                                    </span>
+                                </small>
+
+                                <p class="description">
+                                    Text editor.
+                                    Create notes and manage your to-do list using simple markup formats
+                                    Work completely offline whenever,
+                                    Compatible with any other plaintext software on any platform
+                                    .edit with notepad or vim, filter with grep,
+                                    Syntax Highlighting and format related actions
+                                    quick insert pictures and to-do
+                                    Convert, preview, and share documents as HTML and PDF.
+                                </p>
+                            </div>
+                            <p class="extra content">
+                                <a class="ui right floated basic secondary icon button"
+                                    href="https://play.google.com/store/apps/details?id=net.gsantner.markor">
+                                    play store link
+                                    <i class="download icon"></i>
+                                </a>
+                                <span class="ui hidden clearing divider"
+                                    role="separator">
+
+                                </span>
+                            </p>
+
+                        </li>
+
+                        <li class="card">
+
+                            <picture class="image">
+
+                                <img src="./media/tools/conspy.jpg"
+                                class="scale_down circled_image object_fittedy"
+                                width="150"
+                                height="150"
+                                alt="spck io editor application">
+
+                            </picture>
+
+
+                            <div class="content">
+                                <a class="header uppercased_text"
+                                    href="www.note-buddy.com">
+                                    con-spy
+                                </a>
+                                <small class="meta">
+                                    <b class="lowercased_text">type</b>
+                                    <span class="ui medium blue text signed">
+                                        debugging web browser
+                                    </span>
+                                </small>
+
+                                <p class="description">
+                                    make website debugging in Android device easier
+                                    Enable website debugging for your Android phone.
+                                    Works like debug mode in Chrome.
+                                    <br />
+                                    app Features:
+                                    <br />
+                                    source code view,requests logging,
+                                    console logging,storage logging
+                                </p>
+                            </div>
+                            <p class="extra content">
+                                <a class="ui right floated basic secondary icon button"
+                                    href="https://play.google.com/store/apps/details?id=com.notebuddy.conspy">
+                                    play store link
+                                    <i class="download icon"></i>
+                                </a>
+                                <span class="ui hidden clearing divider"
+                                    role="separator">
+
+                                </span>
+                            </p>
+
+                        </li>
+
+                        <li class="card">
+
+                            <picture class="image">
+
+                                <img src="./media/tools/tiny_webserver.jpg"
+                                class="scale_down circled_image object_fittedy"
+                                width="150"
+                                height="150"
+                                alt="play store image of tiny webserver application">
+
+                            </picture>
+
+
+                            <div class="content">
+                                <a class="header uppercased_text"
+                                    href="www.lrusso.com">
+                                    web server
+                                </a>
+                                <small class="meta">
+                                    <b class="lowercased_text">type</b>
+                                    <span class="ui medium blue text signed">
+                                        simple local web server
+                                    </span>
+                                </small>
+
+                                <p class="description">
+                                    Tiny Web Server for Android 4.0 and above.
+                                    <br />
+                                    Some app features:
+                                    Runs as a service,Different charsets,Easy to configure,fast to access,
+                                    multilingual options,small in size(less memory space required),
+                                    Auto start function(THE SERVER WILL BE STARTED AUTOMATICALLY ON BOOT EVERY TIME),
+                                    Minimalist interface,Folder and file listing,Low memory consumption.
+                                </p>
+                            </div>
+                            <p class="extra content">
+                                <a class="ui right floated basic secondary icon button"
+                                    href="https://play.google.com/store/apps/details?id=ar.com.lrusso.tinywebserver">
+                                    play store link
+                                    <i class="download icon"></i>
+                                </a>
+                                <span class="ui hidden clearing divider"
+                                    role="separator">
+
+                                </span>
+                            </p>
+
+                        </li>
+
+                        <li class="card">
+
+                            <picture class="image">
+
+                                <img src="./media/tools/plumavector.jpg"
+                                class="scale_down circled_image object_fittedy"
+                                width="150"
+                                height="150"
+                                alt="play store image of pluma vector editor application">
+
+                            </picture>
+
+
+                            <div class="content">
+                                <a class="header uppercased_text"
+                                    href="www.plumavectorsvg.000webhostapp.com">
+                                    pluma vector
+                                </a>
+                                <small class="meta">
+                                    <b class="lowercased_text">type</b>
+                                    <span class="ui medium blue text signed">
+                                        svg editor
+                                    </span>
+                                </small>
+
+                                <p class="description">
+                                    vector drawing tools.Fountain Pen tool.
+                                    Allows exporting the drawings to SVG format which can be imported easily with
+                                    more complex vector design programs like for example adobe Illustrator.
+                                    Define each curve With the use of a pointer, the precission you can reach
+                                    drawing with the finger is similar to drawing with a mouse.
+
+                                </p>
+                            </div>
+                            <p class="extra content">
+                                <a class="ui right floated basic secondary icon button
+                                    "
+                                    href="https://play.google.com/store/apps/details?id=pop.bubble.bezier">
+                                    play store link
+                                    <i class="download icon"></i>
+                                </a>
+                                <span class="ui hidden clearing divider"
+                                    role="separator">
+
+                                </span>
+                            </p>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <!-- end of stack and tools -->
             </article>
             <!-- end of dynamic page contents -->
         </main>
@@ -590,6 +1199,76 @@
     </div>
 
     <!-- end of main page contents -->
+
+    <!-- start of footer  -->
+    <footer class="page_footer" id="BelowTheFold">
+
+        <div class="ui vertical inverted grey basic segment">
+
+            <div class="ui centered top aligned stackable equal height
+                padded grid">
+
+                <section class="left aligned seven wide column">
+
+                    <h5 class="ui header uppercased_text">call to action</h5>
+                    <img class="ui tiny left floated circular image
+                    raised_shadowed"
+                    src="./static/images/logo.png"
+                    alt="logo"
+                    width="40px"
+                    height="30px"
+                    />
+                    <p>
+                        <span class="ui small text signed uppercased_text">gets you up to the time</span>
+                        <br />
+                        <span class="ui tiny black text">
+                            <b>with</b>
+                        </span>
+                        <br />
+                        <span class="ui large green text signed capitalised_text">
+                            diligently created content
+                        </span>
+                    </p>
+                </section>
+
+                <section class="seven wide column">
+                    <h5 class="ui inverted header uppercased_text">
+                        newsletter subscription
+                        <span class="sub header lowercased_text">
+                            Te eum doming eirmod, nominati pertinacia
+                            argumentum ad his.
+                        </span>
+                    </h5>
+
+                    <form class="ui  inverted form  " action="." method="get" accept-charset="utf-8">
+                        <div class="ui fluid action input">
+                            <input placeholder="your e-mail address"
+                            type="email">
+                            <button class="ui secondary submit button" type="submit">
+                                subscribe
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+
+            </div>
+
+            <p class="ui center aligned tiny inverted header full_width_text">
+                &copy;
+                <span id="insertedDate">
+                </span> &nbsp;
+                <span class="signed uppercased_text">up To Time designs</span>
+                &nbsp;
+                all rights reserved
+            </p>
+
+            <div class="ui horizontal divider" role="separator">
+
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer  -->
 
     <!-- start of inject js -->
     <noscript>
